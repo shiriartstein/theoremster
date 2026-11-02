@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Theorem Timeline</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='5' width='18' height='22' fill='%231B2A41'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app"></main>
+<dialog id="rules" aria-labelledby="rules-title">
+  <div class="dialog-head">
+    <h2 id="rules-title">How to play</h2>
+    <button type="button" class="close" data-close aria-label="Close the rules">×</button>
+  </div>
+  <ol class="rules">
+    <li>Everyone starts with one theorem in their timeline, showing its year. The goal is to collect a set number of cards first.</li>
+    <li>On your turn, read the new theorem and tap the gap in your timeline where you think it belongs. Equal years count as correct on either side.</li>
+    <li>If you know who proved it, say the name out loud now, before the card is revealed. A correct name earns you a ∎ (up to 5). On cards with several provers, any one of them counts.</li>
+    <li>Before the reveal, other players may challenge: spend one ∎ and pick a different gap in your timeline. Each gap can hold only one challenge.</li>
+    <li>Reveal the card. If you placed it right, you keep it. If you didn’t, a challenger who picked the right gap takes it into their own timeline. Otherwise it is discarded.</li>
+    <li>At the start of a turn, any player can trade 3 ∎ for a card from the deck, placed correctly in their timeline.</li>
+    <li>The first player to reach the target wins. If the deck runs out, the most cards wins, then the most ∎.</li>
+  </ol>
+</dialog>
+<script src="cards.js"></script>
+<script src="game.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
