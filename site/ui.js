@@ -20,7 +20,8 @@
   let guessDraft = '';      // the prover name being typed (online)
   let animateReveal = false;
   let peek = { key: '', front: false };   // after the reveal, flip the card back to reread the theorem
-  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 10, level: 'all', verifiedOnly: false, onlineName: '' }, load(KEY.setup) || {});
+  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 10, level: 'all', verifiedOnly: false, onlineName: '', startTokens: 2, nameNeedsPlacement: true }, load(KEY.setup) || {});
+  const gameSettings = options => ({ target: options.target, startTokens: options.startTokens, nameNeedsPlacement: !!options.nameNeedsPlacement });
 
   // ---------- storage (browser storage can be unavailable; the game still works) ----------
   function load(key) { try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; } catch (e) { return null; } }
@@ -112,8 +113,9 @@
     if (action === 'endTurn' && next.event) {
       const e = next.event, name = who(e.player), card = byId.get(e.card);
       if (prev.guess) {
-        return e.namedProver ? `${name} named ${listJoin(card.provers)} and ${e.earned ? 'earned a ∎' : 'already had 5 ∎'}.`
-          : `${name} guessed “${prev.guess}”; it was ${listJoin(card.provers)}.`;
+        if (!e.namedProver) return `${name} guessed “${prev.guess}”; it was ${listJoin(card.provers)}.`;
+        if (e.blocked === 'placement') return `${name} named ${listJoin(card.provers)}, but no ∎ since the card was misplaced.`;
+        return `${name} named ${listJoin(card.provers)} and ${e.earned ? 'earned a ∎' : 'already had 5 ∎'}.`;
       }
       if (e.earned) return `${name} earned a ∎ for naming the prover.`;
     }
@@ -148,7 +150,7 @@
   }
   function startLocal(names) {
     const deck = deckFor(setup).map(c => ({ id: c.id, year: c.year }));
-    try { game = G.newGame({ cards: deck, players: names, settings: { target: setup.target }, seed: seed() }); }
+    try { game = G.newGame({ cards: deck, players: names, settings: gameSettings(setup), seed: seed() }); }
     catch (error) { flash = error.message; render(); return; }
     mode = 'local'; history = []; challenger = null; flash = '';
     store(KEY.game, game);
@@ -179,7 +181,7 @@
     const name = cleanName(setup.onlineName) || 'Host';
     const code = Online.randomCode();
     net = { role: 'host', code, seats: [{ clientId: 'host', name, peerId: null }], watchers: new Set(), started: false,
-      settings: { target: setup.target, level: setup.level, verifiedOnly: setup.verifiedOnly }, status: 'connecting', conn: null };
+      settings: { target: setup.target, level: setup.level, verifiedOnly: setup.verifiedOnly, startTokens: setup.startTokens, nameNeedsPlacement: !!setup.nameNeedsPlacement }, status: 'connecting', conn: null };
     mode = 'host'; game = null; flash = '';
     try { window.history.replaceState(null, '', `#host=${code}`); } catch (e) { /* ignore */ }
     hostSave(); hostConnect(); render();
@@ -275,7 +277,7 @@
   }
   function hostBegin() {
     const deck = deckFor(net.settings).map(c => ({ id: c.id, year: c.year }));
-    try { game = G.newGame({ cards: deck, players: net.seats.map(s => s.name), settings: { target: net.settings.target }, seed: seed() }); }
+    try { game = G.newGame({ cards: deck, players: net.seats.map(s => s.name), settings: gameSettings(Object.assign({ startTokens: 2, nameNeedsPlacement: true }, net.settings)), seed: seed() }); }
     catch (error) { flash = error.message; render(); return; }
     net.started = true; flash = '';
     hostSave(); hostBroadcast(); render();
@@ -338,7 +340,7 @@
     } }, 'Add a player') : null;
     const select = (label, key, options) => h('div', { class: 'field' },
       h('label', { for: `opt-${key}` }, label),
-      h('select', { id: `opt-${key}`, onchange: e => { setup[key] = key === 'target' ? Number(e.target.value) : e.target.value; store(KEY.setup, setup); updateStatus(); } },
+      h('select', { id: `opt-${key}`, onchange: e => { setup[key] = (key === 'target' || key === 'startTokens') ? Number(e.target.value) : e.target.value; store(KEY.setup, setup); updateStatus(); } },
         options.map(([value, text]) => h('option', { value, selected: String(setup[key]) === String(value) }, text))));
 
     app.replaceChildren(h('section', { class: 'setup' },
@@ -354,6 +356,11 @@
         h('div', { class: 'options' },
           select('Cards to win', 'target', [5, 6, 8, 10, 12, 15].map(n => [n, `${n} cards`])),
           select('Theorems', 'level', [['all', 'All theorems'], ['Undergraduate', 'Undergraduate courses'], ['Famous', 'Famous results']]),
+          select('Starting ∎', 'startTokens', [0, 1, 2, 3, 4, 5].map(n => [n, n === 1 ? '1 ∎ each' : `${n} ∎ each`])),
+          h('div', { class: 'field' }, h('span', { class: 'label' }, 'Naming the prover'),
+            h('label', { class: 'check' },
+              h('input', { type: 'checkbox', checked: !!setup.nameNeedsPlacement, onchange: e => { setup.nameNeedsPlacement = e.target.checked; store(KEY.setup, setup); } }),
+              h('span', {}, 'Earns a ∎ only if the card is also placed correctly'))),
           h('div', { class: 'field' }, h('span', { class: 'label' }, 'Checked cards'),
             h('label', { class: 'check' },
               h('input', { type: 'checkbox', checked: setup.verifiedOnly, onchange: e => { setup.verifiedOnly = e.target.checked; store(KEY.setup, setup); updateStatus(); } }),
@@ -395,6 +402,12 @@
     document.getElementById('create').disabled = !cleanName(setup.onlineName) || !!smallDeck || !CARDS.length;
   }
 
+  function settingsText(options) {
+    const tokens = options.startTokens === undefined ? 2 : options.startTokens;
+    return `First to ${options.target} cards. Everyone starts with ${tokens} ∎.` +
+      (options.nameNeedsPlacement === false ? ' Naming the prover earns a ∎ even if the card is misplaced.' : ' Naming the prover earns a ∎ only with a correct placement.');
+  }
+
   // ---------- online lobby screens ----------
   function statusLine() {
     const text = net.role === 'host'
@@ -423,7 +436,7 @@
         statusLine()),
       h('div', { class: 'panel' }, h('h2', {}, `Players (${net.seats.length} of ${G.MAX_PLAYERS})`),
         playerList(lobbyInfo().players, 0),
-        h('p', { class: 'panel-text' }, `First to ${net.settings.target} cards, ${deck.length} theorems in the deck.`),
+        h('p', { class: 'panel-text' }, `${settingsText(net.settings)} ${deck.length} theorems in the deck.`),
         !enough ? h('p', { class: 'warning' }, 'There aren’t enough cards for this many players. Lower the cards to win in a new game.') : null),
       h('div', { class: 'start-row' },
         h('button', { type: 'button', class: 'btn primary', disabled: net.seats.length < 2 || !enough, onclick: hostBegin }, net.seats.length < 2 ? 'Waiting for a second player' : 'Start the game'),
@@ -447,7 +460,7 @@
         h('div', { class: 'panel' }, h('h2', {}, 'Players so far'), playerList(lobby.players, null)), statusLine());
     } else {
       body.push(h('h1', {}, 'You’re in'),
-        h('p', { class: 'lede' }, `Waiting for ${lobby.host} to start the game. First to ${lobby.settings.target} cards.`),
+        h('p', { class: 'lede' }, `Waiting for ${lobby.host} to start the game. ${settingsText(lobby.settings)}`),
         h('div', { class: 'panel' }, h('h2', {}, 'Players'), playerList(lobby.players, net.seat)), statusLine());
     }
     body.push(h('div', { class: 'start-row' }, h('button', { type: 'button', class: 'btn', onclick: () => rules.showModal() }, 'How to play')));
@@ -562,8 +575,12 @@
     const outcome = r.activeCorrect ? h('h2', { class: 'result good' }, `Right! ${active} keeps the card.`)
       : r.winner !== null ? h('h2', { class: 'result neutral' }, `Not quite. ${nameOf(r.winner)}’s challenge was right, so ${nameOf(r.winner)} takes the card.`)
       : h('h2', { class: 'result bad' }, 'Not quite. The card is discarded.');
+    const placementRule = s.settings.nameNeedsPlacement && !r.activeCorrect;
     if (!online) {
       const finish = named => perform('endTurn', { named });
+      if (placementRule) return [note, outcome,
+        h('p', { class: 'hint' }, 'No ∎ for naming the prover this turn, since the card wasn’t placed correctly.'),
+        h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn primary', onclick: () => finish(false) }, 'Next turn'))];
       return [note, outcome, h('p', {}, `Did ${active} name the prover before the reveal?`),
         h('div', { class: 'actions' },
           h('button', { type: 'button', class: 'btn primary', onclick: () => finish(true) }, full ? `Yes (${active} already has ${s.settings.maxTokens} ∎)` : 'Yes, earn a ∎'),
@@ -571,7 +588,8 @@
     }
     const right = guessRight(s);
     const guessLine = s.guess
-      ? h('p', { class: 'guess-result ' + (right ? 'good' : 'bad') }, `${active} guessed “${s.guess}”: `, right ? (full ? 'right, but already at 5 ∎.' : 'right! +1 ∎') : 'not this time.')
+      ? h('p', { class: 'guess-result ' + (right && !placementRule ? 'good' : 'bad') }, `${active} guessed “${s.guess}”: `,
+        !right ? 'not this time.' : placementRule ? 'right, but no ∎ since the card wasn’t placed correctly.' : full ? 'right, but already at 5 ∎.' : 'right! +1 ∎')
       : h('p', { class: 'hint' }, `${active} didn’t guess the prover.`);
     return [note, outcome, guessLine,
       myTurn ? h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn primary', onclick: () => perform('endTurn') }, 'Next turn'))

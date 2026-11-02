@@ -11,7 +11,8 @@
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
 
-  const DEFAULTS = { target: 10, startTokens: 2, maxTokens: 5, cardCost: 3 };
+  // nameNeedsPlacement: naming the prover earns a token only if the card was also placed correctly.
+  const DEFAULTS = { target: 10, startTokens: 2, maxTokens: 5, cardCost: 3, nameNeedsPlacement: false };
   const MIN_PLAYERS = 2, MAX_PLAYERS = 6;
 
   function fail(message) { throw new Error(message); }
@@ -50,6 +51,8 @@
     if (names.length < MIN_PLAYERS || names.length > MAX_PLAYERS) fail(`A game needs ${MIN_PLAYERS} to ${MAX_PLAYERS} players.`);
     if (new Set(names.map(n => n.toLowerCase())).size !== names.length) fail('Each player needs a different name.');
     if (!Number.isInteger(options.target) || options.target < 2) fail('Cards to win must be at least 2.');
+    if (!Number.isInteger(options.startTokens) || options.startTokens < 0 || options.startTokens > options.maxTokens) fail(`Starting tokens must be between 0 and ${options.maxTokens}.`);
+    options.nameNeedsPlacement = !!options.nameNeedsPlacement;
     const years = {};
     for (const card of cards || []) {
       if (!card || typeof card.id !== 'string' || !Number.isFinite(card.year)) fail('Every card needs an id and a numeric year.');
@@ -180,9 +183,13 @@
     if (state.phase !== 'reveal') fail('Reveal the card before ending the turn.');
     const next = copy(state);
     const active = next.players[next.active];
-    const earned = namedProver && active.tokens < next.settings.maxTokens;
+    // Why a correct name did not earn a token, if it didn't: 'placement' or 'max'.
+    let blocked = null;
+    if (namedProver && next.settings.nameNeedsPlacement && !next.result.activeCorrect) blocked = 'placement';
+    else if (namedProver && active.tokens >= next.settings.maxTokens) blocked = 'max';
+    const earned = !!namedProver && !blocked;
     if (earned) active.tokens += 1;
-    next.event = { type: 'turn', player: next.active, card: next.result.card, namedProver: !!namedProver, earned };
+    next.event = { type: 'turn', player: next.active, card: next.result.card, namedProver: !!namedProver, earned, blocked };
     return drawNext(next);
   }
 

@@ -204,4 +204,34 @@ test('a whole random game always ends with consistent cards', () => {
   }
 });
 
+test('the number of starting tokens can be chosen', () => {
+  for (const n of [0, 1, 5]) {
+    const s = start({ settings: { target: 5, startTokens: n } });
+    assert.ok(s.players.every(p => p.tokens === n));
+  }
+  assert.throws(() => start({ settings: { target: 5, startTokens: 6 } }), /between 0 and 5/);
+  assert.throws(() => start({ settings: { target: 5, startTokens: -1 } }), /between 0 and 5/);
+});
+
+test('with nameNeedsPlacement, a correct name earns a token only with a correct placement', () => {
+  const ruled = { settings: { target: 5, nameNeedsPlacement: true } };
+  let wrong = rig(start(ruled), { timeline: ['T001', 'T010'], card: 'T005', tokens: [2, 2, 2] });
+  wrong = G.endTurn(G.reveal(G.place(wrong, 0)), { namedProver: true });
+  assert.strictEqual(wrong.players[0].tokens, 2);
+  assert.ok(!wrong.event.earned);
+  assert.strictEqual(wrong.event.blocked, 'placement');
+  let right = rig(start(ruled), { timeline: ['T001', 'T010'], card: 'T005', tokens: [2, 2, 2] });
+  right = G.endTurn(G.reveal(G.place(right, 1)), { namedProver: true });
+  assert.strictEqual(right.players[0].tokens, 3);
+  assert.ok(right.event.earned);
+  // Without the rule, a wrong placement still earns the token.
+  let open = rig(start(), { timeline: ['T001', 'T010'], card: 'T005', tokens: [2, 2, 2] });
+  open = G.endTurn(G.reveal(G.place(open, 0)), { namedProver: true });
+  assert.strictEqual(open.players[0].tokens, 3);
+  // At the maximum, the reason is the cap.
+  let full = rig(start(ruled), { timeline: ['T001', 'T010'], card: 'T005', tokens: [5, 2, 2] });
+  full = G.endTurn(G.reveal(G.place(full, 1)), { namedProver: true });
+  assert.strictEqual(full.event.blocked, 'max');
+});
+
 if (!process.exitCode) console.log(`PASS: ${passed} game rule tests.`);
