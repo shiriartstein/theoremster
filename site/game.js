@@ -72,6 +72,7 @@
       phase: 'place',
       card: deck.pop(),
       placement: null,
+      guess: '',
       challenges: [],
       result: null,
       event: null,
@@ -107,12 +108,13 @@
     return state.players.map((p, i) => i).filter(i => state.players[i].timeline.length >= state.settings.target);
   }
 
-  /** The active player puts the current card in a gap of their own timeline. */
-  function place(state, slot) {
+  /** The active player puts the current card in a gap of their own timeline, optionally guessing the prover. */
+  function place(state, slot, guess = '') {
     if (state.phase !== 'place') fail('Cards can only be placed at the start of a turn.');
     checkSlot(state, slot);
     const next = copy(state);
     next.placement = slot;
+    next.guess = String(guess || '').replace(/\s+/g, ' ').trim().slice(0, 80);
     next.phase = 'challenge';
     next.event = null;
     return next;
@@ -168,7 +170,7 @@
     next.active = (next.active + 1) % next.players.length;
     next.turn += 1;
     next.card = next.deck.pop();
-    next.placement = null; next.challenges = []; next.result = null;
+    next.placement = null; next.guess = ''; next.challenges = []; next.result = null;
     next.phase = 'place';
     return next;
   }
@@ -212,5 +214,75 @@
       state.players[playerIndex].tokens > 0 && !state.challenges.some(c => c.player === playerIndex);
   }
 
-  return { DEFAULTS, MIN_PLAYERS, MAX_PLAYERS, cardsNeeded, newGame, place, challenge, reveal, endTurn, buyCard, canChallenge, correctSlots, fits };
+  // ---------- Checking a typed guess of the prover's name ----------
+  // Forgiving about accents, capitalisation, punctuation, given names and initials,
+  // and small spelling mistakes; strict about naming a different person.
+  const PARTICLES = new Set(['de', 'la', 'le', 'du', 'des', 'van', 'von', 'der', 'den', 'al', 'ibn', 'bin', 'el', 'di', 'da', 'del', 'l', 'd']);
+  function normalize(text) {
+    return String(text || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+      .replace(/ß/g, 'ss').replace(/[æ]/g, 'ae').replace(/[ø]/g, 'o').replace(/ł/g, 'l')
+      .replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+  // Edit distance counting a swap of two neighbouring letters as one mistake.
+  function distance(a, b) {
+    const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array(b.length).fill(0)]);
+    for (let j = 1; j <= b.length; j++) d[0][j] = j;
+    for (let i = 1; i <= a.length; i++) {
+      for (let j = 1; j <= b.length; j++) {
+        const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+        d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost);
+        if (i > 1 && j > 1 && a[i - 1] === b[j - 2] && a[i - 2] === b[j - 1]) d[i][j] = Math.min(d[i][j], d[i - 2][j - 2] + 1);
+      }
+    }
+    return d[a.length][b.length];
+  }
+  // How many mistakes a name of this length tolerates.
+  function allowance(length) { return length <= 3 ? 0 : length <= 5 ? 1 : length <= 8 ? 2 : 3; }
+  function close(guess, answer) {
+    if (guess === answer) return true;
+    const squeeze = s => s.replace(/ /g, '');
+    const a = squeeze(answer), g = squeeze(guess);
+    return distance(g, a) <= allowance(a.length);
+  }
+  /** The ways of naming one prover that count as correct (surname, with or without particles, or the full name). */
+  function acceptedNames(prover) {
+    const names = new Set();
+    for (const part of String(prover).split(',')) {
+      const tokens = normalize(part).split(' ').filter(Boolean);
+      if (!tokens.length) continue;
+      names.add(tokens.join(' '));
+      const of = tokens.indexOf('of');
+      if (of > 0) names.add(tokens.slice(0, of).join(' '));        // Thales of Miletus -> thales
+      const core = of > 0 ? tokens.slice(0, of) : tokens;
+      let start = core.length - 1;
+      names.add(core[start]);                                       // surname
+      while (start > 0 && PARTICLES.has(core[start - 1])) { start--; names.add(core.slice(start).join(' ')); }
+      if (core.length >= 3) names.add(core.slice(-2).join(' '));    // Lejeune Dirichlet, Vallee Poussin
+    }
+    return [...names];
+  }
+  function matchesOne(guess, prover, extra) {
+    const answers = acceptedNames(prover).concat((extra || []).map(normalize)).filter(Boolean);
+    if (answers.some(a => close(guess, a))) return true;
+    // "Carl Friedrich Gauss", "C. F. Gauss": a correct surname at the end, and every other word
+    // is one of the prover's own given names or initials.
+    const words = guess.split(' '), own = normalize(prover).split(' ');
+    for (let cut = 1; cut < words.length; cut++) {
+      const tail = words.slice(cut).join(' '), head = words.slice(0, cut);
+      if (!answers.some(a => close(tail, a))) continue;
+      if (head.every(w => PARTICLES.has(w) || own.some(o => (w.length === 1 ? o[0] === w : close(w, o))))) return true;
+    }
+    return false;
+  }
+  /**
+   * Does a typed guess name the prover? card: { provers: [...], alsoAccept: [...] }.
+   * Several names may be given ("Hadamard and de la Vallee Poussin"); each must be one of the provers.
+   */
+  function nameMatches(guess, card) {
+    const parts = String(guess || '').split(/\s*(?:,|&|\/|;|\band\b)\s*/i).map(normalize).filter(Boolean);
+    if (!parts.length || !card || !card.provers) return false;
+    return parts.every(part => card.provers.some(p => matchesOne(part, p, card.alsoAccept)));
+  }
+
+  return { nameMatches, acceptedNames, DEFAULTS, MIN_PLAYERS, MAX_PLAYERS, cardsNeeded, newGame, place, challenge, reveal, endTurn, buyCard, canChallenge, correctSlots, fits };
 });

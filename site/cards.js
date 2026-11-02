@@ -13,7 +13,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Credit is by ancient tradition only; earliest surviving proof is Euclid, Elements III.31.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T002",
@@ -28,7 +29,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Attribution is legendary; the classic proof appears in Aristotle and Euclid.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T003",
@@ -43,7 +45,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Known through later commentators (Simplicius).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T004",
@@ -58,7 +61,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Elements VII.1–2.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T005",
@@ -73,7 +77,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Elements IX.36. The converse (every even perfect number has this form) is Euler's, published posthumously in 1849; see separate card.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T006",
@@ -88,7 +93,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Elements XIII; the result is often traced back to Theaetetus (c. 380 BC).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T007",
@@ -103,7 +109,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Elements IX.20.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T008",
@@ -118,7 +125,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Traditionally credited to Pythagoras (c. 530 BC), but the earliest surviving proof is Euclid, Elements I.47.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T009",
@@ -133,7 +141,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Measurement of a Circle.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T010",
@@ -148,7 +157,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Uses an early form of a geometric series.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T011",
@@ -163,7 +173,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "On the Sphere and Cylinder; Archimedes asked for it on his tomb.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T012",
@@ -178,7 +189,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Metrica. Some ancient sources say Archimedes already knew it.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T013",
@@ -193,7 +205,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Sphaerica.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T014",
@@ -208,7 +221,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Almagest.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T015",
@@ -223,7 +237,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Collection, Book VII.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T016",
@@ -238,7 +253,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Brāhmasphuṭasiddhānta.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T017",
@@ -253,7 +269,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Also called the Brahmagupta–Fibonacci identity.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T018",
@@ -268,7 +285,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr wa-l-muqābala; the word 'algebra' comes from its title.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T019",
@@ -283,7 +301,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T020",
@@ -298,7 +317,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Used to compute the volume of a paraboloid.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T021",
@@ -313,7 +333,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Treatise on Demonstration of Problems of Algebra.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T022",
@@ -328,7 +349,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "A special case appears in the Sunzi Suanjing (3rd–5th c.); Qin's Mathematical Treatise in Nine Sections gave the general method.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T023",
@@ -343,7 +365,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Grouping the terms into blocks that each exceed 1/2.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T024",
@@ -358,7 +381,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Published in Europe by Gregory (1671) and Leibniz (1682). Madhava's work survives through later Kerala texts such as the Yuktibhāṣā (c. 1530).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T025",
@@ -373,7 +397,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": true,
   "note": "Cardano published it in Ars Magna, but it was found by Scipione del Ferro and Niccolò Tartaglia.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T026",
@@ -388,7 +413,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Published in Cardano's Ars Magna.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T027",
@@ -403,7 +429,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Geometria indivisibilibus.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T028",
@@ -418,7 +445,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "La Géométrie.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T029",
@@ -433,7 +461,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Essai pour les coniques, written when Pascal was 16.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T030",
@@ -448,7 +477,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "First published by Abraham Bosse.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T031",
@@ -463,7 +493,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Arithmetica Infinitorum.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T032",
@@ -478,7 +509,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Traité du triangle arithmétique (written 1654, published 1665), with one of the first explicit proofs by induction. The coefficients were known much earlier.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T033",
@@ -493,7 +525,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Barrow's Lectiones Geometricae has a geometric version; Newton and Leibniz developed it as calculus.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T034",
@@ -508,7 +541,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Known earlier to al-Mu'taman ibn Hud (11th century).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T035",
@@ -523,7 +557,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Rolle stated it for polynomials.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T036",
@@ -538,7 +573,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Discovered by Johann Bernoulli, who sold his results to L'Hôpital; published in Analyse des infiniment petits.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T037",
@@ -553,7 +589,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Ars Conjectandi, published posthumously.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T038",
@@ -568,7 +605,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Methodus Incrementorum.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T039",
@@ -583,7 +621,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Methodus Differentialis; de Moivre found the form without the √(2π) constant.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T040",
@@ -598,7 +637,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "The first central limit theorem. Laplace generalised it (1812); Lyapunov gave a general rigorous proof (1901).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T041",
@@ -613,7 +653,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented 1735, published 1740.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T042",
@@ -628,7 +669,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Stated by Fermat in a 1640 letter without proof; Euler's proof was presented 1736 and published 1741 (Leibniz had an unpublished proof).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T043",
@@ -643,7 +685,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented 1736, published 1741; the founding result of graph theory. Euler proved necessity; Hierholzer proved sufficiency (1873).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T044",
@@ -658,7 +701,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented 1737, published 1744.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T045",
@@ -673,7 +717,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Written 1737, published 1744.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T046",
@@ -688,7 +733,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T047",
@@ -703,7 +749,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Introductio in analysin infinitorum. Roger Cotes had an equivalent logarithmic form (1714).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T048",
@@ -718,7 +765,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T049",
@@ -733,7 +781,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Written c. 1750. Euler's proof had a gap; Legendre gave the first rigorous proof (1794).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T050",
@@ -748,7 +797,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Published posthumously by Richard Price.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T051",
@@ -763,7 +813,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T052",
@@ -778,7 +829,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Written 1763, published 1767.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T053",
@@ -793,7 +845,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented 1761, published 1768.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T054",
@@ -808,7 +861,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Methods were known to Brahmagupta, Bhāskara II and Brouncker; Lagrange gave the first complete proof.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T055",
@@ -823,7 +877,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Conjectured by Bachet (1621).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T056",
@@ -838,7 +893,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Lagrange proved a version about permutations of polynomial roots; the modern group statement and proof came in the 19th century (Galois, Jordan).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T057",
@@ -853,7 +909,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Announced by Waring (1770), who credited his student John Wilson; neither had a proof. Lagrange gave the first.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T058",
@@ -868,7 +925,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Posed 1733, solved in Essai d'arithmétique morale (1777).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T059",
@@ -883,7 +941,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Rediscovered by Euler (1783) and published by Lagrange (1795), whose name stuck.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T060",
@@ -898,7 +957,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Mécanique analytique.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T061",
@@ -913,7 +973,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Théorie des fonctions analytiques. Cauchy gave the modern rigorous proof (1823).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T062",
@@ -928,7 +989,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Gauss's doctoral thesis; the proof had a topological gap. Argand gave a more complete proof (1806).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T063",
@@ -943,7 +1005,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented 1799, published 1806.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T064",
@@ -958,7 +1021,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 1796, proved in Disquisitiones Arithmeticae (1801).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T065",
@@ -973,7 +1037,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Disquisitiones Arithmeticae has the first clear statement and proof; key ingredients are in Euclid.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T066",
@@ -988,7 +1053,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Disquisitiones Arithmeticae.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T067",
@@ -1003,7 +1069,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Disquisitiones Arithmeticae. Euler and Legendre conjectured it; Gauss called it the 'golden theorem'.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T068",
@@ -1018,7 +1085,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "The projective dual of Pascal's theorem.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T069",
@@ -1033,7 +1101,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Binet presented a version the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T070",
@@ -1048,7 +1117,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Stated by Fermat (1638) without proof.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T071",
@@ -1063,7 +1133,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Bolzano proved it as a lemma; Weierstrass made it central in his lectures (1860s).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T072",
@@ -1078,7 +1149,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Rein analytischer Beweis.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T073",
@@ -1093,7 +1165,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Forgotten and rediscovered by Hadamard (1888).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T074",
@@ -1108,7 +1181,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Cours d'analyse (for sums). Bunyakovsky (1859) and Schwarz (1888) proved the integral version.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T075",
@@ -1123,7 +1197,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T076",
@@ -1138,7 +1213,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Traité des propriétés projectives des figures.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T077",
@@ -1153,7 +1229,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Résumé des leçons sur le calcul infinitésimal.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T078",
@@ -1168,7 +1245,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": true,
   "note": "First published by Legendre (1823), who credited Germain in a footnote.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T079",
@@ -1183,7 +1261,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Ruffini gave an incomplete proof (1799); Abel's proof was self-published in 1824 and reprinted in Crelle's journal in 1826.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T080",
@@ -1198,7 +1277,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T081",
@@ -1213,7 +1293,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T082",
@@ -1228,7 +1309,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Newton discovered the series c. 1665; Abel gave the first rigorous proof of convergence.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T083",
@@ -1243,7 +1325,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Presented 1827, published 1828.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T084",
@@ -1258,7 +1341,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "The first rigorous convergence result for Fourier series.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T085",
@@ -1273,7 +1357,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T086",
@@ -1288,7 +1373,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 1829; full memoir 1835.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T087",
@@ -1303,7 +1389,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T088",
@@ -1318,7 +1405,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Often called Gauss's theorem; Gauss (1813) and Green (1828) had special cases. Ostrogradsky presented the general proof 1826, published 1831.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T089",
@@ -1333,7 +1421,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T090",
@@ -1348,7 +1437,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Two problems open since antiquity.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T091",
@@ -1363,7 +1453,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Liouville numbers such as Σ 10^(−n!).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T092",
@@ -1378,7 +1469,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Named after Liouville, who used it in lectures (1847), but Cauchy published a proof first.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T093",
@@ -1393,7 +1485,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T094",
@@ -1408,7 +1501,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Published by Schönemann (1846) four years before Eisenstein (1850).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T095",
@@ -1423,7 +1517,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Written 1830–32 before Galois died aged 20; published by Liouville in 1846.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T096",
@@ -1438,7 +1533,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "George Green's 1828 essay had a related result; the plane theorem as taught today was first proved by Cauchy (1846) and Riemann (1851).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T097",
@@ -1453,7 +1549,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T098",
@@ -1468,7 +1565,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Gauss knew a version but never published it; the global form came later.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T099",
@@ -1483,7 +1581,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Rediscovered and named after Gibbs (1899).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T100",
@@ -1498,7 +1597,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Published posthumously; the converse of Euclid's result.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T101",
@@ -1513,7 +1613,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Conjectured by Bertrand (1845), proved by Chebyshev.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T102",
@@ -1528,7 +1629,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T103",
@@ -1543,7 +1645,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Chebyshev's proof (1867) came later.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T104",
@@ -1558,7 +1661,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T105",
@@ -1573,7 +1677,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Borchardt proved it first; Cayley's paper is from 1889.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T106",
@@ -1588,7 +1693,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Stated by Kelvin in a letter to Stokes (1850), set by Stokes as a Cambridge exam question (1854); first published proof by Hankel.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T107",
@@ -1603,7 +1709,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T108",
@@ -1618,7 +1725,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Written 1854, published posthumously in 1867.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T109",
@@ -1633,7 +1741,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Traité des substitutions.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T110",
@@ -1648,7 +1757,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Presented to the Berlin Academy 1872, published 1875 by du Bois-Reymond. Bolzano had an unpublished example in the 1830s.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T111",
@@ -1663,7 +1773,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Dirichlet proved it in lectures (1854) but didn't publish.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T112",
@@ -1678,7 +1789,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T113",
@@ -1693,7 +1805,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Camille Jordan found it independently in 1874.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T114",
@@ -1708,7 +1821,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T115",
@@ -1723,7 +1837,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "The famous diagonal argument came later (1891).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T116",
@@ -1738,7 +1853,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Cauchy had a special case. Kovalevskaya was the first woman to earn a modern doctorate in mathematics.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T117",
@@ -1753,7 +1869,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T118",
@@ -1768,7 +1885,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Cayley (1858) checked small cases and Hamilton had a quaternion case (1853); Frobenius gave the first general proof.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T119",
@@ -1783,7 +1901,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T120",
@@ -1798,7 +1917,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T121",
@@ -1813,7 +1933,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T122",
@@ -1828,7 +1949,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T123",
@@ -1843,7 +1965,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Brouwer proved it for all even-dimensional spheres (1912).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T124",
@@ -1858,7 +1981,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T125",
@@ -1873,7 +1997,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T126",
@@ -1888,7 +2013,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Burnside's book (1897) made it famous; Frobenius (1887) and Cauchy (1845) had it before. Also called 'the lemma that is not Burnside's'.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T127",
@@ -1903,7 +2029,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Jordan's proof was long considered incomplete; Oswald Veblen gave a proof accepted as rigorous (1905).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T128",
@@ -1918,7 +2045,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T129",
@@ -1933,7 +2061,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "From his prize-winning memoir on the three-body problem.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T130",
@@ -1948,7 +2077,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Introduced the diagonal argument.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T131",
@@ -1963,7 +2093,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T132",
@@ -1978,7 +2109,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Borel proved the covering property for countable covers; Heine's name comes from a related 1872 argument.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T133",
@@ -1993,7 +2125,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Geometrie der Zahlen (stated earlier, 1889).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T134",
@@ -2009,7 +2142,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Proved independently by both in the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T135",
@@ -2024,7 +2158,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Bernstein proved it at 19; Schröder's version had a gap, and Dedekind had an unpublished proof (1887).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T136",
@@ -2039,7 +2174,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "ℝ, ℂ, quaternions, octonions.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T137",
@@ -2054,7 +2190,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Osgood had the case of the real line (1897).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T138",
@@ -2069,7 +2206,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T139",
@@ -2084,7 +2222,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Euler conjectured it in 1782; Tarry checked the cases by hand.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T140",
@@ -2099,7 +2238,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Proved while Fejér was still a student.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T141",
@@ -2114,7 +2254,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": true,
   "note": "Stated by Riemann (1851) with a flawed proof; Osgood gave the first rigorous one.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T142",
@@ -2129,7 +2270,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "The first of Hilbert's 23 problems to be solved.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T143",
@@ -2144,7 +2286,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Lebesgue's doctoral thesis.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T144",
@@ -2159,7 +2302,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T145",
@@ -2174,7 +2318,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T146",
@@ -2189,7 +2334,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T147",
@@ -2204,7 +2350,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T148",
@@ -2219,7 +2366,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Often credited to Lebesgue.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T149",
@@ -2234,7 +2382,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Tonelli's non-negative version followed in 1909.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T150",
@@ -2249,7 +2398,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Frobenius extended it to non-negative matrices (1912).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T151",
@@ -2265,7 +2415,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Proved independently the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T152",
@@ -2281,7 +2432,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Proved independently the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T153",
@@ -2296,7 +2448,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T154",
@@ -2311,7 +2464,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Kolmogorov proved the general version (1930s).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T155",
@@ -2326,7 +2480,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Waring stated it in 1770.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T156",
@@ -2341,7 +2496,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Thue's proof was considered incomplete; László Fejes Tóth gave the accepted proof (1940).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T157",
@@ -2356,7 +2512,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Piers Bohl had an equivalent result (1904).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T158",
@@ -2371,7 +2528,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T159",
@@ -2386,7 +2544,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T160",
@@ -2402,7 +2561,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "A joint paper.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T161",
@@ -2417,7 +2577,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T162",
@@ -2432,7 +2593,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T163",
@@ -2448,7 +2610,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "A joint paper.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T164",
@@ -2463,7 +2626,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Banach proved it independently (1929); Helly had an early version (1912).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T165",
@@ -2478,7 +2642,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T166",
@@ -2494,7 +2659,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Also called the Banach–Steinhaus theorem.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T167",
@@ -2509,7 +2675,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T168",
@@ -2524,7 +2691,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T169",
@@ -2539,7 +2707,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T170",
@@ -2554,7 +2723,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Gödel's doctoral thesis (1929).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T171",
@@ -2569,7 +2739,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T172",
@@ -2584,7 +2755,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Ramsey died the same year, aged 26.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T173",
@@ -2599,7 +2771,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T174",
@@ -2614,7 +2787,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T175",
@@ -2629,7 +2803,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T176",
@@ -2644,7 +2819,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T177",
@@ -2659,7 +2835,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Ulam conjectured it.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T178",
@@ -2674,7 +2851,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Grundbegriffe der Wahrscheinlichkeitsrechnung.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T179",
@@ -2690,7 +2868,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Proved independently (1934 and 1935). Solved Hilbert's 7th problem.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T180",
@@ -2706,7 +2885,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "From the 'happy ending problem'.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T181",
@@ -2721,7 +2901,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T182",
@@ -2736,7 +2917,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "Kuratowski published an equivalent principle in 1922.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T183",
@@ -2751,7 +2933,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Alonzo Church proved an equivalent result the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T184",
@@ -2766,7 +2949,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "The sharper bound 2n came in 1944.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T185",
@@ -2781,7 +2965,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": true,
   "note": "J. Howard Redfield published it first (1927).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T186",
@@ -2796,7 +2981,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T187",
@@ -2811,7 +2997,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T188",
@@ -2826,7 +3013,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Banach had the separable case (1932).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T189",
@@ -2841,7 +3029,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T190",
@@ -2856,7 +3045,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Turán found it in a WWII labor camp.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T191",
@@ -2872,7 +3062,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Steinhaus posed it and proved the 3D case earlier (1938).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T192",
@@ -2887,7 +3078,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T193",
@@ -2902,7 +3094,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": true,
   "note": "Posed by Sylvester (1893); Melchior proved an equivalent dual form (1941).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T194",
@@ -2917,7 +3110,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Founding example of the probabilistic method.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T195",
@@ -2932,7 +3126,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T196",
@@ -2947,7 +3142,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Published in a 1950 paper and the 1951 book.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T197",
@@ -2962,7 +3158,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T198",
@@ -2977,7 +3174,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T199",
@@ -2993,7 +3191,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Elias, Feinstein and Shannon proved it independently the same year.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T200",
@@ -3008,7 +3207,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T201",
@@ -3025,7 +3225,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Proved 1938, published 1961.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T202",
@@ -3040,7 +3241,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T203",
@@ -3056,7 +3258,8 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T204",
@@ -3072,7 +3275,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T205",
@@ -3088,7 +3292,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "The proof filled an entire 255-page journal issue.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T206",
@@ -3104,7 +3309,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T207",
@@ -3119,7 +3325,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Invented forcing for it.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T208",
@@ -3134,7 +3341,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Settled a question of Luzin (1915).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T209",
@@ -3149,7 +3357,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Completed work of Martin Davis, Hilary Putnam and Julia Robinson.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T210",
@@ -3164,7 +3373,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T211",
@@ -3179,7 +3389,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Leonid Levin proved it independently (1973).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T212",
@@ -3194,7 +3405,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T213",
@@ -3209,7 +3421,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T214",
@@ -3225,7 +3438,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 1976, published 1977; the first major computer-assisted proof.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T215",
@@ -3240,7 +3454,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Introduced topological methods into combinatorics.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T216",
@@ -3255,7 +3470,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 1978.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T217",
@@ -3270,7 +3486,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T218",
@@ -3285,7 +3502,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T219",
@@ -3300,7 +3518,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T220",
@@ -3315,7 +3534,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": true,
   "note": "Named after Fermat (stated c. 1637). Published 1995 in Annals of Mathematics; a gap was fixed with Richard Taylor.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T221",
@@ -3330,7 +3550,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Posted to arXiv in 2002–2003 and never submitted to a journal. Perelman declined the Fields Medal and the Millennium Prize.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T222",
@@ -3345,7 +3566,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 2002.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T223",
@@ -3361,7 +3583,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "The final paper of a 20-paper series.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T224",
@@ -3378,7 +3601,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Preprint 2002; Kayal and Saxena were undergraduates.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T225",
@@ -3393,7 +3617,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Stated by Kepler (1611). Announced 1998; formally verified by computer in 2017.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T226",
@@ -3411,7 +3636,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T227",
@@ -3426,7 +3652,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Mirzakhani was the first woman awarded the Fields Medal (2014).",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T228",
@@ -3442,7 +3669,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Preprint 2004.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T229",
@@ -3457,7 +3685,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Announced 2013; the bound was soon lowered to 246 by a collaborative project.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T230",
@@ -3472,7 +3701,8 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "Preprint 2016; Fields Medal 2022.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  },
  {
   "id": "T231",
@@ -3487,6 +3717,7 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "A famously short proof, about two pages.",
-  "verified": false
+  "verified": false,
+  "alsoAccept": []
  }
 ];

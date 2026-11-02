@@ -92,9 +92,33 @@ button { cursor: pointer; }
 .start-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .start-row .btn.primary { font-size: 1.15rem; padding: 13px 26px; }
 
+/* Setup modes and online lobby */
+.setup { max-width: 980px; }
+.modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 0 18px; align-items: start; }
+.panel-text { margin: -6px 0 14px; color: var(--muted); }
+.panel .start-row { margin-top: 14px; }
+input.text { width: 100%; padding: 10px 12px; border: 1.5px solid var(--line); border-radius: 6px; background: var(--paper); }
+.link-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.link-row input { flex: 1 1 280px; font-size: .95rem; }
+.lobby-list { list-style: none; margin: 0 0 14px; padding: 0; display: grid; gap: 8px; }
+.lobby-list li { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.tag { font-size: .78rem; font-weight: 700; border: 1.5px solid var(--line); border-radius: 4px; padding: 0 6px; color: var(--muted); }
+.tag.off { color: var(--bad); border-color: currentColor; }
+.net-status { color: var(--muted); margin: 12px 0 0; }
+.guess { margin: 4px 0 12px; max-width: 46ch; }
+.guess label { font-weight: 600; font-size: .95rem; }
+.guess input { font-size: 1.1rem; }
+.guess-result { font-weight: 600; }
+.guess-result.good { color: var(--good); }
+.guess-result.bad { color: var(--muted); }
+.warning-box { border-left-color: var(--bad); }
+
 /* Stage: the current card and the prompt */
 .stage { display: grid; grid-template-columns: minmax(320px, 620px) minmax(280px, 1fr); gap: clamp(18px, 3vw, 40px); align-items: start; margin-bottom: 26px; }
 .flip { perspective: 1600px; }
+.flip.turnable { cursor: pointer; }
+.card-column { display: grid; gap: 10px; justify-items: start; }
+.card-column .flip { width: 100%; }
 .flip-inner { display: grid; transition: transform .7s cubic-bezier(.2, .7, .2, 1); transform-style: preserve-3d; min-height: 290px; }
 .flip.revealed .flip-inner { transform: rotateY(180deg); }
 .face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
