@@ -10,42 +10,48 @@ permissions:
   pages: write
   id-token: write
 
+# A newer upload cancels a run that is still going, so only the latest version is published.
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Build the cards from the spreadsheet
-        run: |
-          pip install openpyxl
-          python3 tools/build_cards.py
-      - name: Test the game rules
-        run: |
-          node --check site/game.js
-          node --check site/ui.js
-          node --check site/online.js
-          node tests/game.test.cjs
-          node tests/names.test.cjs
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Build the cards from the spreadsheet
+        run: |
+          python -m pip install --quiet --disable-pip-version-check openpyxl
+          python tools/build_cards.py
+
+      # Node.js is already installed on GitHub's machines.
+      - name: Check every formula and test the game
+        run: |
+          node tools/check_cards.cjs
+          for f in site/*.js; do node --check "$f"; done
+          node tests/game.test.cjs
+          node tests/names.test.cjs
+
+      - name: Let browsers load the new version right away
+        run: python tools/stamp_assets.py
+
+      # The attempt number keeps "Re-run" from finding two copies of the site.
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+          name: github-pages-${{ github.run_attempt }}
+
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
