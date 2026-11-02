@@ -33,7 +33,9 @@ jobs:
         run: |
           node --check site/game.js
           node --check site/ui.js
+          node --check site/online.js
           node tests/game.test.cjs
+          node tests/names.test.cjs
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
