@@ -2,6 +2,7 @@
 window.THEOREM_CARDS = [
  {
   "id": "T001",
+  "row": 2,
   "name": "Thales' theorem",
   "statement": "An angle inscribed in a semicircle is a right angle.",
   "provers": [
@@ -18,8 +19,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T002",
-  "name": "Irrationality of √2",
-  "statement": "√2 cannot be written as a ratio of two integers.",
+  "row": 3,
+  "name": "Irrationality of $\\sqrt2$",
+  "statement": "$\\sqrt{2}$ cannot be written as a ratio of two integers.",
   "provers": [
    "Hippasus of Metapontum"
   ],
@@ -34,6 +36,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T003",
+  "row": 4,
   "name": "Quadrature of the lunes",
   "statement": "Certain crescent-shaped regions bounded by circular arcs have exactly the area of a triangle.",
   "provers": [
@@ -50,6 +53,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T004",
+  "row": 5,
   "name": "Euclidean algorithm",
   "statement": "Repeated division with remainder finds the greatest common divisor of two numbers.",
   "provers": [
@@ -66,8 +70,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T005",
+  "row": 6,
   "name": "Euclid–Euler theorem (one direction)",
-  "statement": "If 2ᵖ − 1 is prime, then 2ᵖ⁻¹(2ᵖ − 1) is a perfect number.",
+  "statement": "If $2^p - 1$ is prime, then $2^{p-1}(2^p - 1)$ is a perfect number.",
   "provers": [
    "Euclid"
   ],
@@ -82,6 +87,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T006",
+  "row": 7,
   "name": "Five Platonic solids",
   "statement": "There are exactly five regular convex polyhedra.",
   "provers": [
@@ -98,6 +104,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T007",
+  "row": 8,
   "name": "Infinitude of primes",
   "statement": "There are infinitely many prime numbers.",
   "provers": [
@@ -114,8 +121,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T008",
+  "row": 9,
   "name": "Pythagorean theorem",
-  "statement": "In a right triangle, a² + b² = c².",
+  "statement": "In a right triangle, $a^2 + b^2 = c^2$.",
   "provers": [
    "Euclid"
   ],
@@ -130,6 +138,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T009",
+  "row": 10,
   "name": "Area of a circle",
   "statement": "A circle's area equals that of a right triangle with legs equal to its radius and circumference.",
   "provers": [
@@ -146,8 +155,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T010",
+  "row": 11,
   "name": "Quadrature of the parabola",
-  "statement": "A parabolic segment has 4/3 the area of its inscribed triangle.",
+  "statement": "A parabolic segment has $\\tfrac43$ the area of its inscribed triangle.",
   "provers": [
    "Archimedes"
   ],
@@ -162,8 +172,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T011",
+  "row": 12,
   "name": "Sphere and cylinder",
-  "statement": "A sphere has 2/3 the volume and 2/3 the surface area of its circumscribing cylinder.",
+  "statement": "A sphere has $\\tfrac23$ the volume and $\\tfrac23$ the surface area of its circumscribing cylinder.",
   "provers": [
    "Archimedes"
   ],
@@ -178,8 +189,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T012",
+  "row": 13,
   "name": "Heron's formula",
-  "statement": "A triangle with sides a, b, c and semiperimeter s has area √(s(s−a)(s−b)(s−c)).",
+  "statement": "A triangle with sides $a, b, c$ and semiperimeter $s$ has area $\\sqrt{s(s-a)(s-b)(s-c)}$.",
   "provers": [
    "Heron of Alexandria"
   ],
@@ -194,6 +206,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T013",
+  "row": 14,
   "name": "Menelaus's theorem",
   "statement": "A line crossing the three sides of a triangle cuts them in segments whose ratios multiply to 1.",
   "provers": [
@@ -210,6 +223,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T014",
+  "row": 15,
   "name": "Ptolemy's theorem",
   "statement": "In a cyclic quadrilateral, the product of the diagonals equals the sum of the products of opposite sides.",
   "provers": [
@@ -226,6 +240,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T015",
+  "row": 16,
   "name": "Pappus's hexagon theorem",
   "statement": "If six points lie alternately on two lines, the three intersection points of opposite sides are collinear.",
   "provers": [
@@ -242,8 +257,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T016",
+  "row": 17,
   "name": "Brahmagupta's formula",
-  "statement": "A cyclic quadrilateral with sides a, b, c, d has area √((s−a)(s−b)(s−c)(s−d)).",
+  "statement": "A cyclic quadrilateral with sides $a, b, c, d$ and semiperimeter $s$ has area $\\sqrt{(s-a)(s-b)(s-c)(s-d)}$.",
   "provers": [
    "Brahmagupta"
   ],
@@ -258,6 +274,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T017",
+  "row": 18,
   "name": "Brahmagupta's identity",
   "statement": "A product of two sums of the form a² + nb² is again of that form.",
   "provers": [
@@ -274,6 +291,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T018",
+  "row": 19,
   "name": "Solving quadratic equations by completing the square",
   "statement": "Every quadratic equation can be solved by geometrically completing the square.",
   "provers": [
@@ -290,6 +308,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T019",
+  "row": 20,
   "name": "Thābit's rule for amicable numbers",
   "statement": "A formula that produces pairs of amicable numbers from certain primes.",
   "provers": [
@@ -306,8 +325,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T020",
+  "row": 21,
   "name": "Sum of fourth powers",
-  "statement": "A closed formula for 1⁴ + 2⁴ + … + n⁴.",
+  "statement": "A closed formula for $1^4 + 2^4 + \\cdots + n^4$.",
   "provers": [
    "Ibn al-Haytham"
   ],
@@ -322,6 +342,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T021",
+  "row": 22,
   "name": "Geometric solution of cubic equations",
   "statement": "Every cubic equation with a positive root can be solved by intersecting two conic sections.",
   "provers": [
@@ -338,6 +359,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T022",
+  "row": 23,
   "name": "Chinese remainder theorem (general method)",
   "statement": "A system of congruences with pairwise coprime moduli has a unique solution modulo their product.",
   "provers": [
@@ -354,8 +376,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T023",
+  "row": 24,
   "name": "Divergence of the harmonic series",
-  "statement": "1 + 1/2 + 1/3 + 1/4 + … grows without bound.",
+  "statement": "$\\displaystyle 1 + \\frac12 + \\frac13 + \\frac14 + \\cdots$ grows without bound.",
   "provers": [
    "Nicole Oresme"
   ],
@@ -370,8 +393,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T024",
+  "row": 25,
   "name": "Series for π (Madhava–Leibniz series)",
-  "statement": "π/4 = 1 − 1/3 + 1/5 − 1/7 + …",
+  "statement": "$\\displaystyle \\frac{\\pi}{4} = 1 - \\frac13 + \\frac15 - \\frac17 + \\cdots$",
   "provers": [
    "Madhava of Sangamagrama"
   ],
@@ -386,6 +410,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T025",
+  "row": 26,
   "name": "Solution of the cubic equation",
   "statement": "Every cubic equation can be solved by a formula using square and cube roots.",
   "provers": [
@@ -402,6 +427,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T026",
+  "row": 27,
   "name": "Solution of the quartic equation",
   "statement": "Every quartic equation can be solved by radicals.",
   "provers": [
@@ -418,6 +444,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T027",
+  "row": 28,
   "name": "Cavalieri's principle",
   "statement": "Solids whose cross-sections at every height have equal areas have equal volumes.",
   "provers": [
@@ -434,6 +461,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T028",
+  "row": 29,
   "name": "Descartes' rule of signs",
   "statement": "The number of positive roots of a polynomial is at most the number of sign changes in its coefficients.",
   "provers": [
@@ -450,6 +478,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T029",
+  "row": 30,
   "name": "Pascal's theorem",
   "statement": "For six points on a conic, the three intersection points of opposite sides of the hexagon are collinear.",
   "provers": [
@@ -466,6 +495,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T030",
+  "row": 31,
   "name": "Desargues's theorem",
   "statement": "Two triangles in perspective from a point are in perspective from a line.",
   "provers": [
@@ -482,8 +512,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T031",
+  "row": 32,
   "name": "Wallis product",
-  "statement": "π/2 = (2·2·4·4·6·6·…)/(1·3·3·5·5·7·…)",
+  "statement": "$\\displaystyle \\frac{\\pi}{2} = \\frac{2\\cdot 2\\cdot 4\\cdot 4\\cdot 6\\cdot 6\\cdots}{1\\cdot 3\\cdot 3\\cdot 5\\cdot 5\\cdot 7\\cdots}$",
   "provers": [
    "John Wallis"
   ],
@@ -498,8 +529,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T032",
+  "row": 33,
   "name": "Binomial theorem (whole-number exponents)",
-  "statement": "(a + b)ⁿ expands with the binomial coefficients of Pascal's triangle.",
+  "statement": "$(a + b)^n$ expands with the binomial coefficients of Pascal's triangle.",
   "provers": [
    "Blaise Pascal"
   ],
@@ -514,6 +546,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T033",
+  "row": 34,
   "name": "Fundamental theorem of calculus (geometric form)",
   "statement": "Differentiation and integration are inverse operations.",
   "provers": [
@@ -530,6 +563,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T034",
+  "row": 35,
   "name": "Ceva's theorem",
   "statement": "Three lines from the vertices of a triangle meet at one point exactly when a product of side ratios equals 1.",
   "provers": [
@@ -546,8 +580,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T035",
+  "row": 36,
   "name": "Rolle's theorem",
-  "statement": "If f(a) = f(b), then f′(c) = 0 somewhere between a and b.",
+  "statement": "If $f(a) = f(b)$, then $f'(c) = 0$ somewhere between $a$ and $b$.",
   "provers": [
    "Michel Rolle"
   ],
@@ -562,8 +597,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T036",
+  "row": 37,
   "name": "L'Hôpital's rule",
-  "statement": "A limit of the form 0/0 can be found from the limit of the ratio of derivatives.",
+  "statement": "A limit of the form $\\frac00$ can be found from the limit of the ratio of derivatives.",
   "provers": [
    "Guillaume de l'Hôpital"
   ],
@@ -578,6 +614,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T037",
+  "row": 38,
   "name": "Law of large numbers",
   "statement": "The average of many independent repetitions approaches the true probability.",
   "provers": [
@@ -594,6 +631,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T038",
+  "row": 39,
   "name": "Taylor's theorem",
   "statement": "A smooth function can be expanded as a power series built from its derivatives at one point.",
   "provers": [
@@ -610,8 +648,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T039",
+  "row": 40,
   "name": "Stirling's formula",
-  "statement": "n! ≈ √(2πn)(n/e)ⁿ",
+  "statement": "$\\displaystyle n! \\approx \\sqrt{2\\pi n}\\,\\left(\\frac{n}{e}\\right)^{n}$",
   "provers": [
    "James Stirling"
   ],
@@ -626,6 +665,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T040",
+  "row": 41,
   "name": "Normal approximation to the binomial",
   "statement": "Binomial probabilities are approximated by the bell curve.",
   "provers": [
@@ -642,8 +682,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T041",
+  "row": 42,
   "name": "Basel problem",
-  "statement": "1 + 1/4 + 1/9 + 1/16 + … = π²/6",
+  "statement": "$\\displaystyle 1 + \\frac14 + \\frac19 + \\frac1{16} + \\cdots = \\frac{\\pi^2}{6}$",
   "provers": [
    "Leonhard Euler"
   ],
@@ -658,8 +699,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T042",
+  "row": 43,
   "name": "Fermat's little theorem",
-  "statement": "If p is prime, then aᵖ − a is divisible by p.",
+  "statement": "If $p$ is prime, then $a^p - a$ is divisible by $p$.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -674,6 +716,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T043",
+  "row": 44,
   "name": "Seven bridges of Königsberg",
   "statement": "A connected graph has a walk using every edge exactly once only if at most two vertices have odd degree.",
   "provers": [
@@ -690,8 +733,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T044",
+  "row": 45,
   "name": "Divergence of the sum of prime reciprocals",
-  "statement": "1/2 + 1/3 + 1/5 + 1/7 + 1/11 + … diverges.",
+  "statement": "$\\displaystyle \\frac12 + \\frac13 + \\frac15 + \\frac17 + \\frac1{11} + \\cdots$ diverges.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -706,8 +750,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T045",
+  "row": 46,
   "name": "Irrationality of e",
-  "statement": "e is irrational.",
+  "statement": "$e$ is irrational.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -722,6 +767,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T046",
+  "row": 47,
   "name": "Stewart's theorem",
   "statement": "A formula relating the sides of a triangle to the length of any segment from a vertex to the opposite side.",
   "provers": [
@@ -738,8 +784,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T047",
+  "row": 48,
   "name": "Euler's formula",
-  "statement": "e^{iθ} = cos θ + i sin θ, and in particular e^{iπ} + 1 = 0.",
+  "statement": "$e^{i\\theta} = \\cos\\theta + i\\sin\\theta$, and in particular $e^{i\\pi} + 1 = 0$.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -754,6 +801,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T048",
+  "row": 49,
   "name": "Cramer's rule",
   "statement": "A square linear system with nonzero determinant is solved by ratios of determinants.",
   "provers": [
@@ -770,8 +818,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T049",
+  "row": 50,
   "name": "Euler's polyhedron formula",
-  "statement": "For a convex polyhedron, V − E + F = 2.",
+  "statement": "For a convex polyhedron, $V - E + F = 2$.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -786,8 +835,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T050",
+  "row": 51,
   "name": "Bayes' theorem",
-  "statement": "P(A | B) = P(B | A) P(A) / P(B)",
+  "statement": "$\\displaystyle P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)}$",
   "provers": [
    "Thomas Bayes"
   ],
@@ -802,8 +852,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T051",
+  "row": 52,
   "name": "Euler's theorem (totient)",
-  "statement": "If a and n are coprime, then a^φ(n) ≡ 1 (mod n).",
+  "statement": "If $a$ and $n$ are coprime, then $a^{\\varphi(n)} \\equiv 1 \\pmod{n}$.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -818,6 +869,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T052",
+  "row": 53,
   "name": "Euler line",
   "statement": "In any triangle, the orthocenter, centroid and circumcenter are collinear.",
   "provers": [
@@ -834,8 +886,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T053",
+  "row": 54,
   "name": "Irrationality of π",
-  "statement": "π is irrational.",
+  "statement": "$\\pi$ is irrational.",
   "provers": [
    "Johann Heinrich Lambert"
   ],
@@ -850,8 +903,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T054",
+  "row": 55,
   "name": "Solvability of Pell's equation",
-  "statement": "For every non-square positive integer n, x² − ny² = 1 has a solution in positive integers.",
+  "statement": "For every non-square positive integer $n$, $x^2 - ny^2 = 1$ has a solution in positive integers.",
   "provers": [
    "Joseph-Louis Lagrange"
   ],
@@ -866,6 +920,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T055",
+  "row": 56,
   "name": "Lagrange's four-square theorem",
   "statement": "Every positive integer is a sum of four squares.",
   "provers": [
@@ -882,6 +937,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T056",
+  "row": 57,
   "name": "Lagrange's theorem (prototype)",
   "statement": "The order of a subgroup divides the order of the group.",
   "provers": [
@@ -898,8 +954,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T057",
+  "row": 58,
   "name": "Wilson's theorem",
-  "statement": "p is prime exactly when (p − 1)! + 1 is divisible by p.",
+  "statement": "$p$ is prime exactly when $(p - 1)! + 1$ is divisible by $p$.",
   "provers": [
    "Joseph-Louis Lagrange"
   ],
@@ -914,8 +971,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T058",
+  "row": 59,
   "name": "Buffon's needle",
-  "statement": "A needle of length ℓ dropped on lines spaced ℓ apart crosses a line with probability 2/π.",
+  "statement": "A needle of length $\\ell$ dropped on lines spaced $\\ell$ apart crosses a line with probability $\\frac{2}{\\pi}$.",
   "provers": [
    "Georges-Louis Leclerc, Comte de Buffon"
   ],
@@ -930,8 +988,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T059",
+  "row": 60,
   "name": "Lagrange interpolation",
-  "statement": "Through n + 1 points with distinct x-values passes exactly one polynomial of degree at most n.",
+  "statement": "Through $n + 1$ points with distinct $x$-values passes exactly one polynomial of degree at most $n$.",
   "provers": [
    "Edward Waring"
   ],
@@ -946,8 +1005,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T060",
+  "row": 61,
   "name": "Lagrange multipliers",
-  "statement": "At a constrained extremum, the gradient of f is a multiple of the gradient of the constraint.",
+  "statement": "At a constrained extremum, the gradient of $f$ is a multiple of the gradient of the constraint.",
   "provers": [
    "Joseph-Louis Lagrange"
   ],
@@ -962,6 +1022,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T061",
+  "row": 62,
   "name": "Mean value theorem",
   "statement": "A differentiable function has a point where its derivative equals its average rate of change.",
   "provers": [
@@ -978,6 +1039,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T062",
+  "row": 63,
   "name": "Fundamental theorem of algebra",
   "statement": "Every non-constant polynomial has a root in the complex numbers.",
   "provers": [
@@ -994,6 +1056,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T063",
+  "row": 64,
   "name": "Parseval's identity",
   "statement": "The sum of squares of a function's Fourier coefficients equals the integral of its square.",
   "provers": [
@@ -1010,6 +1073,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T064",
+  "row": 65,
   "name": "Constructibility of the regular 17-gon",
   "statement": "A regular 17-sided polygon can be constructed with straightedge and compass.",
   "provers": [
@@ -1026,6 +1090,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T065",
+  "row": 66,
   "name": "Fundamental theorem of arithmetic",
   "statement": "Every integer greater than 1 factors into primes in exactly one way.",
   "provers": [
@@ -1042,6 +1107,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T066",
+  "row": 67,
   "name": "Gauss's lemma (polynomials)",
   "statement": "A product of primitive integer polynomials is primitive.",
   "provers": [
@@ -1058,8 +1124,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T067",
+  "row": 68,
   "name": "Quadratic reciprocity",
-  "statement": "For odd primes p and q, whether p is a square mod q is tied to whether q is a square mod p.",
+  "statement": "For odd primes $p$ and $q$, whether $p$ is a square mod $q$ is tied to whether $q$ is a square mod $p$.",
   "provers": [
    "Carl Friedrich Gauss"
   ],
@@ -1074,6 +1141,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T068",
+  "row": 69,
   "name": "Brianchon's theorem",
   "statement": "The three main diagonals of a hexagon circumscribed about a conic meet at one point.",
   "provers": [
@@ -1090,6 +1158,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T069",
+  "row": 70,
   "name": "Cauchy–Binet formula",
   "statement": "The determinant of a product of matrices is the product of their determinants (with a general version for rectangular matrices).",
   "provers": [
@@ -1106,8 +1175,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T070",
+  "row": 71,
   "name": "Fermat's polygonal number theorem",
-  "statement": "Every positive integer is a sum of at most n n-gonal numbers.",
+  "statement": "Every positive integer is a sum of at most $n$ $n$-gonal numbers.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
@@ -1122,6 +1192,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T071",
+  "row": 72,
   "name": "Bolzano–Weierstrass theorem",
   "statement": "Every bounded sequence of real numbers has a convergent subsequence.",
   "provers": [
@@ -1138,8 +1209,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T072",
+  "row": 73,
   "name": "Intermediate value theorem",
-  "statement": "A continuous function on [a, b] takes every value between f(a) and f(b).",
+  "statement": "A continuous function on $[a, b]$ takes every value between $f(a)$ and $f(b)$.",
   "provers": [
    "Bernard Bolzano"
   ],
@@ -1154,8 +1226,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T073",
+  "row": 74,
   "name": "Cauchy–Hadamard theorem",
-  "statement": "The radius of convergence of Σ aₙxⁿ is 1 / limsup |aₙ|^{1/n}.",
+  "statement": "The radius of convergence of $\\sum a_n x^n$ is $1 \\big/ \\limsup |a_n|^{1/n}$.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
@@ -1170,8 +1243,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T074",
+  "row": 75,
   "name": "Cauchy–Schwarz inequality",
-  "statement": "|⟨u, v⟩| ≤ ‖u‖ ‖v‖",
+  "statement": "$\\displaystyle |\\langle u, v\\rangle| \\le \\|u\\|\\,\\|v\\|$",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
@@ -1186,6 +1260,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T075",
+  "row": 76,
   "name": "Feuerbach's theorem",
   "statement": "The nine-point circle of a triangle is tangent to its incircle and its three excircles.",
   "provers": [
@@ -1202,6 +1277,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T076",
+  "row": 77,
   "name": "Poncelet's closure theorem",
   "statement": "If a polygon inscribed in one conic and circumscribed about another closes up once, it closes up from every starting point.",
   "provers": [
@@ -1218,8 +1294,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T077",
+  "row": 78,
   "name": "Cauchy's mean value theorem",
-  "statement": "For f and g on [a, b], some c satisfies (f(b) − f(a)) g′(c) = (g(b) − g(a)) f′(c).",
+  "statement": "For $f$ and $g$ on $[a, b]$, some $c$ satisfies $\\bigl(f(b) - f(a)\\bigr)\\,g'(c) = \\bigl(g(b) - g(a)\\bigr)\\,f'(c)$.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
@@ -1234,8 +1311,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T078",
+  "row": 79,
   "name": "Sophie Germain's theorem",
-  "statement": "Fermat's Last Theorem holds in 'case I' for every prime p such that 2p + 1 is also prime.",
+  "statement": "Fermat's Last Theorem holds in 'case I' for every prime $p$ such that $2p + 1$ is also prime.",
   "provers": [
    "Sophie Germain"
   ],
@@ -1250,6 +1328,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T079",
+  "row": 80,
   "name": "Abel–Ruffini theorem",
   "statement": "There is no general formula in radicals for polynomial equations of degree 5 or higher.",
   "provers": [
@@ -1266,6 +1345,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T080",
+  "row": 81,
   "name": "Cauchy's integral theorem",
   "statement": "The integral of a holomorphic function around a closed curve is zero.",
   "provers": [
@@ -1282,8 +1362,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T081",
+  "row": 82,
   "name": "Abel's theorem (power series)",
-  "statement": "If Σ aₙ converges, then Σ aₙxⁿ → Σ aₙ as x → 1⁻.",
+  "statement": "If $\\sum a_n$ converges, then $\\sum a_n x^n \\to \\sum a_n$ as $x \\to 1^-$.",
   "provers": [
    "Niels Henrik Abel"
   ],
@@ -1298,8 +1379,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T082",
+  "row": 83,
   "name": "Binomial series",
-  "statement": "(1 + x)^α = Σ C(α, n) xⁿ for |x| < 1, for any exponent α.",
+  "statement": "$(1 + x)^\\alpha = \\sum_n \\binom{\\alpha}{n} x^n$ for $|x| < 1$, for any exponent $\\alpha$.",
   "provers": [
    "Niels Henrik Abel"
   ],
@@ -1314,6 +1396,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T083",
+  "row": 84,
   "name": "Theorema Egregium",
   "statement": "The Gaussian curvature of a surface is unchanged by bending without stretching.",
   "provers": [
@@ -1330,6 +1413,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T084",
+  "row": 85,
   "name": "Convergence of Fourier series",
   "statement": "The Fourier series of a piecewise smooth periodic function converges to it (to the average at jumps).",
   "provers": [
@@ -1346,6 +1430,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T085",
+  "row": 86,
   "name": "Spectral theorem (symmetric matrices)",
   "statement": "A real symmetric matrix has real eigenvalues and an orthonormal basis of eigenvectors.",
   "provers": [
@@ -1362,6 +1447,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T086",
+  "row": 87,
   "name": "Sturm's theorem",
   "statement": "The number of distinct real roots of a polynomial in an interval can be counted from sign changes in a chain of polynomials.",
   "provers": [
@@ -1378,6 +1464,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T087",
+  "row": 88,
   "name": "Cauchy's integral formula",
   "statement": "A holomorphic function's values inside a circle are determined by an integral over the circle.",
   "provers": [
@@ -1394,6 +1481,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T088",
+  "row": 89,
   "name": "Divergence theorem",
   "statement": "The flux of a vector field out of a closed surface equals the integral of its divergence inside.",
   "provers": [
@@ -1410,8 +1498,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T089",
+  "row": 90,
   "name": "Dirichlet's theorem on arithmetic progressions",
-  "statement": "If a and d are coprime, the progression a, a + d, a + 2d, … contains infinitely many primes.",
+  "statement": "If $a$ and $d$ are coprime, the progression $a,\\ a + d,\\ a + 2d, \\ldots$ contains infinitely many primes.",
   "provers": [
    "Peter Gustav Lejeune Dirichlet"
   ],
@@ -1426,6 +1515,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T090",
+  "row": 91,
   "name": "Impossibility of trisecting angles and doubling the cube",
   "statement": "A general angle cannot be trisected, and a cube cannot be doubled, with straightedge and compass.",
   "provers": [
@@ -1442,6 +1532,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T091",
+  "row": 92,
   "name": "Existence of transcendental numbers",
   "statement": "There are real numbers that are not roots of any integer polynomial.",
   "provers": [
@@ -1458,6 +1549,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T092",
+  "row": 93,
   "name": "Liouville's theorem (complex analysis)",
   "statement": "A bounded entire function is constant.",
   "provers": [
@@ -1474,8 +1566,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T093",
+  "row": 94,
   "name": "Cauchy's theorem (groups)",
-  "statement": "If a prime p divides the order of a finite group, the group has an element of order p.",
+  "statement": "If a prime $p$ divides the order of a finite group, the group has an element of order $p$.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
@@ -1490,8 +1583,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T094",
+  "row": 95,
   "name": "Eisenstein's criterion",
-  "statement": "If a prime p divides all coefficients but the leading one, and p² doesn't divide the constant term, the polynomial is irreducible.",
+  "statement": "If a prime $p$ divides all coefficients but the leading one, and $p^2$ doesn't divide the constant term, the polynomial is irreducible.",
   "provers": [
    "Theodor Schönemann"
   ],
@@ -1506,6 +1600,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T095",
+  "row": 96,
   "name": "Galois's criterion for solvability",
   "statement": "A polynomial equation is solvable by radicals exactly when its Galois group is solvable.",
   "provers": [
@@ -1522,6 +1617,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T096",
+  "row": 97,
   "name": "Green's theorem",
   "statement": "A line integral around a closed plane curve equals a double integral over the enclosed region.",
   "provers": [
@@ -1538,6 +1634,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T097",
+  "row": 98,
   "name": "Kirchhoff's matrix tree theorem",
   "statement": "The number of spanning trees of a graph equals a determinant computed from its Laplacian matrix.",
   "provers": [
@@ -1554,8 +1651,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T098",
+  "row": 99,
   "name": "Gauss–Bonnet theorem",
-  "statement": "The total curvature of a closed surface equals 2π times its Euler characteristic.",
+  "statement": "The total curvature of a closed surface equals $2\\pi$ times its Euler characteristic.",
   "provers": [
    "Pierre Ossian Bonnet"
   ],
@@ -1570,6 +1668,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T099",
+  "row": 100,
   "name": "Gibbs phenomenon",
   "statement": "Fourier partial sums overshoot a jump by about 9% no matter how many terms are taken.",
   "provers": [
@@ -1586,8 +1685,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T100",
+  "row": 101,
   "name": "Euler's theorem on even perfect numbers",
-  "statement": "Every even perfect number has the form 2ᵖ⁻¹(2ᵖ − 1) with 2ᵖ − 1 prime.",
+  "statement": "Every even perfect number has the form $2^{p-1}(2^p - 1)$ with $2^p - 1$ prime.",
   "provers": [
    "Leonhard Euler"
   ],
@@ -1602,8 +1702,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T101",
+  "row": 102,
   "name": "Bertrand's postulate",
-  "statement": "For every n > 1 there is a prime between n and 2n.",
+  "statement": "For every $n > 1$ there is a prime between $n$ and $2n$.",
   "provers": [
    "Pafnuty Chebyshev"
   ],
@@ -1618,6 +1719,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T102",
+  "row": 103,
   "name": "Sylvester's law of inertia",
   "statement": "The numbers of positive, negative and zero eigenvalues of a symmetric matrix don't depend on the choice of basis.",
   "provers": [
@@ -1634,8 +1736,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T103",
+  "row": 104,
   "name": "Chebyshev's inequality",
-  "statement": "A random variable is more than k standard deviations from its mean with probability at most 1/k².",
+  "statement": "A random variable is more than $k$ standard deviations from its mean with probability at most $\\frac{1}{k^2}$.",
   "provers": [
    "Irénée-Jules Bienaymé"
   ],
@@ -1650,6 +1753,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T104",
+  "row": 105,
   "name": "Cayley's theorem (groups)",
   "statement": "Every group is isomorphic to a group of permutations.",
   "provers": [
@@ -1666,8 +1770,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T105",
+  "row": 106,
   "name": "Cayley's formula for trees",
-  "statement": "There are nⁿ⁻² labeled trees on n vertices.",
+  "statement": "There are $n^{n-2}$ labeled trees on $n$ vertices.",
   "provers": [
    "Carl Wilhelm Borchardt"
   ],
@@ -1682,6 +1787,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T106",
+  "row": 107,
   "name": "Stokes' theorem",
   "statement": "The circulation of a field around a closed curve equals the flux of its curl through any surface it bounds.",
   "provers": [
@@ -1698,8 +1804,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T107",
+  "row": 108,
   "name": "Rouché's theorem",
-  "statement": "If |g| < |f| on a closed curve, then f and f + g have the same number of zeros inside it.",
+  "statement": "If $|g| < |f|$ on a closed curve, then $f$ and $f + g$ have the same number of zeros inside it.",
   "provers": [
    "Eugène Rouché"
   ],
@@ -1714,6 +1821,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T108",
+  "row": 109,
   "name": "Riemann rearrangement theorem",
   "statement": "A conditionally convergent series can be rearranged to sum to any real number.",
   "provers": [
@@ -1730,6 +1838,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T109",
+  "row": 110,
   "name": "Jordan normal form",
   "statement": "Every complex square matrix is similar to a block-diagonal matrix of Jordan blocks.",
   "provers": [
@@ -1746,6 +1855,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T110",
+  "row": 111,
   "name": "A continuous, nowhere differentiable function",
   "statement": "There is a function continuous everywhere and differentiable nowhere.",
   "provers": [
@@ -1762,6 +1872,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T111",
+  "row": 112,
   "name": "Heine–Cantor theorem",
   "statement": "A continuous function on a closed bounded interval is uniformly continuous.",
   "provers": [
@@ -1778,6 +1889,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T112",
+  "row": 113,
   "name": "Sylow theorems",
   "statement": "A finite group has subgroups of every maximal prime-power order, and they are all conjugate.",
   "provers": [
@@ -1794,8 +1906,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T113",
+  "row": 114,
   "name": "Singular value decomposition",
-  "statement": "Every matrix can be written as UΣVᵀ with U, V orthogonal and Σ diagonal.",
+  "statement": "Every matrix can be written as $U \\Sigma V^{T}$ with $U, V$ orthogonal and $\\Sigma$ diagonal.",
   "provers": [
    "Eugenio Beltrami"
   ],
@@ -1810,8 +1923,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T114",
+  "row": 115,
   "name": "Transcendence of e",
-  "statement": "e is not the root of any integer polynomial.",
+  "statement": "$e$ is not the root of any integer polynomial.",
   "provers": [
    "Charles Hermite"
   ],
@@ -1826,6 +1940,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T115",
+  "row": 116,
   "name": "Uncountability of the real numbers",
   "statement": "The real numbers cannot be listed as a sequence.",
   "provers": [
@@ -1842,6 +1957,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T116",
+  "row": 117,
   "name": "Cauchy–Kovalevskaya theorem",
   "statement": "A PDE with analytic coefficients and analytic initial data has a unique local analytic solution.",
   "provers": [
@@ -1858,6 +1974,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T117",
+  "row": 118,
   "name": "Darboux's theorem",
   "statement": "Every derivative has the intermediate value property, even if it is not continuous.",
   "provers": [
@@ -1874,6 +1991,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T118",
+  "row": 119,
   "name": "Cayley–Hamilton theorem",
   "statement": "Every square matrix satisfies its own characteristic polynomial.",
   "provers": [
@@ -1890,6 +2008,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T119",
+  "row": 120,
   "name": "Dini's theorem",
   "statement": "A monotone sequence of continuous functions converging pointwise to a continuous limit on a compact set converges uniformly.",
   "provers": [
@@ -1906,8 +2025,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T120",
+  "row": 121,
   "name": "Frobenius theorem (division algebras)",
-  "statement": "The only finite-dimensional associative real division algebras are ℝ, ℂ and the quaternions.",
+  "statement": "The only finite-dimensional associative real division algebras are $\\mathbb{R}$, $\\mathbb{C}$ and the quaternions.",
   "provers": [
    "Ferdinand Georg Frobenius"
   ],
@@ -1922,6 +2042,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T121",
+  "row": 122,
   "name": "Picard's little theorem",
   "statement": "A non-constant entire function misses at most one complex value.",
   "provers": [
@@ -1938,8 +2059,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T122",
+  "row": 123,
   "name": "Transcendence of π (squaring the circle is impossible)",
-  "statement": "π is transcendental, so a circle cannot be squared with straightedge and compass.",
+  "statement": "$\\pi$ is transcendental, so a circle cannot be squared with straightedge and compass.",
   "provers": [
    "Ferdinand von Lindemann"
   ],
@@ -1954,6 +2076,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T123",
+  "row": 124,
   "name": "Hairy ball theorem (2-sphere)",
   "statement": "Every continuous tangent vector field on a sphere vanishes somewhere.",
   "provers": [
@@ -1970,8 +2093,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T124",
+  "row": 125,
   "name": "Weierstrass approximation theorem",
-  "statement": "Every continuous function on [a, b] is a uniform limit of polynomials.",
+  "statement": "Every continuous function on $[a, b]$ is a uniform limit of polynomials.",
   "provers": [
    "Karl Weierstrass"
   ],
@@ -1986,6 +2110,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T125",
+  "row": 126,
   "name": "Morera's theorem",
   "statement": "A continuous function whose integral around every closed triangle vanishes is holomorphic.",
   "provers": [
@@ -2002,6 +2127,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T126",
+  "row": 127,
   "name": "Burnside's lemma (orbit counting)",
   "statement": "The number of orbits of a group action equals the average number of fixed points.",
   "provers": [
@@ -2018,6 +2144,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T127",
+  "row": 128,
   "name": "Jordan curve theorem",
   "statement": "Every simple closed curve in the plane divides it into an inside and an outside.",
   "provers": [
@@ -2034,6 +2161,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T128",
+  "row": 129,
   "name": "Hilbert's basis theorem",
   "statement": "Every ideal in a polynomial ring over a field is finitely generated.",
   "provers": [
@@ -2050,6 +2178,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T129",
+  "row": 130,
   "name": "Poincaré recurrence theorem",
   "statement": "A measure-preserving system returns arbitrarily close to almost every initial state.",
   "provers": [
@@ -2066,6 +2195,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T130",
+  "row": 131,
   "name": "Cantor's theorem",
   "statement": "Every set is strictly smaller than the set of all its subsets.",
   "provers": [
@@ -2082,6 +2212,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T131",
+  "row": 132,
   "name": "Hilbert's Nullstellensatz",
   "statement": "Polynomials vanishing on the zero set of an ideal have a power lying in that ideal.",
   "provers": [
@@ -2098,8 +2229,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T132",
+  "row": 133,
   "name": "Heine–Borel theorem",
-  "statement": "A subset of ℝⁿ is compact exactly when it is closed and bounded.",
+  "statement": "A subset of $\\mathbb{R}^n$ is compact exactly when it is closed and bounded.",
   "provers": [
    "Émile Borel"
   ],
@@ -2114,6 +2246,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T133",
+  "row": 134,
   "name": "Minkowski's theorem",
   "statement": "A convex symmetric region of area greater than 4 contains a nonzero lattice point.",
   "provers": [
@@ -2130,8 +2263,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T134",
+  "row": 135,
   "name": "Prime number theorem",
-  "statement": "The number of primes up to x is approximately x / ln x.",
+  "statement": "The number of primes up to $x$ is approximately $\\frac{x}{\\ln x}$.",
   "provers": [
    "Jacques Hadamard",
    "Charles de la Vallée Poussin"
@@ -2147,6 +2281,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T135",
+  "row": 136,
   "name": "Cantor–Bernstein theorem",
   "statement": "If each of two sets injects into the other, they have the same size.",
   "provers": [
@@ -2163,6 +2298,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T136",
+  "row": 137,
   "name": "Hurwitz's theorem (composition algebras)",
   "statement": "Normed division algebras exist only in dimensions 1, 2, 4 and 8.",
   "provers": [
@@ -2179,6 +2315,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T137",
+  "row": 138,
   "name": "Baire category theorem",
   "statement": "A complete metric space is not a countable union of nowhere dense sets.",
   "provers": [
@@ -2195,8 +2332,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T138",
+  "row": 139,
   "name": "Pick's theorem",
-  "statement": "A lattice polygon has area I + B/2 − 1 (interior and boundary lattice points).",
+  "statement": "A lattice polygon has area $I + \\frac{B}{2} - 1$, where $I$ and $B$ count the interior and boundary lattice points.",
   "provers": [
    "Georg Pick"
   ],
@@ -2211,6 +2349,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T139",
+  "row": 140,
   "name": "Euler's 36 officers problem",
   "statement": "There are no two orthogonal Latin squares of order 6.",
   "provers": [
@@ -2227,6 +2366,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T140",
+  "row": 141,
   "name": "Fejér's theorem",
   "statement": "The averages of the partial sums of a continuous function's Fourier series converge to it uniformly.",
   "provers": [
@@ -2243,6 +2383,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T141",
+  "row": 142,
   "name": "Riemann mapping theorem",
   "statement": "Every simply connected proper open subset of the plane is conformally equivalent to the unit disk.",
   "provers": [
@@ -2259,6 +2400,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T142",
+  "row": 143,
   "name": "Hilbert's third problem",
   "statement": "A regular tetrahedron cannot be cut into finitely many pieces and reassembled into a cube.",
   "provers": [
@@ -2275,8 +2417,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T143",
+  "row": 144,
   "name": "Lebesgue's criterion for Riemann integrability",
-  "statement": "A bounded function on [a, b] is Riemann integrable exactly when its discontinuities have measure zero.",
+  "statement": "A bounded function on $[a, b]$ is Riemann integrable exactly when its discontinuities have measure zero.",
   "provers": [
    "Henri Lebesgue"
   ],
@@ -2291,8 +2434,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T144",
-  "name": "Burnside's pᵃqᵇ theorem",
-  "statement": "A group of order pᵃqᵇ (p, q primes) is solvable.",
+  "row": 145,
+  "name": "Burnside's $p^a q^b$ theorem",
+  "statement": "A group of order $p^a q^b$ ($p$, $q$ primes) is solvable.",
   "provers": [
    "William Burnside"
   ],
@@ -2307,8 +2451,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T145",
+  "row": 146,
   "name": "Vitali's non-measurable set",
-  "statement": "There is a subset of ℝ to which no translation-invariant length can be assigned.",
+  "statement": "There is a subset of $\\mathbb{R}$ to which no translation-invariant length can be assigned.",
   "provers": [
    "Giuseppe Vitali"
   ],
@@ -2323,6 +2468,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T146",
+  "row": 147,
   "name": "Wedderburn's little theorem",
   "statement": "Every finite division ring is commutative.",
   "provers": [
@@ -2339,8 +2485,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T147",
+  "row": 148,
   "name": "Fatou's lemma",
-  "statement": "∫ liminf fₙ ≤ liminf ∫ fₙ for non-negative functions.",
+  "statement": "$\\int \\liminf f_n \\le \\liminf \\int f_n$ for non-negative functions.",
   "provers": [
    "Pierre Fatou"
   ],
@@ -2355,6 +2502,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T148",
+  "row": 149,
   "name": "Monotone convergence theorem",
   "statement": "For increasing non-negative functions, the limit of the integrals is the integral of the limit.",
   "provers": [
@@ -2371,6 +2519,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T149",
+  "row": 150,
   "name": "Fubini's theorem",
   "statement": "A double integral of an integrable function can be computed as an iterated integral in either order.",
   "provers": [
@@ -2387,6 +2536,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T150",
+  "row": 151,
   "name": "Perron's theorem",
   "statement": "A matrix with positive entries has a unique largest positive eigenvalue with a positive eigenvector.",
   "provers": [
@@ -2403,6 +2553,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T151",
+  "row": 152,
   "name": "Riesz–Fischer theorem",
   "statement": "L² is complete: square-integrable functions correspond exactly to square-summable Fourier coefficients.",
   "provers": [
@@ -2420,6 +2571,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T152",
+  "row": 153,
   "name": "Uniformization theorem",
   "statement": "Every simply connected Riemann surface is equivalent to the disk, the plane or the sphere.",
   "provers": [
@@ -2437,6 +2589,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T153",
+  "row": 154,
   "name": "Schur decomposition",
   "statement": "Every complex square matrix is unitarily similar to an upper triangular matrix.",
   "provers": [
@@ -2453,8 +2606,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T154",
+  "row": 155,
   "name": "Strong law of large numbers (coin flips)",
-  "statement": "In infinitely many fair coin flips, the proportion of heads tends to 1/2 with probability 1.",
+  "statement": "In infinitely many fair coin flips, the proportion of heads tends to $\\frac12$ with probability $1$.",
   "provers": [
    "Émile Borel"
   ],
@@ -2469,8 +2623,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T155",
+  "row": 156,
   "name": "Waring's problem",
-  "statement": "For each k, every positive integer is a sum of a bounded number of k-th powers.",
+  "statement": "For each $k$, every positive integer is a sum of a bounded number of $k$-th powers.",
   "provers": [
    "David Hilbert"
   ],
@@ -2485,6 +2640,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T156",
+  "row": 157,
   "name": "Densest circle packing in the plane",
   "statement": "The hexagonal packing is the densest packing of equal circles in the plane.",
   "provers": [
@@ -2501,6 +2657,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T157",
+  "row": 158,
   "name": "Brouwer fixed-point theorem",
   "statement": "Every continuous map from a closed disk (or ball) to itself has a fixed point.",
   "provers": [
@@ -2517,8 +2674,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T158",
+  "row": 159,
   "name": "Ostrowski's theorem",
-  "statement": "Every absolute value on ℚ is equivalent to the usual one or a p-adic one.",
+  "statement": "Every absolute value on $\\mathbb{Q}$ is equivalent to the usual one or a $p$-adic one.",
   "provers": [
    "Alexander Ostrowski"
   ],
@@ -2533,8 +2691,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T159",
+  "row": 160,
   "name": "Schur's theorem (Ramsey theory)",
-  "statement": "However the positive integers are colored with finitely many colors, some color contains x, y, x + y.",
+  "statement": "However the positive integers are colored with finitely many colors, some color contains $x$, $y$ and $x + y$.",
   "provers": [
    "Issai Schur"
   ],
@@ -2549,8 +2708,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T160",
+  "row": 161,
   "name": "Hardy–Ramanujan asymptotic formula",
-  "statement": "The number of partitions of n is approximately e^{π√(2n/3)} / (4n√3).",
+  "statement": "The number of partitions of $n$ is approximately $\\frac{1}{4n\\sqrt3}\\, e^{\\pi\\sqrt{2n/3}}$.",
   "provers": [
    "G. H. Hardy",
    "Srinivasa Ramanujan"
@@ -2566,6 +2726,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T161",
+  "row": 162,
   "name": "Noether's theorem",
   "statement": "Every continuous symmetry of a physical system gives a conserved quantity.",
   "provers": [
@@ -2582,6 +2743,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T162",
+  "row": 163,
   "name": "Banach fixed-point theorem",
   "statement": "A contraction on a complete metric space has a unique fixed point.",
   "provers": [
@@ -2598,6 +2760,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T163",
+  "row": 164,
   "name": "Banach–Tarski paradox",
   "statement": "A solid ball can be cut into finitely many pieces and reassembled into two balls of the same size.",
   "provers": [
@@ -2615,6 +2778,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T164",
+  "row": 165,
   "name": "Hahn–Banach theorem",
   "statement": "A bounded linear functional on a subspace extends to the whole space with the same norm.",
   "provers": [
@@ -2631,6 +2795,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T165",
+  "row": 166,
   "name": "Menger's theorem",
   "statement": "The minimum number of vertices separating two vertices equals the maximum number of disjoint paths between them.",
   "provers": [
@@ -2647,6 +2812,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T166",
+  "row": 167,
   "name": "Uniform boundedness principle",
   "statement": "A pointwise bounded family of bounded operators on a Banach space is uniformly bounded.",
   "provers": [
@@ -2664,6 +2830,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T167",
+  "row": 168,
   "name": "Van der Waerden's theorem",
   "statement": "However the integers are colored with finitely many colors, one color contains arbitrarily long arithmetic progressions.",
   "provers": [
@@ -2680,6 +2847,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T168",
+  "row": 169,
   "name": "Minimax theorem",
   "statement": "In a two-player zero-sum game with mixed strategies, max-min equals min-max.",
   "provers": [
@@ -2696,6 +2864,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T169",
+  "row": 170,
   "name": "Sperner's lemma",
   "statement": "Every Sperner coloring of a triangulated triangle contains a triangle with all three colors.",
   "provers": [
@@ -2712,6 +2881,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T170",
+  "row": 171,
   "name": "Gödel's completeness theorem",
   "statement": "Every logically valid first-order statement is provable.",
   "provers": [
@@ -2728,8 +2898,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T171",
+  "row": 172,
   "name": "Kuratowski's theorem",
-  "statement": "A graph is planar exactly when it contains no subdivision of K₅ or K₃,₃.",
+  "statement": "A graph is planar exactly when it contains no subdivision of $K_5$ or $K_{3,3}$.",
   "provers": [
    "Kazimierz Kuratowski"
   ],
@@ -2744,6 +2915,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T172",
+  "row": 173,
   "name": "Ramsey's theorem",
   "statement": "Every large enough complete graph colored with two colors contains a large one-colored complete subgraph.",
   "provers": [
@@ -2760,6 +2932,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T173",
+  "row": 174,
   "name": "Birkhoff's ergodic theorem",
   "statement": "For an ergodic system, time averages equal space averages almost everywhere.",
   "provers": [
@@ -2776,6 +2949,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T174",
+  "row": 175,
   "name": "Gershgorin circle theorem",
   "statement": "Every eigenvalue of a matrix lies in a disk centered at a diagonal entry with radius the sum of the other row entries' absolute values.",
   "provers": [
@@ -2792,6 +2966,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T175",
+  "row": 176,
   "name": "Gödel's incompleteness theorems",
   "statement": "Any consistent formal system containing arithmetic has true statements it cannot prove, and cannot prove its own consistency.",
   "provers": [
@@ -2808,6 +2983,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T176",
+  "row": 177,
   "name": "Kőnig's theorem",
   "statement": "In a bipartite graph, the maximum matching size equals the minimum vertex cover size.",
   "provers": [
@@ -2824,6 +3000,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T177",
+  "row": 178,
   "name": "Borsuk–Ulam theorem",
   "statement": "Every continuous map from the sphere to the plane sends some pair of opposite points to the same point.",
   "provers": [
@@ -2840,6 +3017,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T178",
+  "row": 179,
   "name": "Kolmogorov's zero–one law",
   "statement": "A tail event of independent random variables has probability 0 or 1.",
   "provers": [
@@ -2856,8 +3034,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T179",
+  "row": 180,
   "name": "Gelfond–Schneider theorem",
-  "statement": "If a and b are algebraic, a ≠ 0, 1, and b is irrational, then aᵇ is transcendental (so 2^√2 is).",
+  "statement": "If $a$ and $b$ are algebraic, $a \\ne 0, 1$, and $b$ is irrational, then $a^b$ is transcendental (so $2^{\\sqrt2}$ is).",
   "provers": [
    "Aleksandr Gelfond",
    "Theodor Schneider"
@@ -2873,8 +3052,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T180",
+  "row": 181,
   "name": "Erdős–Szekeres theorem",
-  "statement": "Every sequence of n² + 1 distinct numbers has a monotone subsequence of length n + 1.",
+  "statement": "Every sequence of $n^2 + 1$ distinct numbers has a monotone subsequence of length $n + 1$.",
   "provers": [
    "Paul Erdős",
    "George Szekeres"
@@ -2890,8 +3070,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T181",
+  "row": 182,
   "name": "Hall's marriage theorem",
-  "statement": "A family of sets has a system of distinct representatives exactly when every k of the sets contain at least k elements in total.",
+  "statement": "A family of sets has a system of distinct representatives exactly when every $k$ of the sets contain at least $k$ elements in total.",
   "provers": [
    "Philip Hall"
   ],
@@ -2906,6 +3087,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T182",
+  "row": 183,
   "name": "Zorn's lemma",
   "statement": "If every chain in a partially ordered set has an upper bound, the set has a maximal element.",
   "provers": [
@@ -2922,6 +3104,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T183",
+  "row": 184,
   "name": "Undecidability of the halting problem",
   "statement": "No algorithm can decide, for every program and input, whether the program halts.",
   "provers": [
@@ -2938,8 +3121,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T184",
+  "row": 185,
   "name": "Whitney embedding theorem",
-  "statement": "Every smooth n-dimensional manifold can be embedded in Euclidean space of dimension 2n + 1.",
+  "statement": "Every smooth $n$-dimensional manifold can be embedded in Euclidean space of dimension $2n + 1$.",
   "provers": [
    "Hassler Whitney"
   ],
@@ -2954,6 +3138,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T185",
+  "row": 186,
   "name": "Pólya enumeration theorem",
   "statement": "Colorings up to symmetry can be counted using a group's cycle index.",
   "provers": [
@@ -2970,6 +3155,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T186",
+  "row": 187,
   "name": "Stone–Weierstrass theorem",
   "statement": "A subalgebra of continuous functions that separates points and contains constants is dense.",
   "provers": [
@@ -2986,6 +3172,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T187",
+  "row": 188,
   "name": "Consistency of the continuum hypothesis",
   "statement": "The continuum hypothesis cannot be disproved from the usual axioms of set theory.",
   "provers": [
@@ -3002,8 +3189,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T188",
+  "row": 189,
   "name": "Banach–Alaoglu theorem",
-  "statement": "The closed unit ball of a dual space is weak-* compact.",
+  "statement": "The closed unit ball of a dual space is weak-$*$ compact.",
   "provers": [
    "Leonidas Alaoglu"
   ],
@@ -3018,6 +3206,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T189",
+  "row": 190,
   "name": "Brooks' theorem",
   "statement": "A connected graph that is neither complete nor an odd cycle can be colored with as many colors as its maximum degree.",
   "provers": [
@@ -3034,8 +3223,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T190",
+  "row": 191,
   "name": "Turán's theorem",
-  "statement": "A graph with no k-clique has at most a specific number of edges, achieved by balanced complete multipartite graphs.",
+  "statement": "A graph with no $k$-clique has at most a specific number of edges, achieved by balanced complete multipartite graphs.",
   "provers": [
    "Pál Turán"
   ],
@@ -3050,6 +3240,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T191",
+  "row": 192,
   "name": "Ham sandwich theorem",
   "statement": "Any three solid objects in space can be cut exactly in half by a single plane.",
   "provers": [
@@ -3067,6 +3258,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T192",
+  "row": 193,
   "name": "Sard's theorem",
   "statement": "The critical values of a smooth map have measure zero.",
   "provers": [
@@ -3083,6 +3275,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T193",
+  "row": 194,
   "name": "Sylvester–Gallai theorem",
   "statement": "For finitely many points not all on a line, some line passes through exactly two of them.",
   "provers": [
@@ -3099,6 +3292,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T194",
+  "row": 195,
   "name": "Probabilistic lower bound for Ramsey numbers",
   "statement": "There are 2-colorings of large complete graphs with no big one-colored clique, shown by counting random colorings.",
   "provers": [
@@ -3115,6 +3309,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T195",
+  "row": 196,
   "name": "Noisy-channel coding theorem",
   "statement": "Information can be sent through a noisy channel with arbitrarily small error at any rate below its capacity.",
   "provers": [
@@ -3131,6 +3326,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T196",
+  "row": 197,
   "name": "Arrow's impossibility theorem",
   "statement": "No ranked voting system for three or more options satisfies a short list of fairness conditions.",
   "provers": [
@@ -3147,6 +3343,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T197",
+  "row": 198,
   "name": "Existence of Nash equilibria",
   "statement": "Every finite game has an equilibrium in mixed strategies.",
   "provers": [
@@ -3163,8 +3360,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T198",
+  "row": 199,
   "name": "Dirac's theorem",
-  "statement": "A graph on n ≥ 3 vertices where every vertex has degree at least n/2 has a Hamiltonian cycle.",
+  "statement": "A graph on $n \\ge 3$ vertices where every vertex has degree at least $n/2$ has a Hamiltonian cycle.",
   "provers": [
    "Gabriel Andrew Dirac"
   ],
@@ -3179,6 +3377,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T199",
+  "row": 200,
   "name": "Max-flow min-cut theorem",
   "statement": "The maximum flow through a network equals the minimum capacity of a cut.",
   "provers": [
@@ -3196,6 +3395,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T200",
+  "row": 201,
   "name": "Nash embedding theorem",
   "statement": "Every Riemannian manifold can be isometrically embedded in some Euclidean space.",
   "provers": [
@@ -3212,8 +3412,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T201",
+  "row": 202,
   "name": "Erdős–Ko–Rado theorem",
-  "statement": "A family of pairwise intersecting k-subsets of an n-set (n ≥ 2k) has at most C(n−1, k−1) members.",
+  "statement": "A family of pairwise intersecting $k$-subsets of an $n$-set ($n \\ge 2k$) has at most $\\binom{n-1}{k-1}$ members.",
   "provers": [
    "Paul Erdős",
    "Chao Ko",
@@ -3230,6 +3431,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T202",
+  "row": 203,
   "name": "Generalized Poincaré conjecture (dimension ≥ 5)",
   "statement": "A manifold of dimension at least 5 that looks like a sphere homotopically is a sphere.",
   "provers": [
@@ -3246,6 +3448,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T203",
+  "row": 204,
   "name": "Stable marriage theorem",
   "statement": "Every instance of the stable marriage problem has a stable matching, found by the deferred acceptance algorithm.",
   "provers": [
@@ -3263,6 +3466,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T204",
+  "row": 205,
   "name": "Atiyah–Singer index theorem",
   "statement": "The analytic index of an elliptic operator equals a topological index.",
   "provers": [
@@ -3280,6 +3484,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T205",
+  "row": 206,
   "name": "Feit–Thompson theorem",
   "statement": "Every finite group of odd order is solvable.",
   "provers": [
@@ -3297,6 +3502,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T206",
+  "row": 207,
   "name": "Hales–Jewett theorem",
   "statement": "High-dimensional tic-tac-toe with enough dimensions cannot end in a draw.",
   "provers": [
@@ -3314,6 +3520,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T207",
+  "row": 208,
   "name": "Independence of the continuum hypothesis",
   "statement": "The continuum hypothesis cannot be proved from the usual axioms of set theory.",
   "provers": [
@@ -3330,6 +3537,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T208",
+  "row": 209,
   "name": "Carleson's theorem",
   "statement": "The Fourier series of a square-integrable function converges almost everywhere.",
   "provers": [
@@ -3346,6 +3554,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T209",
+  "row": 210,
   "name": "Hilbert's tenth problem (negative solution)",
   "statement": "No algorithm can decide whether an arbitrary polynomial equation has integer solutions.",
   "provers": [
@@ -3362,6 +3571,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T210",
+  "row": 211,
   "name": "Monsky's theorem",
   "statement": "A square cannot be cut into an odd number of triangles of equal area.",
   "provers": [
@@ -3378,6 +3588,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T211",
+  "row": 212,
   "name": "Cook–Levin theorem",
   "statement": "Boolean satisfiability (SAT) is NP-complete.",
   "provers": [
@@ -3394,6 +3605,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T212",
+  "row": 213,
   "name": "Weil conjectures (Riemann hypothesis for varieties over finite fields)",
   "statement": "The zeta function of a variety over a finite field has its zeros where the Riemann hypothesis predicts.",
   "provers": [
@@ -3410,6 +3622,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T213",
+  "row": 214,
   "name": "Szemerédi's theorem",
   "statement": "Every set of integers with positive density contains arbitrarily long arithmetic progressions.",
   "provers": [
@@ -3426,6 +3639,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T214",
+  "row": 215,
   "name": "Four color theorem",
   "statement": "Every planar map can be colored with four colors so that neighboring regions differ.",
   "provers": [
@@ -3443,8 +3657,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T215",
+  "row": 216,
   "name": "Kneser's conjecture",
-  "statement": "The Kneser graph KG(n, k) has chromatic number n − 2k + 2.",
+  "statement": "The Kneser graph $\\mathrm{KG}(n, k)$ has chromatic number $n - 2k + 2$.",
   "provers": [
    "László Lovász"
   ],
@@ -3459,8 +3674,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T216",
-  "name": "Irrationality of ζ(3)",
-  "statement": "1 + 1/8 + 1/27 + 1/64 + … is irrational.",
+  "row": 217,
+  "name": "Irrationality of $\\zeta(3)$",
+  "statement": "$\\displaystyle 1 + \\frac18 + \\frac1{27} + \\frac1{64} + \\cdots$ is irrational.",
   "provers": [
    "Roger Apéry"
   ],
@@ -3475,6 +3691,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T217",
+  "row": 218,
   "name": "Four-dimensional Poincaré conjecture",
   "statement": "A 4-manifold homotopy equivalent to the 4-sphere is homeomorphic to it.",
   "provers": [
@@ -3491,6 +3708,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T218",
+  "row": 219,
   "name": "Mordell conjecture",
   "statement": "A curve of genus at least 2 has only finitely many rational points.",
   "provers": [
@@ -3507,8 +3725,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T219",
+  "row": 220,
   "name": "Bieberbach conjecture",
-  "statement": "For a univalent function on the disk with a₁ = 1, every coefficient satisfies |aₙ| ≤ n.",
+  "statement": "For a univalent function on the disk with $a_1 = 1$, every coefficient satisfies $|a_n| \\le n$.",
   "provers": [
    "Louis de Branges"
   ],
@@ -3523,8 +3742,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T220",
+  "row": 221,
   "name": "Fermat's Last Theorem",
-  "statement": "xⁿ + yⁿ = zⁿ has no positive integer solutions for n ≥ 3.",
+  "statement": "$x^n + y^n = z^n$ has no positive integer solutions for $n \\ge 3$.",
   "provers": [
    "Andrew Wiles"
   ],
@@ -3539,6 +3759,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T221",
+  "row": 222,
   "name": "Poincaré conjecture",
   "statement": "Every simply connected closed 3-manifold is a 3-sphere.",
   "provers": [
@@ -3555,6 +3776,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T222",
+  "row": 223,
   "name": "Catalan's conjecture",
   "statement": "The only consecutive perfect powers are 8 and 9.",
   "provers": [
@@ -3571,6 +3793,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T223",
+  "row": 224,
   "name": "Graph minor theorem",
   "statement": "In every infinite set of finite graphs, one is a minor of another.",
   "provers": [
@@ -3588,6 +3811,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T224",
+  "row": 225,
   "name": "Primes is in P",
   "statement": "Whether a number is prime can be decided in polynomial time.",
   "provers": [
@@ -3606,6 +3830,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T225",
+  "row": 226,
   "name": "Kepler conjecture",
   "statement": "No packing of equal spheres is denser than the cannonball (face-centered cubic) packing.",
   "provers": [
@@ -3622,6 +3847,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T226",
+  "row": 227,
   "name": "Strong perfect graph theorem",
   "statement": "A graph is perfect exactly when it has no odd hole and no odd antihole.",
   "provers": [
@@ -3641,8 +3867,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T227",
+  "row": 228,
   "name": "Counting simple closed geodesics",
-  "statement": "On a hyperbolic surface of genus g, simple closed geodesics of length ≤ L grow like a constant times L^{6g−6}.",
+  "statement": "On a hyperbolic surface of genus $g$, simple closed geodesics of length $\\le L$ grow like a constant times $L^{6g-6}$.",
   "provers": [
    "Maryam Mirzakhani"
   ],
@@ -3657,6 +3884,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T228",
+  "row": 229,
   "name": "Green–Tao theorem",
   "statement": "The primes contain arbitrarily long arithmetic progressions.",
   "provers": [
@@ -3674,6 +3902,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T229",
+  "row": 230,
   "name": "Bounded gaps between primes",
   "statement": "There are infinitely many pairs of primes differing by at most 70,000,000.",
   "provers": [
@@ -3690,8 +3919,9 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T230",
+  "row": 231,
   "name": "Sphere packing in dimension 8",
-  "statement": "The E₈ lattice gives the densest packing of spheres in 8 dimensions.",
+  "statement": "The $E_8$ lattice gives the densest packing of spheres in 8 dimensions.",
   "provers": [
    "Maryna Viazovska"
   ],
@@ -3706,6 +3936,7 @@ window.THEOREM_CARDS = [
  },
  {
   "id": "T231",
+  "row": 232,
   "name": "Sensitivity conjecture",
   "statement": "The sensitivity and degree of a Boolean function are polynomially related.",
   "provers": [

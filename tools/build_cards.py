@@ -6,7 +6,7 @@ Needs:  pip install openpyxl
 
 Columns are found by their header names on the "Theorems" sheet, so columns can
 be reordered or added freely. Rows marked "Drop" in the "Verified?" column are
-left out. Rows marked "Yes" are flagged as verified, which the game can use as
+left out. Rows marked "Yes" (or "approved", "verified", "OK") are flagged as verified, which the game can use as
 a deck filter. An optional "Also accept" column lists extra spellings of the
 prover's name that count when guessing, separated by commas (for example "Qin"
 for Qin Jiushao). The script stops with a list of problems if any row is invalid.
@@ -36,6 +36,7 @@ COLUMNS = {
     'also': 'Also accept',
 }
 REQUIRED = ['id', 'name', 'statement', 'prover', 'year', 'shown']
+VERIFIED = {'yes', 'y', 'approved', 'verified', 'ok', 'checked', 'done', '✓', '✔'}
 
 # Notes are shown to players when a card is revealed. These remove sentences
 # that were written for the person checking the list rather than for players.
@@ -98,6 +99,7 @@ def main():
         twist, note = player_note(get('note'))
         cards.append({
             'id': card_id,
+            'row': line,
             'name': get('name'),
             'statement': get('statement'),
             'provers': [p.strip() for p in get('prover').split(' / ') if p.strip()],
@@ -107,7 +109,7 @@ def main():
             'level': get('level'),
             'twist': twist,
             'note': note,
-            'verified': get('verified').lower() == 'yes',
+            'verified': get('verified').lower() in VERIFIED,
             'alsoAccept': [a.strip() for a in re.split(r'[;,]', get('also')) if a.strip()],
         })
 

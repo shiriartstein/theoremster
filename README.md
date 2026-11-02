@@ -38,8 +38,18 @@ edit the spreadsheet and upload it to `data/` in place of the old one. GitHub
 Actions rebuilds the cards and republishes the game automatically.
 
 - Rows marked **Drop** in the *Verified?* column are left out.
-- Rows marked **Yes** count as verified, and the setup screen can limit the deck
-  to verified cards.
+- Rows marked **Yes** or **approved** count as verified, and the setup screen
+  can limit the deck to verified cards.
+- Math is written in LaTeX between dollar signs, as in lecture notes:
+  `If $p$ is prime, then $a^p - a$ is divisible by $p$.` For a card that is
+  only a formula, `$\displaystyle ...$` gives full-size fractions. Write `\$`
+  for a real dollar sign. Formulas work in the statement, theorem name and notes.
+- Every formula is checked when the cards are built. A LaTeX mistake stops the
+  build with the row number (in the Actions tab), and the published game stays
+  as it was until the cell is fixed.
+- To see how cards look, open **Browse all cards** on the start page
+  (`gallery.html`): every card, front and back, with search and filters, and
+  the spreadsheet row of each card.
 - The *Notes / twist* column is shown to players when a card is revealed. Notes
   starting with “Twist card:” get a Twist label.
 - Several provers go in *Proved by* separated by ` / `; naming any one counts.
@@ -54,6 +64,7 @@ To build the cards on your own computer instead:
 ```
 pip install openpyxl
 python3 tools/build_cards.py
+node tools/check_cards.cjs
 ```
 
 ## Tests
@@ -68,10 +79,14 @@ node tests/names.test.cjs
 ```
 data/theorems.xlsx          the card list (the only file to edit for content)
 tools/build_cards.py        spreadsheet → site/cards.js, with checks
+tools/check_cards.cjs       checks every LaTeX formula with KaTeX
 site/index.html, style.css  the page
 site/game.js                the rules (pure logic, tested)
 site/ui.js                  the interface (shared screen and online)
 site/online.js              online connections between browsers
+site/gallery.html, gallery.js  the card gallery
+site/math.js                LaTeX in card text, rendered with KaTeX
+site/vendor/katex/          KaTeX 0.16.22 (MIT licence) with its fonts
 site/vendor/peerjs.min.js   PeerJS 1.5.4 (MIT licence), for online play
 site/cards.js               generated card data
 tests/game.test.cjs         rule tests

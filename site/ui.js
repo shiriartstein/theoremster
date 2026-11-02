@@ -3,6 +3,7 @@
   'use strict';
   const G = window.TimelineGame;
   const Online = window.TimelineOnline;
+  const M = window.TimelineMath;
   const CARDS = window.THEOREM_CARDS || [];
   const byId = new Map(CARDS.map(c => [c.id, c]));
   const KEY = { game: 'theorem-timeline:game', setup: 'theorem-timeline:setup', theme: 'theorem-timeline:theme', client: 'theorem-timeline:client' };
@@ -106,7 +107,7 @@
     }
     if (action === 'buy') {
       const c = byId.get(next.event.card);
-      return `${who(next.event.player)} traded ${next.settings.cardCost} ∎ for “${c.name}” (${c.shown}).`;
+      return `${who(next.event.player)} traded ${next.settings.cardCost} ∎ for “${M.plain(c.name)}” (${c.shown}).`;
     }
     if (action === 'endTurn' && next.event) {
       const e = next.event, name = who(e.player), card = byId.get(e.card);
@@ -373,6 +374,7 @@
           h('div', { class: 'start-row' }, h('button', { type: 'button', class: 'btn primary', id: 'create', onclick: hostCreate }, 'Create a game link')))),
       h('div', { class: 'start-row' },
         h('button', { type: 'button', class: 'btn', onclick: () => rules.showModal() }, 'How to play'),
+        h('a', { class: 'btn', href: 'gallery.html' }, 'Browse all cards'),
         themeButton())));
     updateStatus();
   }
@@ -486,14 +488,14 @@
     const flip = h('div', { class: 'flip' + (showBack && !animateReveal ? ' revealed' : '') + (revealed ? ' turnable' : ''),
       onclick: revealed ? () => turnCard() : null },
       h('div', { class: 'flip-inner' },
-        h('article', { class: 'face front index-card', 'aria-hidden': showBack ? 'true' : null },
+        h('article', { class: 'face front index-card', 'data-card': c.id, 'aria-hidden': showBack ? 'true' : null },
           h('p', { class: 'card-area' }, c.area),
-          h('p', { class: 'statement' }, c.statement)),
+          h('p', { class: 'statement' }, M.render(c.statement))),
         h('article', { class: 'face back index-card', 'aria-hidden': showBack ? null : 'true' },
           h('p', { class: 'year' }, c.shown),
-          h('p', { class: 'theorem-name' }, c.name),
+          h('p', { class: 'theorem-name' }, M.render(c.name)),
           h('p', { class: 'prover' }, 'Proved by ', h('strong', {}, listJoin(c.provers))),
-          c.note ? h('p', { class: 'note' }, c.twist ? h('span', { class: 'twist' }, 'Twist') : null, c.note) : null)));
+          c.note ? h('p', { class: 'note' }, c.twist ? h('span', { class: 'twist' }, 'Twist') : null, M.render(c.note)) : null)));
     if (showBack && animateReveal) {
       animateReveal = false;
       requestAnimationFrame(() => requestAnimationFrame(() => flip.classList.add('revealed')));
@@ -656,9 +658,9 @@
 
   function timelineCard(id, fresh) {
     const c = byId.get(id);
-    return h('li', { class: 'tl-card' + (fresh ? ' new' : ''), title: c.statement },
+    return h('li', { class: 'tl-card' + (fresh ? ' new' : ''), title: M.plain(c.statement) },
       h('span', { class: 'tl-year' }, c.shown),
-      h('span', { class: 'tl-name' }, c.name),
+      h('span', { class: 'tl-name' }, M.render(c.name)),
       h('span', { class: 'tl-prover' }, listJoin(c.provers)));
   }
 
