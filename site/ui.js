@@ -410,10 +410,16 @@
 
   // ---------- online lobby screens ----------
   function statusLine() {
+    const blocked = 'Still trying. If this doesn’t clear up within a minute, the network you’re on may be blocking online play (some university and office networks do). A home connection or a phone hotspot usually works.';
     const text = net.role === 'host'
-      ? { connecting: 'Connecting…', ready: 'Ready for players.', retrying: 'Reconnecting…', error: `Connection problem: ${net.error}` }[net.status]
-      : { connecting: 'Connecting…', connected: 'Connected.', waiting: 'Waiting for the host’s game to be open…', error: `Connection problem: ${net.error}`, ended: '' }[net.status];
-    return text ? h('p', { class: 'net-status' + (net.status === 'error' ? ' warning' : '') }, text) : null;
+      ? { connecting: 'Connecting…', ready: 'Ready for players.', retrying: 'Reconnecting…',
+          slow: `Can’t reach the connection service yet. ${blocked}`, error: `Connection problem: ${net.error}` }[net.status]
+      : { connecting: 'Connecting…', connected: 'Connected.', waiting: 'Waiting for the host’s game to be open…',
+          'slow-service': `Can’t reach the connection service yet. ${blocked}`,
+          'slow-direct': `Found the game, but the direct link between your browsers isn’t opening yet. ${blocked}`,
+          error: `Connection problem: ${net.error}`, ended: '' }[net.status];
+    const trouble = ['error', 'slow', 'slow-service', 'slow-direct'].includes(net.status);
+    return text ? h('p', { class: 'net-status' + (trouble ? ' warning' : '') }, text) : null;
   }
   function playerList(players, mine) {
     return h('ul', { class: 'lobby-list' }, players.map((p, i) => h('li', { style: color(i) },
@@ -489,7 +495,10 @@
     actions.push(h('button', { type: 'button', class: 'btn quiet', onclick: () => rules.showModal() }, 'Rules'), themeButton(),
       h('button', { type: 'button', class: 'btn quiet', onclick: leave }, mode === 'local' ? 'New game' : mode === 'host' ? 'End game' : 'Leave'));
     const bar = h('header', { class: 'bar' }, h('p', { class: 'brand' }, 'Theorem Timeline'), h('div', { class: 'bar-info' }, info), h('div', { class: 'bar-actions' }, actions));
-    const banner = mode === 'guest' && net.status !== 'connected' ? h('p', { class: 'flash warning-box' }, 'Lost the connection to the host. Reconnecting…') : null;
+    const banner = mode === 'guest' && net.status !== 'connected'
+      ? h('p', { class: 'flash warning-box' }, ['slow-service', 'slow-direct'].includes(net.status)
+          ? 'Lost the connection to the host and can’t get it back yet. Still trying; if this lasts, try another network or a phone hotspot.'
+          : 'Lost the connection to the host. Reconnecting…') : null;
     app.replaceChildren(...[bar, banner, s.phase === 'over' ? renderOver() : renderStage(), renderTimelines()].filter(Boolean));
   }
 
