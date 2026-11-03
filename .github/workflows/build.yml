@@ -42,6 +42,7 @@ jobs:
           node tests/game.test.cjs
           node tests/names.test.cjs
           node tests/decks.test.cjs
+          node tests/setup.test.cjs
           python -m unittest discover -s tests -p 'test_*.py'
 
       - name: Let browsers load the new version right away
