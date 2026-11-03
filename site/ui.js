@@ -5,6 +5,7 @@
   const Online = window.TimelineOnline;
   const M = window.TimelineMath;
   const D = window.TimelineDecks;
+  const S = window.TimelineSetup;
   const CARDS = window.THEOREM_CARDS || [];
   const byId = new Map(CARDS.map(c => [c.id, c]));
   const KEY = { game: 'theorem-timeline:game', setup: 'theorem-timeline:setup', theme: 'theorem-timeline:theme', client: 'theorem-timeline:client' };
@@ -21,7 +22,8 @@
   let guessDraft = '';      // the prover name being typed (online)
   let animateReveal = false;
   let peek = { key: '', front: false };   // after the reveal, flip the card back to reread the theorem
-  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 10, level: 'all', course: 'all', topic: 'all', verifiedOnly: false, onlineName: '', startTokens: 2, nameNeedsPlacement: true }, load(KEY.setup) || {}, D.fromQuery(location.search, CARDS));
+  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 5, level: 'all', course: 'all', topic: 'all', verifiedOnly: false, onlineName: '', onlinePlayers: 2, playMode: 'local', startTokens: 2, nameNeedsPlacement: true }, load(KEY.setup) || {}, D.fromQuery(location.search, CARDS));
+  let setupStep = 0, setupErrors = [], targetNotice = '';
   if (setup.topic !== 'all' && !D.topics(CARDS).includes(setup.topic)) setup.topic = 'all';
   const gameSettings = options => ({ target: options.target, startTokens: options.startTokens, nameNeedsPlacement: !!options.nameNeedsPlacement });
 
@@ -172,7 +174,7 @@
       if (!confirm('Leave this online game? You can rejoin later with the same link.')) return;
       if (net.conn) net.conn.close();
     }
-    mode = 'local'; net = null; game = null; history = []; flash = ''; challenger = null;
+    mode = 'local'; net = null; game = null; history = []; flash = ''; challenger = null; setupStep = 0; setupErrors = []; targetNotice = '';
     try { window.history.replaceState(null, '', location.pathname + location.search); } catch (e) { /* ignore */ }
     render();
   }
@@ -324,100 +326,141 @@
     else if (message.t === 'ended') { net.error = `${net.lobby ? net.lobby.host : 'The host'} ended the game.`; game = null; net.lobby = null; if (net.conn) net.conn.close(); net.status = 'ended'; render(); }
   }
 
-  // ---------- setup screen ----------
-  function renderSetup() {
-    const resume = savedGame();
-    const players = h('div', { class: 'players' });
-    setup.names.forEach((name, i) => {
-      players.append(h('div', { class: 'player-input', style: color(i) },
-        h('span', { class: 'swatch', 'aria-hidden': 'true' }),
-        h('input', { type: 'text', id: `player-${i}`, value: name, maxlength: '24', 'aria-label': `Player ${i + 1} name`,
-          oninput: e => { setup.names[i] = e.target.value; store(KEY.setup, setup); updateStatus(); } }),
-        setup.names.length > G.MIN_PLAYERS ? h('button', { type: 'button', class: 'btn quiet', 'aria-label': `Remove player ${i + 1}`,
-          onclick: () => { setup.names.splice(i, 1); store(KEY.setup, setup); render(); } }, 'Remove') : null));
-    });
-    const addPlayer = setup.names.length < G.MAX_PLAYERS ? h('button', { type: 'button', class: 'btn quiet', onclick: () => {
-      setup.names.push(`Player ${setup.names.length + 1}`); store(KEY.setup, setup); render();
-      document.getElementById(`player-${setup.names.length - 1}`).select();
-    } }, 'Add a player') : null;
-    const select = (label, key, options) => h('div', { class: 'field' },
-      h('label', { for: `opt-${key}` }, label),
-      h('select', { id: `opt-${key}`, onchange: e => { setup[key] = (key === 'target' || key === 'startTokens') ? Number(e.target.value) : e.target.value; store(KEY.setup, setup); updateStatus(); } },
-        options.map(([value, text]) => h('option', { value, selected: String(setup[key]) === String(value) }, text))));
-
-    app.replaceChildren(h('section', { class: 'setup' },
-      h('h1', {}, 'Theorem Timeline'),
-      h('p', { class: 'lede' }, 'Place each theorem in your timeline by its historical date. Name a credited mathematician to earn a ∎. Card backs explain whether the date is a publication, announcement or approximate attribution.'),
-      resume ? h('div', { class: 'panel' },
-        h('h2', {}, 'A game is in progress'),
-        h('p', { class: 'panel-text' }, `${listJoin(resume.players.map(p => p.name))}, turn ${resume.turn}.`),
-        h('div', { class: 'start-row' },
-          h('button', { type: 'button', class: 'btn primary', onclick: () => { mode = 'local'; game = resume; history = []; flash = ''; render(); } }, 'Resume the game'),
-          h('button', { type: 'button', class: 'btn', onclick: () => { store(KEY.game, null); render(); } }, 'Discard it'))) : null,
-      h('div', { class: 'panel' }, h('h2', {}, 'Game'),
-        D.picker(setup, CARDS, () => { store(KEY.setup, setup); updateStatus(); }, 'setup-deck'),
-        h('div', { class: 'options' },
-          select('Cards to win', 'target', [2, 3, 4, 5, 6, 8, 10, 12, 15].map(n => [n, `${n} cards`])),
-          select('Theorems', 'level', [['all', 'All theorems'], ['Undergraduate', 'Undergraduate courses'], ['Famous', 'Famous results']]),
-          select('Starting ∎', 'startTokens', [0, 1, 2, 3, 4, 5].map(n => [n, n === 1 ? '1 ∎ each' : `${n} ∎ each`])),
-          h('div', { class: 'field' }, h('span', { class: 'label' }, 'Naming a credited mathematician'),
-            h('label', { class: 'check' },
-              h('input', { type: 'checkbox', checked: !!setup.nameNeedsPlacement, onchange: e => { setup.nameNeedsPlacement = e.target.checked; store(KEY.setup, setup); } }),
-              h('span', {}, 'Earns a ∎ only if the card is also placed correctly'))),
-          h('div', { class: 'field' }, h('span', { class: 'label' }, 'Checked cards'),
-            h('label', { class: 'check' },
-              h('input', { type: 'checkbox', checked: setup.verifiedOnly, onchange: e => { setup.verifiedOnly = e.target.checked; store(KEY.setup, setup); updateStatus(); } }),
-              h('span', {}, 'Only cards marked verified')))),
-        h('p', { class: 'deck-count', id: 'deck-count', 'aria-live': 'polite' }),
-        h('p', { class: 'panel-text', id: 'course-note' }),
-        h('div', { class: 'start-row' },
-          h('a', { class: 'btn', id: 'browse-deck', href: 'gallery.html' }, 'Browse this deck'),
-          h('a', { class: 'btn', id: 'deck-link', href: 'index.html' }, 'Link to this deck'))),
-      h('div', { class: 'modes' },
-        h('div', { class: 'panel' }, h('h2', {}, 'Play on this screen'),
-          h('p', { class: 'panel-text' }, 'Everyone plays on this device, taking turns.'),
-          players, addPlayer,
-          h('div', { id: 'setup-status' }),
-          h('div', { class: 'start-row' }, h('button', { type: 'button', class: 'btn primary', id: 'start', onclick: () => startLocal(setup.names.map(n => n.trim())) }, 'Start the game'))),
-        h('div', { class: 'panel' }, h('h2', {}, 'Play online'),
-          h('p', { class: 'panel-text' }, 'Get a link to send. Each player opens it on their own device.'),
-          h('div', { class: 'field' }, h('label', { for: 'online-name' }, 'Your name'),
-            h('input', { type: 'text', id: 'online-name', class: 'text', maxlength: '24', value: setup.onlineName, placeholder: 'Your name',
-              oninput: e => { setup.onlineName = e.target.value; store(KEY.setup, setup); updateStatus(); } })),
-          h('div', { id: 'online-status' }),
-          h('div', { class: 'start-row' }, h('button', { type: 'button', class: 'btn primary', id: 'create', onclick: hostCreate }, 'Create a game link')))),
-      h('div', { class: 'start-row' },
-        h('button', { type: 'button', class: 'btn', onclick: () => rules.showModal() }, 'How to play'),
-        h('a', { class: 'btn', href: 'gallery.html' }, 'Browse all cards'),
-        themeButton())));
-    updateStatus();
+  // ---------- guided setup ----------
+  const setupQuestions = [
+    ["How are we playing?", 'Gather around one screen, or invite friends to join on their own devices.'],
+    ["Who’s joining in?", 'Names help us keep track of whose turn it is.'],
+    ["What shall we explore?", 'Revisit your courses, pick a favourite topic, or mix things up.'],
+    ["A quick round or a longer game?", 'Choose how many cards a player needs in their timeline to win.'],
+    ["Ready to make some history?", 'Here’s your game. You can go back and change any answer.']
+  ];
+  function setupChanged() {
+    store(KEY.setup, setup);
+    if (setupErrors.length) setupErrors = S.problems(setup, deckFor(setup).length, setupStep);
+    updateSetupStatus();
   }
-  function updateStatus() {
-    const status = document.getElementById('setup-status'); if (!status) return;
-    const deck = deckFor(setup), names = setup.names.map(n => n.trim());
-    document.getElementById('deck-count').textContent = `${deck.length} theorems in the deck. ${D.description(setup)}.`;
-    document.getElementById('course-note').textContent = setup.course === 'all' ? '' :
-      'Course decks follow the supplied syllabus. Calc 3 includes integration and improper integrals. Historical dates and attributions remain under review.';
-    document.getElementById('browse-deck').href = `gallery.html?${D.query(setup)}`;
-    document.getElementById('deck-link').href = `index.html?${D.query(setup)}`;
-    const problems = [];
-    if (D.selected(setup)?.length === 0) problems.push('Choose at least one course, or choose All cards / general collection.');
-    if (!CARDS.length) problems.push('No cards were found. Run tools/build_cards.py to create site/cards.js.');
-    if (names.some(n => !n)) problems.push('Every player needs a name.');
-    if (new Set(names.map(n => n.toLowerCase())).size !== names.length) problems.push('Each player needs a different name.');
-    const needed = G.cardsNeeded(names.length, setup.target);
-    if (CARDS.length && deck.length < needed) {
-      const maxTarget = Math.floor((deck.length - 2) / names.length);
-      problems.push(`This needs at least ${needed} cards, and the deck has ${deck.length}. ` +
-        (maxTarget >= 2 ? `Choose at most ${maxTarget} cards to win for ${names.length} players, or broaden the filters.` : 'Broaden the filters or use fewer players.'));
+  function goToSetupStep(step) {
+    setupStep = step; setupErrors = []; flash = ''; targetNotice = '';
+    if (step === 3) {
+      const count = deckFor(setup).length, suggested = S.suggestedTarget(setup, count);
+      if (suggested && setup.target > suggested) {
+        setup.target = suggested;
+        targetNotice = `With ${count} cards and ${S.playerCount(setup)} players, I’ve set the goal to ${suggested}. ` +
+          (suggested > 2 ? 'You can choose a shorter game below.' : 'That’s our shortest game. Include more material if you’d like a longer round.');
+        store(KEY.setup, setup);
+      }
     }
-    status.replaceChildren(...[...problems.map(p => h('p', { class: 'warning' }, p)), flash ? h('p', { class: 'warning' }, flash) : null].filter(Boolean));
-    if (!problems.length && deck.length < names.length * (setup.target + 2) + 4)
-      status.append(h('p', { class: 'panel-text' }, 'Short deck: if the cards run out, the most cards wins, with tokens breaking ties.'));
-    document.getElementById('start').disabled = problems.length > 0;
-    const smallDeck = CARDS.length && deck.length < G.cardsNeeded(2, setup.target);
-    document.getElementById('online-status').replaceChildren(...(smallDeck ? [h('p', { class: 'warning' }, 'The deck is too small for this many cards to win.')] : []));
-    document.getElementById('create').disabled = !cleanName(setup.onlineName) || !!smallDeck || !CARDS.length;
+    render(); document.getElementById('setup-question')?.focus();
+  }
+  function advanceSetup() {
+    setupErrors = S.problems(setup, deckFor(setup).length, setupStep);
+    if (setupErrors.length) { updateSetupStatus(); document.getElementById('setup-status').focus(); return; }
+    if (setupStep < 4) goToSetupStep(setupStep + 1);
+    else if (setup.playMode === 'online') hostCreate();
+    else startLocal(setup.names.map(S.clean));
+  }
+  function setupSelect(label, key, options) {
+    return h('div', { class: 'field' }, h('label', { for: `opt-${key}` }, label),
+      h('select', { id: `opt-${key}`, onchange: e => {
+        setup[key] = ['target', 'startTokens', 'onlinePlayers'].includes(key) ? Number(e.target.value) : e.target.value;
+        targetNotice = ''; setupChanged();
+      } }, options.map(([value, text]) => h('option', { value, selected: String(setup[key]) === String(value) }, text))));
+  }
+  function renderSetup() {
+    const resume = savedGame(), count = deckFor(setup).length;
+    const question = h('div', { class: 'question-content' });
+    if (setupStep === 0) {
+      question.append(h('fieldset', { class: 'mode-answers' }, h('legend', { class: 'sr-only' }, 'How are we playing?'),
+        [['local', 'One screen, all together', 'Pass the device or gather around it. Say your guesses out loud.', '01'],
+         ['online', 'Everyone on their own device', 'You’ll get an invitation link to share. Keep your browser open while you play.', '02']].map(([value, title, text, number]) =>
+          h('label', { class: 'answer-card' },
+            h('input', { type: 'radio', name: 'play-mode', value, checked: setup.playMode === value,
+              onchange: () => { setup.playMode = value; setupChanged(); } }),
+            h('span', { class: 'answer-copy' }, h('strong', {}, title), h('span', {}, text)),
+            h('span', { class: 'answer-number', 'aria-hidden': 'true' }, number)))));
+    } else if (setupStep === 1) {
+      if (setup.playMode === 'online') {
+        question.append(h('div', { class: 'field' }, h('label', { for: 'online-name' }, 'First, what’s your name?'),
+          h('input', { type: 'text', id: 'online-name', class: 'text', maxlength: '24', autocomplete: 'given-name', value: setup.onlineName, placeholder: 'Your name',
+            oninput: e => { setup.onlineName = e.target.value; setupChanged(); } })),
+          setupSelect('How many people are you expecting, including you?', 'onlinePlayers', [2,3,4,5,6].map(n => [n, `${n} players`])),
+          h('p', { class: 'field-hint' }, 'This helps us choose a game length. Your friends will enter their own names when they join.'));
+      } else {
+        const players = h('div', { class: 'players' });
+        setup.names.forEach((name, i) => players.append(h('div', { class: 'player-input', style: color(i) },
+          h('label', { class: 'player-label', for: `player-${i}` }, h('span', { class: 'swatch', 'aria-hidden': 'true' }), `Player ${i + 1}`),
+          h('input', { type: 'text', id: `player-${i}`, value: name, maxlength: '24', autocomplete: 'off',
+            oninput: e => { setup.names[i] = e.target.value; setupChanged(); } }),
+          setup.names.length > G.MIN_PLAYERS ? h('button', { type: 'button', class: 'btn quiet', 'aria-label': `Remove player ${i + 1}`,
+            onclick: () => { setup.names.splice(i, 1); setupChanged(); render(); document.getElementById(`player-${Math.min(i, setup.names.length - 1)}`).focus(); } }, 'Remove') : null)));
+        question.append(players);
+        if (setup.names.length < G.MAX_PLAYERS) question.append(h('button', { type: 'button', class: 'btn quiet', onclick: () => {
+          setup.names.push(`Player ${setup.names.length + 1}`); setupChanged(); render(); document.getElementById(`player-${setup.names.length - 1}`).select();
+        } }, '+ Add another player'));
+        question.append(h('p', { class: 'field-hint' }, 'Two to six players. Nicknames are welcome.'));
+      }
+    } else if (setupStep === 2) {
+      question.append(D.picker(setup, CARDS, setupChanged, 'setup-deck', true),
+        h('details', { class: 'extra-options' }, h('summary', {}, 'A couple more deck options'),
+          setupSelect('Which kinds of results?', 'level', [['all', 'All results'], ['Undergraduate', 'Undergraduate courses'], ['Famous', 'Famous results']]),
+          h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: setup.verifiedOnly,
+            onchange: e => { setup.verifiedOnly = e.target.checked; setupChanged(); } }), h('span', {}, 'Only cards marked verified in the spreadsheet'))),
+        h('div', { class: 'deck-feedback' }, h('p', { id: 'deck-count', 'aria-live': 'polite' }),
+          h('a', { id: 'browse-deck', href: `gallery.html?${D.query(setup)}`, target: '_blank', rel: 'noopener' }, 'Take a look at the cards ↗')));
+    } else if (setupStep === 3) {
+      question.append(setupSelect('How many cards to win?', 'target', S.targets.map(n => [n, `${n} cards${n === 3 ? ' · a little taster' : n === 5 ? ' · a short game' : n === 10 ? ' · settle in' : ''}`])),
+        h('p', { class: 'field-hint', id: 'target-hint' }),
+        h('details', { class: 'extra-options' }, h('summary', {}, 'House rules · optional'),
+          setupSelect('How many ∎ tokens should everyone start with?', 'startTokens', [0,1,2,3,4,5].map(n => [n, `${n} tokens each${n === 2 ? ' · usual rules' : ''}`])),
+          h('label', { class: 'check' }, h('input', { type: 'checkbox', checked: !!setup.nameNeedsPlacement,
+            onchange: e => { setup.nameNeedsPlacement = e.target.checked; setupChanged(); } }),
+            h('span', {}, 'The naming bonus also needs a correctly placed card')),
+          h('p', { class: 'field-hint' }, 'Name a credited mathematician to earn a token. Tokens let you challenge a placement or buy a card.')));
+    } else {
+      const summaryRow = (label, value) => h('div', {}, h('dt', {}, label), h('dd', {}, value));
+      question.append(h('dl', { class: 'game-summary' },
+        summaryRow('Playing', setup.playMode === 'online' ? `Online · hosted by ${S.clean(setup.onlineName)} · expecting ${S.playerCount(setup)} players` : `Together · ${listJoin(setup.names.map(S.clean))}`),
+        summaryRow('Exploring', D.description(setup)),
+        summaryRow('Your deck', `${count} cards${setup.level !== 'all' ? ` · ${setup.level}` : ''}${setup.verifiedOnly ? ' · verified only' : ''}`),
+        summaryRow('The goal', `First to ${setup.target} cards`),
+        summaryRow('House rules', `${setup.startTokens} ∎ tokens each. ${setup.nameNeedsPlacement ? 'Correct name + correct placement earns a token.' : 'A correct name earns a token even if misplaced.'}`)),
+        h('p', { class: 'field-hint' }, setup.playMode === 'online' ? 'Next, share your invitation link. You’ll start when everyone has arrived.' : 'Read a theorem, guess when it belongs, and reveal its story. Let’s play.'),
+        h('a', { class: 'text-link', href: `index.html?${D.query(setup)}`, target: '_blank', rel: 'noopener' }, 'Open a reusable link to this deck ↗'));
+    }
+    app.replaceChildren(h('section', { class: 'setup guided-setup' },
+      h('header', { class: 'setup-brand' }, h('span', { class: 'brand-mark', 'aria-hidden': 'true' }, '∎'), h('span', {}, 'Theorem Timeline'), h('span', { class: 'brand-caption' }, 'A little history. A little guesswork.')),
+      resume ? h('div', { class: 'resume-strip' }, h('div', {}, h('strong', {}, 'Your game is still here.'), h('span', {}, ` ${listJoin(resume.players.map(p => p.name))} · turn ${resume.turn}`)),
+        h('button', { type: 'button', class: 'btn', onclick: () => { mode = 'local'; game = resume; history = []; flash = ''; render(); } }, 'Pick up where we left off'),
+        h('button', { type: 'button', class: 'btn quiet', onclick: () => { store(KEY.game, null); render(); } }, 'Discard saved game')) : null,
+      h('div', { class: 'setup-layout' },
+        h('aside', { class: 'setup-welcome' }, h('p', { class: 'eyebrow' }, 'Good company. Great theorems.'),
+          h('h1', {}, 'Let’s set up ', h('br'), 'your game.'),
+          h('p', { class: 'welcome-copy' }, 'Just a few questions, then you’re off on a journey through mathematics.'),
+          h('div', { class: 'math-postcards', 'aria-hidden': 'true' }, h('span', { class: 'postcard back-card' }, '∫'), h('span', { class: 'postcard front-card' }, h('small', {}, 'WHEN WAS IT?'), '?', h('span', { class: 'mini-timeline' }, '• — • — •'))),
+          h('p', { class: 'welcome-footnote' }, 'No need to know every answer. That’s half the fun.')),
+        h('form', { class: 'question-panel', novalidate: true, onsubmit: e => { e.preventDefault(); advanceSetup(); } },
+          h('div', { class: 'step-meta' }, h('span', {}, `Question ${setupStep + 1} of 5`), h('ol', { class: 'step-dots', 'aria-label': 'Setup progress' },
+            ['Play', 'Players', 'Cards', 'Length', 'Ready'].map((label, i) => h('li', { class: i <= setupStep ? 'filled' : '', 'aria-current': i === setupStep ? 'step' : null }, h('span', { class: 'sr-only' }, `${i + 1}. ${label}`))))),
+          h('h2', { id: 'setup-question', tabindex: '-1' }, setupQuestions[setupStep][0]),
+          h('p', { class: 'question-intro' }, setupQuestions[setupStep][1]), question,
+          h('div', { id: 'setup-status', tabindex: '-1', 'aria-live': 'polite', 'aria-atomic': 'true' }),
+          h('div', { class: 'wizard-nav' }, setupStep ? h('button', { type: 'button', class: 'btn quiet', onclick: () => goToSetupStep(setupStep - 1) }, '← Back') : h('span'),
+            h('button', { type: 'submit', class: 'btn primary', id: 'setup-next' }, setupStep < 4 ? 'Continue →' : setup.playMode === 'online' ? 'Create invitation link →' : 'Let’s play →')))),
+      h('footer', { class: 'setup-footer' }, h('button', { type: 'button', class: 'btn quiet', onclick: () => rules.showModal() }, 'How to play'),
+        h('a', { href: 'gallery.html' }, 'Browse all cards'), themeButton())));
+    updateSetupStatus();
+  }
+  function updateSetupStatus() {
+    const count = deckFor(setup).length;
+    const status = document.getElementById('setup-status');
+    if (!status) return;
+    status.replaceChildren(...[...setupErrors, ...(flash ? [flash] : [])].map(text => h('p', { class: 'warning' }, text)));
+    const deckCount = document.getElementById('deck-count');
+    if (deckCount) deckCount.textContent = count ? `${count} cards to explore together.` : 'No cards match these choices yet.';
+    const browse = document.getElementById('browse-deck');
+    if (browse) browse.href = `gallery.html?${D.query(setup)}`;
+    const hint = document.getElementById('target-hint');
+    if (hint) hint.textContent = targetNotice || `You have ${count} cards for ${S.playerCount(setup)} players. This deck supports a goal of up to ${Math.min(15, S.maximum(setup, count))} cards. If the deck runs out, the most cards wins, with tokens breaking ties.`;
   }
 
   function settingsText(options) {

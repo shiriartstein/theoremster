@@ -41,16 +41,16 @@
     const ids=selected(options);
     return `${ids===null?'General collection':ids.length?ids.map(courseLabel).join(' + '):'No courses selected'}; ${!options.topic||options.topic==='all'?'all topics':options.topic}`;
   }
-  function picker(options, cards, changed, prefix='deck') {
+  function picker(options, cards, changed, prefix='deck', guided=false) {
     const el=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
-    const box=el('details');box.className='deck-picker';
-    const summary=el('summary','Choose topics and courses');summary.className='btn';box.append(summary);
+    const box=el(guided?'div':'details');box.className='deck-picker'+(guided?' guided-picker':'');
+    if(!guided){const summary=el('summary','Choose topics and courses');summary.className='btn';box.append(summary);}
     const fields=el('div');fields.className='deck-picker-fields';box.append(fields);
-    const group=el('fieldset'), legend=el('legend','Courses');group.append(legend);fields.append(group);
-    const help=el('p','Choose one or more courses. A card from any selected course is included once.');help.className='panel-text';group.append(help);
+    const group=el('fieldset'), legend=el('legend',guided?'Which courses shall we include?':'Courses');group.append(legend);fields.append(group);
+    const help=el('p',guided?'Mix any courses you like, or explore the whole collection.':'Choose one or more courses. A card from any selected course is included once.');help.className='panel-text';group.append(help);
     const available=courses.filter(([id])=>id.startsWith('calc')||cards.some(c=>(c.courses||[]).includes(id)));
     const checks=[];
-    for (const [id,label] of [['all','All cards / general collection'],...available]) {
+    for (const [id,label] of [['all',guided?'The whole collection':'All cards / general collection'],...available]) {
       const wrap=el('label'), input=el('input');wrap.className='check';input.type='checkbox';input.id=`${prefix}-${id}`;
       input.addEventListener('change',()=>{
         if(id==='all') {options.course=input.checked?'all':'custom';options.courseIds=[];}
@@ -61,11 +61,13 @@
     }
     function sync() {const ids=selected(options);for(const [id,input] of checks)input.checked=id==='all'?ids===null:!!ids&&ids.includes(id);}
     sync();
-    const field=el('div');field.className='field';const label=el('label','Topic');label.htmlFor=`${prefix}-topic`;
+    const field=el('div');field.className='field';const label=el('label',guided?'A particular topic?':'Topic');label.htmlFor=`${prefix}-topic`;
     const select=el('select');select.id=`${prefix}-topic`;
     for(const t of ['all',...topics(cards)])select.add(new Option(t==='all'?'All topics':t,t));
     select.value=options.topic||'all';select.addEventListener('change',()=>{options.topic=select.value;changed();});
-    field.append(label,select);fields.append(field);
+    field.append(label,select);
+    if(guided){const hint=el('p','A topic narrows your course choices. For a full topic deck, choose the whole collection above.');hint.className='field-hint';field.append(hint);}
+    fields.append(field);
     return box;
   }
   return {courses,selected,topicTags,topics,matches,filter,fromQuery,query,description,picker,courseLabel};

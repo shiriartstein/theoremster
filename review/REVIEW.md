@@ -1,17 +1,20 @@
-# Theoremster: expanded course decks
+# Theoremster: guided setup and expanded decks
 
 Prepared 3 November 2026 from repository commit
 `d1dfb40dbb54d4c7539288d317c11810ededfa73`, the supplied Calc 1–3 LyX notes,
-the ODE ZIP, and the two linear algebra PDFs. This replaces the earlier
-course-deck draft. It has not been pushed to GitHub or published.
+the ODE ZIP, and the two linear algebra PDFs. This includes the six-course expansion and the later
+guided setup/convex geometry update. It has not been pushed to GitHub or published.
 
 ## What this package contains
 
-- **44 actual new cards**, bringing the general collection to **275**.
-- **27 corrected existing statements**: the first 24 are recorded in
-  `corrections.csv`; the additional three are in `additional-corrections.csv`.
-- A **Choose topics and courses** button on setup and the gallery, with
-  checkboxes for any combination of six courses and a finer topic selector.
+- **53 actual new cards**, bringing the general collection to **284**.
+  Nine are the latest convex geometry additions (T276–T284).
+- **28 corrected existing statements**: the first 24 are recorded in
+  `corrections.csv`; three more are in `additional-corrections.csv`, and
+  the latest Minkowski clarification is in `convex-existing-edits.json`.
+- A five-question setup, with friendly copy, warmer styling, Back navigation
+  and a final review. The course/topic question keeps any combination of six
+  courses; the gallery retains its expandable picker.
 - Shared cards counted once, shareable course/topic links, live deck counts,
   and the same deck selection passed into online host settings.
 - Short-game targets for small selections. Minimum deck size is now
@@ -19,6 +22,9 @@ course-deck draft. It has not been pushed to GitHub or published.
 - One authoritative source: `data/theorems.xlsx`. The game build reads it
   directly; the JSON/CSV files in `review/` are audit snapshots, not extra
   sources that must be kept in sync during ordinary edits.
+
+See [CONVEX-GEOMETRY.md](CONVEX-GEOMETRY.md) for the nine latest cards and
+their historical date choices. All previous course counts are preserved.
 
 ## Course selections
 

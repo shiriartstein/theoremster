@@ -3734,7 +3734,7 @@ window.THEOREM_CARDS = [
   "id": "T133",
   "row": 134,
   "name": "Minkowski's theorem",
-  "statement": "A convex symmetric region of area greater than 4 contains a nonzero lattice point.",
+  "statement": "An origin-symmetric convex body $K\\subset\\mathbb R^2$ of area greater than $4$ contains a nonzero point of $\\mathbb Z^2$.",
   "provers": [
    "Hermann Minkowski"
   ],
@@ -3742,7 +3742,10 @@ window.THEOREM_CARDS = [
   "shown": "1896",
   "yearKind": "Publication",
   "courses": [],
-  "topics": [],
+  "topics": [
+   "Convex geometry",
+   "Geometry of numbers"
+  ],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -4033,6 +4036,30 @@ window.THEOREM_CARDS = [
   "level": "Undergraduate",
   "twist": false,
   "note": "Lebesgue's doctoral thesis.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T280",
+  "row": 281,
+  "name": "Planar isoperimetric inequality (Hurwitz’s Fourier proof)",
+  "statement": "A rectifiable simple closed plane curve of length $L$ enclosing area $A$ satisfies $L^2\\ge4\\pi A$, with equality precisely for a circle.",
+  "provers": [
+   "Adolf Hurwitz"
+  ],
+  "year": 1902,
+  "shown": "1902",
+  "yearKind": "Publication of Hurwitz’s Fourier-method proof",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Geometric inequalities",
+   "Fourier analysis"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "The classical inequality is much older. This card dates Hurwitz’s Fourier-method proof, not the first solution or the origin of the problem. Among curves enclosing a fixed area, the circle has the least perimeter.",
   "verified": false,
   "alsoAccept": []
  },
@@ -5020,6 +5047,34 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T278",
+  "row": 279,
+  "name": "Alexandrov–Fenchel inequality",
+  "statement": "For convex bodies $K,L,K_3,\\ldots,K_n\\subset\\mathbb R^n$, $n\\ge2$, their mixed volumes obey $$V(K,L,K_3,\\ldots,K_n)^2\\ge V(K,K,K_3,\\ldots,K_n)\\,V(L,L,K_3,\\ldots,K_n).$$",
+  "provers": [
+   "Aleksandr Danilovich Alexandrov",
+   "Werner Fenchel"
+  ],
+  "year": 1937,
+  "shown": "1937",
+  "yearKind": "Alexandrov’s published proof; Fenchel announced it in 1936",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Mixed volumes"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "Mixed volume is normalized by $V(K[n])=|K|$. The 1937 date refers to Alexandrov’s published proof. Fenchel announced the inequality in 1936. Either surname counts for the naming bonus.",
+  "verified": false,
+  "alsoAccept": [
+   "Aleksandrov",
+   "Alexandroff",
+   "Aleksandroff"
+  ]
+ },
+ {
   "id": "T187",
   "row": 188,
   "name": "Consistency of the continuum hypothesis",
@@ -5036,6 +5091,29 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T277",
+  "row": 278,
+  "name": "Mahler’s planar volume-product theorem",
+  "statement": "For a convex body $K\\subset\\mathbb R^2$ with $0\\in\\operatorname{int}K$, its polar satisfies $|K|\\,|K^\\circ|\\ge27/4$. If $K=-K$, the stronger bound is $8$.",
+  "provers": [
+   "Kurt Mahler"
+  ],
+  "year": 1939,
+  "shown": "1938–1939",
+  "yearKind": "Planar theorem; volume year and conventional date differ",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Volume product"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "This is the two-dimensional theorem. Here $K^\\circ=\\{y:\\langle x,y\\rangle\\le1\\text{ for all }x\\in K\\}$. Mahler’s archive lists the paper under 1939 but gives volume year 1938; sorting uses 1939. Equality characterizations were completed in later work.",
   "verified": false,
   "alsoAccept": []
  },
@@ -5201,6 +5279,55 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T284",
+  "row": 285,
+  "name": "John’s ellipsoid theorem",
+  "statement": "Every convex body $K\\subset\\mathbb R^n$ has a unique maximum-volume inscribed ellipsoid $E$, centered at $c$, with $E\\subset K\\subset c+n(E-c)$. For centrally symmetric $K$, $n$ improves to $\\sqrt n$.",
+  "provers": [
+   "Fritz John"
+  ],
+  "year": 1948,
+  "shown": "1948",
+  "yearKind": "Original Courant Anniversary Volume publication",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Ellipsoids"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "A convex body is a compact convex set with nonempty interior. After an affine change of coordinates, its largest inscribed ellipsoid becomes the unit ball. The factors n and square root of n are sharp.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T281",
+  "row": 282,
+  "name": "Blaschke–Santaló inequality",
+  "statement": "If $s(K)$ is the Santaló point of a convex body $K\\subset\\mathbb R^n$, then $$|K|\\,|(K-s(K))^\\circ|\\le |B_2^n|^2.$$ Ellipsoids attain equality.",
+  "provers": [
+   "Luis A. Santaló"
+  ],
+  "year": 1949,
+  "shown": "1949",
+  "yearKind": "Santaló’s all-dimensional inequality",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Volume product"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "The Santaló point minimizes $|(K-x)^\\circ|$ over interior points $x$; $B_2^n$ is the Euclidean unit ball. Blaschke proved the low-dimensional cases in 1917. The general only-if equality characterization is later (Petty, 1985). Blaschke also counts for the naming bonus.",
+  "verified": false,
+  "alsoAccept": [
+   "Lluís Santaló",
+   "Wilhelm Blaschke"
+  ]
+ },
+ {
   "id": "T196",
   "row": 197,
   "name": "Arrow's impossibility theorem",
@@ -5302,6 +5429,30 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T283",
+  "row": 284,
+  "name": "Rogers–Shephard inequality",
+  "statement": "For every convex body $K\\subset\\mathbb R^n$, $$|K-K|\\le\\binom{2n}{n}|K|,$$ with equality precisely when $K$ is a simplex.",
+  "provers": [
+   "Claude Ambrose Rogers",
+   "Geoffrey Colin Shephard"
+  ],
+  "year": 1957,
+  "shown": "1957",
+  "yearKind": "Publication of the difference-body inequality",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Geometric inequalities"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "The difference body is $K-K=\\{x-y:x,y\\in K\\}$. It is always centrally symmetric. The inequality gives a sharp upper bound for its volume relative to that of $K$.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T266",
   "row": 267,
   "name": "LaSalle’s invariance principle",
@@ -5364,6 +5515,29 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T276",
+  "row": 277,
+  "name": "Dvoretzky’s theorem",
+  "statement": "For every integer $k\\ge1$ and $\\varepsilon>0$, every sufficiently high-dimensional real normed space contains a $k$-dimensional subspace whose Banach–Mazur distance from $\\ell_2^k$ is at most $1+\\varepsilon$.",
+  "provers": [
+   "Aryeh Dvoretzky"
+  ],
+  "year": 1961,
+  "shown": "1961",
+  "yearKind": "Full proceedings publication (Jerusalem symposium)",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Functional analysis"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "Almost Euclidean sections in every sufficiently large dimension. The date is the full 1961 proceedings paper; Dvoretzky had announced the result in PNAS in 1959. The symposium itself was in 1960.",
   "verified": false,
   "alsoAccept": []
  },
@@ -5956,6 +6130,54 @@ window.THEOREM_CARDS = [
   "level": "Famous",
   "twist": false,
   "note": "A famously short proof, about two pages.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T282",
+  "row": 283,
+  "name": "Bourgain’s slicing problem (affirmative resolution)",
+  "statement": "There is a universal constant $c>0$ such that every convex body $K\\subset\\mathbb R^n$ of volume $1$ has a hyperplane section of $(n-1)$-dimensional volume at least $c$.",
+  "provers": [
+   "Boaz Klartag",
+   "Joseph Lehec"
+  ],
+  "year": 2025,
+  "shown": "2025",
+  "yearKind": "GAFA publication; preprint appeared in December 2024",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Asymptotic geometric analysis"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "The constant is independent of both the dimension and the body. Klartag and Lehec completed the affirmative resolution using Guan’s bound. Bourgain posed the problem. The first preprint was posted on 19 December 2024; this card uses the 2025 journal date.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T279",
+  "row": 280,
+  "name": "Godbersen’s inequality (2026 proof preprint)",
+  "statement": "For a convex body $K\\subset\\mathbb R^n$ and integer $0\\le j\\le n$, $$V(K[j],-K[n-j])\\le\\binom{n}{j}|K|.$$ Here $K[j]$ means $j$ copies of $K$ in the mixed volume.",
+  "provers": [
+   "Jan Kotrbatý",
+   "Mohamed A. Mouamine"
+  ],
+  "year": 2026,
+  "shown": "2026",
+  "yearKind": "Proof preprint posted 22 July 2026",
+  "courses": [],
+  "topics": [
+   "Convex geometry",
+   "Mixed volumes"
+  ],
+  "area": "Geometry",
+  "level": "Famous",
+  "twist": false,
+  "note": "The July 2026 preprint proves Godbersen’s 1938 conjectured inequality and the simplex equality characterization among polytopes. An October 2026 preprint by Fryš, Kotrbatý, Mouamine and Wang treats equality for all convex bodies. This card dates a preprint, not a journal publication.",
   "verified": false,
   "alsoAccept": []
  }

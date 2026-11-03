@@ -1,0 +1,33 @@
+THEOREMSTER — FRIENDLY SETUP + CONVEX GEOMETRY
+3 November 2026
+
+TRY IT
+1. Extract this ZIP completely.
+2. Open Theoremster-update/site/index.html for a local game.
+3. Answer the five setup questions.
+4. For the geometry deck: choose The whole collection, then Convex geometry.
+
+UPDATE YOUR GITHUB PROJECT
+The ZIP contains the complete project, not just the website.
+Copy the CONTENTS of Theoremster-update into your repository, replacing the
+matching files. Do not nest the Theoremster-update folder inside the repo.
+Keep .github/workflows/build.yml; it rebuilds and publishes on a push to main
+when GitHub Pages is configured to use GitHub Actions. See README.md.
+
+KEEP THE CARDS UPDATEABLE
+Edit data/theorems.xlsx, sheet Theorems. Upload that workbook back to data/
+for future card changes. The build regenerates site/cards.js automatically.
+Topics and Courses determine the filters. The new cards are T276 through
+T284. The review/ folder explains historical date choices and sources.
+
+WHAT'S NEW
+Five friendly setup questions, Back navigation, a final review and warmer
+styling. Nine new convex geometry cards, 284 cards total and 11 in the
+Convex geometry topic. The previous six course decks remain available.
+
+ONLINE PLAY
+Online play needs a hosted web address and compatible network connections.
+Local play, invitation creation and connection-service access were checked.
+The test environment could not complete a direct connection between players.
+
+Your live GitHub repository has not been changed by this ZIP delivery.
