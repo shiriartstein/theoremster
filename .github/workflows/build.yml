@@ -41,6 +41,8 @@ jobs:
           for f in site/*.js; do node --check "$f"; done
           node tests/game.test.cjs
           node tests/names.test.cjs
+          node tests/decks.test.cjs
+          python -m unittest discover -s tests -p 'test_*.py'
 
       - name: Let browsers load the new version right away
         run: python tools/stamp_assets.py
