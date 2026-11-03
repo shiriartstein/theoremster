@@ -8,8 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="vendor/katex/katex.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css?v=b075123b50">
+<link rel="stylesheet" href="style.css?v=84bfbd1f92">
 </head>
 <body>
 <main id="app"></main>
@@ -21,18 +21,19 @@
   <ol class="rules">
     <li>Everyone starts with one theorem in their timeline, showing its year, and a few ∎ tokens (2 unless changed at setup). The goal is to collect a set number of cards first.</li>
     <li>On your turn, read the new theorem and tap the gap in your timeline where you think it belongs. Equal years count as correct on either side.</li>
-    <li>If you know who proved it, name them before the card is revealed: out loud on a shared screen, or typed in when playing online (small spelling mistakes are fine). A correct name earns you a ∎ (up to 5). On cards with several provers, any one of them counts. Unless the game was set up otherwise, the name only counts if you also placed the card correctly.</li>
+    <li>Name a mathematician credited for the result before the card is revealed: out loud on a shared screen, or typed in when playing online (small spelling mistakes are fine). A correct name earns you a ∎ (up to 5). On cards with several credited people, any one of them counts. Unless the game was set up otherwise, the name only counts if you also placed the card correctly.</li>
     <li>Before the reveal, other players may challenge: spend one ∎ and pick a different gap in your timeline. Each gap can hold only one challenge.</li>
     <li>Reveal the card. If you placed it right, you keep it. If you didn’t, a challenger who picked the right gap takes it into their own timeline. Otherwise it is discarded.</li>
     <li>At the start of a turn, any player can trade 3 ∎ for a card from the deck, placed correctly in their timeline.</li>
     <li>The first player to reach the target wins. If the deck runs out, the most cards wins, then the most ∎.</li>
   </ol>
 </dialog>
-<script src="vendor/katex/katex.min.js"></script>
-<script src="math.js"></script>
-<script src="cards.js"></script>
-<script src="game.js"></script>
-<script src="online.js"></script>
-<script src="ui.js"></script>
+<script src="vendor/katex/katex.min.js?v=e8d8855059"></script>
+<script src="math.js?v=ae43feeab3"></script>
+<script src="cards.js?v=bead14499a"></script>
+<script src="decks.js?v=7a49a2ee98"></script>
+<script src="game.js?v=42bb8bb96b"></script>
+<script src="online.js?v=721d62ddc1"></script>
+<script src="ui.js?v=3e2a1e76ec"></script>
 </body>
 </html>

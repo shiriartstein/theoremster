@@ -1,8 +1,41 @@
 # Theorem Timeline
 
 A card game about the history of mathematics, played on one shared screen.
-Each card is a theorem. Place it in your timeline by the year it was proved,
-and name the person who proved it to earn a ∎. Inspired by the music game Hitster.
+Each card is a theorem. Place it in your timeline by its historical date,
+and name a credited mathematician to earn a ∎. Dates may refer to publication,
+announcement or approximate attribution, as shown on the card back.
+Inspired by the music game Hitster.
+
+## Course and topic decks
+
+Press **Choose topics and courses** on the start page or card gallery. Select
+any combination of **Calc 1, Calc 2, Calc 3, ODE, Linear Algebra 1, and Linear
+Algebra 2**, or the general collection. The selected courses form a union:
+a shared theorem appears only once. The topic, level and verification filters
+then narrow that collection. The button opens standard labelled controls that
+also work with a keyboard.
+
+**Browse this deck** opens the selection; **Link to this deck** gives a link
+for a course page. The online host uses the same filters, and guests see the
+course/topic description in the lobby. Existing cumulative links still work.
+
+The expanded collection has **275 cards**, including **44 new cards** and
+**27 corrections to existing statements**. Calc 3 includes integration and
+improper integrals. Individual deck counts: Calc 1 **29**, Calc 2 **32**,
+Calc 3 **20**, ODE **14**, Linear Algebra 1 **6**, Linear Algebra 2 **13**.
+Calc 1+2 has **52** cards; Calc 1+2+3 has **63**; Linear Algebra 1+2 has **16**.
+
+Small decks support short games. Linear Algebra 1 alone supports two players
+with a two-card target. Setup shows the minimum required and suggests a lower
+target if necessary. The existing empty-deck rule decides games that run out
+of cards: most timeline cards wins, then most tokens. No unrelated cards are
+silently added to a course selection.
+
+Course membership is a curated selection based on the supplied notes, not a
+complete syllabus inventory. Historical sources and the chosen date events
+are recorded for new cards; the broad collection still needs historical
+review. No cards have been newly marked verified. See [the review](review/REVIEW.md)
+and the [course-card inventory](review/COURSE-CARDS.csv).
 
 ## Playing
 
@@ -58,6 +91,21 @@ Actions rebuilds the cards and republishes the game automatically.
   family name comes first).
 - Years are whole numbers, negative for BC. *Year on card* is what players see
   (for example `c. 250 BC`).
+- *What the year means* is displayed on the card back. Check that it agrees
+  with the year, credited mathematician and precise theorem formulation.
+- *Courses* uses `calc1`, `calc2`, `calc3`, `ode`, `lin1`, `lin2`, separated by
+  semicolons. A card can have several tags. Blank means general collection only.
+- *Course evidence* records the supporting note chapter, section or page.
+  It is editorial and is not displayed during play.
+- *Topics* contains finer tags separated by semicolons, such as `Power series`
+  or `Stability and phase portraits`. These and *Area* supply the topic menu;
+  new tags appear automatically.
+- *Historical source* records the source and chosen event for the timeline
+  date. Publication, lecture, correspondence and terminology dates must be
+  labelled accurately. A modern formulation is not automatically a claim
+  about the first proof of that exact statement.
+- Keep IDs stable when correcting existing cards. Give a new theorem a new ID;
+  deleting cards may make a saved game impossible to resume.
 
 To build the cards on your own computer instead:
 
@@ -72,6 +120,8 @@ node tools/check_cards.cjs
 ```
 node tests/game.test.cjs
 node tests/names.test.cjs
+node tests/decks.test.cjs
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 ## Project layout
@@ -104,6 +154,6 @@ hosted anywhere else by copying the `site/` folder.
 ## Plans
 
 1. Printable deck: a PDF with card fronts and backs for double-sided printing.
-2. Polish: sounds, more deck filters (by area), statistics at the end of a game.
+2. Polish: sounds and statistics at the end of a game.
 3. Online play that survives the host closing the page (a small server or a
    cloud database).

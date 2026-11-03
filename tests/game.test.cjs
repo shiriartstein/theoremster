@@ -48,6 +48,20 @@ test('setup rejects bad player lists and small decks', () => {
   assert.throws(() => G.newGame({ cards: [...cards, cards[0]], players }), /Duplicate/);
 });
 
+test('a six-card course deck can finish a two-player short game without repeats', () => {
+  assert.equal(G.cardsNeeded(2,2),6);
+  assert.throws(()=>G.newGame({cards:cards.slice(0,5),players:['A','B'],settings:{target:2}}),/at least 6/);
+  let s=G.newGame({cards:cards.slice(0,6),players:['A','B'],settings:{target:2},seed:1});
+  let turns=0;
+  while(s.phase!=='over' && turns++<10) {
+    const slot=G.correctSlots(s,s.players[s.active].timeline,s.card)[0];
+    s=G.endTurn(G.reveal(G.place(s,slot)));
+  }
+  assert.equal(s.phase,'over');
+  const all=[...s.deck,...s.discard,...s.players.flatMap(p=>p.timeline)];
+  assert.equal(new Set(all).size,6);
+});
+
 test('actions never modify the state they are given', () => {
   const s = start(); const before = JSON.stringify(s);
   G.place(s, 0);

@@ -1,0 +1,15 @@
+{
+  "T062": {
+    "statement": "Every nonconstant polynomial with complex coefficients has a root in $\\mathbb C$.",
+    "reason": "Specify the coefficient field."
+  },
+  "T102": {
+    "statement": "For a real symmetric matrix $A$ and any invertible real matrix $P$, the matrices $A$ and $P^TAP$ have the same numbers of positive, negative and zero eigenvalues.",
+    "reason": "Inertia is invariant under congruence of quadratic forms, not a vague change of matrix basis."
+  },
+  "T149": {
+    "statement": "If $f$ is continuous on $[a,b]\\times[c,d]$, then $\\displaystyle\\int_a^b\\!\\int_c^d f(x,y)\\,dy\\,dx=\\int_c^d\\!\\int_a^b f(x,y)\\,dx\\,dy=\\iint_{[a,b]\\times[c,d]}f$.",
+    "note": "This card gives the continuous Riemann-integral case taught in Calc 3. The date 1907 refers to Fubini’s more general integration theorem.",
+    "reason": "State a precise course-appropriate case with all hypotheses, and distinguish its formulation from the dated general theorem."
+  }
+}

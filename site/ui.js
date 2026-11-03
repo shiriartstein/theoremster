@@ -4,6 +4,7 @@
   const G = window.TimelineGame;
   const Online = window.TimelineOnline;
   const M = window.TimelineMath;
+  const D = window.TimelineDecks;
   const CARDS = window.THEOREM_CARDS || [];
   const byId = new Map(CARDS.map(c => [c.id, c]));
   const KEY = { game: 'theorem-timeline:game', setup: 'theorem-timeline:setup', theme: 'theorem-timeline:theme', client: 'theorem-timeline:client' };
@@ -20,7 +21,8 @@
   let guessDraft = '';      // the prover name being typed (online)
   let animateReveal = false;
   let peek = { key: '', front: false };   // after the reveal, flip the card back to reread the theorem
-  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 10, level: 'all', verifiedOnly: false, onlineName: '', startTokens: 2, nameNeedsPlacement: true }, load(KEY.setup) || {});
+  let setup = Object.assign({ names: ['Player 1', 'Player 2'], target: 10, level: 'all', course: 'all', topic: 'all', verifiedOnly: false, onlineName: '', startTokens: 2, nameNeedsPlacement: true }, load(KEY.setup) || {}, D.fromQuery(location.search, CARDS));
+  if (setup.topic !== 'all' && !D.topics(CARDS).includes(setup.topic)) setup.topic = 'all';
   const gameSettings = options => ({ target: options.target, startTokens: options.startTokens, nameNeedsPlacement: !!options.nameNeedsPlacement });
 
   // ---------- storage (browser storage can be unavailable; the game still works) ----------
@@ -71,7 +73,7 @@
     return h('span', { class: 'tokens', role: 'img', 'aria-label': `${count} of ${max} ∎ tokens`, title: `${count} ∎` }, marks);
   }
   function deckFor(options) {
-    return CARDS.filter(c => (options.level === 'all' || c.level === options.level) && (!options.verifiedOnly || c.verified));
+    return D.filter(CARDS, options);
   }
   function gapLabel(slot, timeline) {
     const year = id => byId.get(id).shown;
@@ -117,7 +119,7 @@
         if (e.blocked === 'placement') return `${name} named ${listJoin(card.provers)}, but no ∎ since the card was misplaced.`;
         return `${name} named ${listJoin(card.provers)} and ${e.earned ? 'earned a ∎' : 'already had 5 ∎'}.`;
       }
-      if (e.earned) return `${name} earned a ∎ for naming the prover.`;
+      if (e.earned) return `${name} earned a ∎ for naming a credited mathematician.`;
     }
     return '';
   }
@@ -181,7 +183,7 @@
     const name = cleanName(setup.onlineName) || 'Host';
     const code = Online.randomCode();
     net = { role: 'host', code, seats: [{ clientId: 'host', name, peerId: null }], watchers: new Set(), started: false,
-      settings: { target: setup.target, level: setup.level, verifiedOnly: setup.verifiedOnly, startTokens: setup.startTokens, nameNeedsPlacement: !!setup.nameNeedsPlacement }, status: 'connecting', conn: null };
+      settings: { target: setup.target, level: setup.level, course: setup.course, courseIds: [...(setup.courseIds || [])], topic: setup.topic, verifiedOnly: setup.verifiedOnly, startTokens: setup.startTokens, nameNeedsPlacement: !!setup.nameNeedsPlacement }, status: 'connecting', conn: null };
     mode = 'host'; game = null; flash = '';
     try { window.history.replaceState(null, '', `#host=${code}`); } catch (e) { /* ignore */ }
     hostSave(); hostConnect(); render();
@@ -345,7 +347,7 @@
 
     app.replaceChildren(h('section', { class: 'setup' },
       h('h1', {}, 'Theorem Timeline'),
-      h('p', { class: 'lede' }, 'Place each theorem in your timeline by the year it was proved. Name the person who proved it to earn a ∎.'),
+      h('p', { class: 'lede' }, 'Place each theorem in your timeline by its historical date. Name a credited mathematician to earn a ∎. Card backs explain whether the date is a publication, announcement or approximate attribution.'),
       resume ? h('div', { class: 'panel' },
         h('h2', {}, 'A game is in progress'),
         h('p', { class: 'panel-text' }, `${listJoin(resume.players.map(p => p.name))}, turn ${resume.turn}.`),
@@ -353,11 +355,12 @@
           h('button', { type: 'button', class: 'btn primary', onclick: () => { mode = 'local'; game = resume; history = []; flash = ''; render(); } }, 'Resume the game'),
           h('button', { type: 'button', class: 'btn', onclick: () => { store(KEY.game, null); render(); } }, 'Discard it'))) : null,
       h('div', { class: 'panel' }, h('h2', {}, 'Game'),
+        D.picker(setup, CARDS, () => { store(KEY.setup, setup); updateStatus(); }, 'setup-deck'),
         h('div', { class: 'options' },
-          select('Cards to win', 'target', [5, 6, 8, 10, 12, 15].map(n => [n, `${n} cards`])),
+          select('Cards to win', 'target', [2, 3, 4, 5, 6, 8, 10, 12, 15].map(n => [n, `${n} cards`])),
           select('Theorems', 'level', [['all', 'All theorems'], ['Undergraduate', 'Undergraduate courses'], ['Famous', 'Famous results']]),
           select('Starting ∎', 'startTokens', [0, 1, 2, 3, 4, 5].map(n => [n, n === 1 ? '1 ∎ each' : `${n} ∎ each`])),
-          h('div', { class: 'field' }, h('span', { class: 'label' }, 'Naming the prover'),
+          h('div', { class: 'field' }, h('span', { class: 'label' }, 'Naming a credited mathematician'),
             h('label', { class: 'check' },
               h('input', { type: 'checkbox', checked: !!setup.nameNeedsPlacement, onchange: e => { setup.nameNeedsPlacement = e.target.checked; store(KEY.setup, setup); } }),
               h('span', {}, 'Earns a ∎ only if the card is also placed correctly'))),
@@ -365,7 +368,11 @@
             h('label', { class: 'check' },
               h('input', { type: 'checkbox', checked: setup.verifiedOnly, onchange: e => { setup.verifiedOnly = e.target.checked; store(KEY.setup, setup); updateStatus(); } }),
               h('span', {}, 'Only cards marked verified')))),
-        h('p', { class: 'deck-count', id: 'deck-count' })),
+        h('p', { class: 'deck-count', id: 'deck-count', 'aria-live': 'polite' }),
+        h('p', { class: 'panel-text', id: 'course-note' }),
+        h('div', { class: 'start-row' },
+          h('a', { class: 'btn', id: 'browse-deck', href: 'gallery.html' }, 'Browse this deck'),
+          h('a', { class: 'btn', id: 'deck-link', href: 'index.html' }, 'Link to this deck'))),
       h('div', { class: 'modes' },
         h('div', { class: 'panel' }, h('h2', {}, 'Play on this screen'),
           h('p', { class: 'panel-text' }, 'Everyone plays on this device, taking turns.'),
@@ -388,14 +395,25 @@
   function updateStatus() {
     const status = document.getElementById('setup-status'); if (!status) return;
     const deck = deckFor(setup), names = setup.names.map(n => n.trim());
-    document.getElementById('deck-count').textContent = `${deck.length} theorems in the deck.`;
+    document.getElementById('deck-count').textContent = `${deck.length} theorems in the deck. ${D.description(setup)}.`;
+    document.getElementById('course-note').textContent = setup.course === 'all' ? '' :
+      'Course decks follow the supplied syllabus. Calc 3 includes integration and improper integrals. Historical dates and attributions remain under review.';
+    document.getElementById('browse-deck').href = `gallery.html?${D.query(setup)}`;
+    document.getElementById('deck-link').href = `index.html?${D.query(setup)}`;
     const problems = [];
+    if (D.selected(setup)?.length === 0) problems.push('Choose at least one course, or choose All cards / general collection.');
     if (!CARDS.length) problems.push('No cards were found. Run tools/build_cards.py to create site/cards.js.');
     if (names.some(n => !n)) problems.push('Every player needs a name.');
     if (new Set(names.map(n => n.toLowerCase())).size !== names.length) problems.push('Each player needs a different name.');
     const needed = G.cardsNeeded(names.length, setup.target);
-    if (CARDS.length && deck.length < needed) problems.push(`This needs at least ${needed} cards, and the deck has ${deck.length}. Choose fewer cards to win, fewer players, or more theorems.`);
+    if (CARDS.length && deck.length < needed) {
+      const maxTarget = Math.floor((deck.length - 2) / names.length);
+      problems.push(`This needs at least ${needed} cards, and the deck has ${deck.length}. ` +
+        (maxTarget >= 2 ? `Choose at most ${maxTarget} cards to win for ${names.length} players, or broaden the filters.` : 'Broaden the filters or use fewer players.'));
+    }
     status.replaceChildren(...[...problems.map(p => h('p', { class: 'warning' }, p)), flash ? h('p', { class: 'warning' }, flash) : null].filter(Boolean));
+    if (!problems.length && deck.length < names.length * (setup.target + 2) + 4)
+      status.append(h('p', { class: 'panel-text' }, 'Short deck: if the cards run out, the most cards wins, with tokens breaking ties.'));
     document.getElementById('start').disabled = problems.length > 0;
     const smallDeck = CARDS.length && deck.length < G.cardsNeeded(2, setup.target);
     document.getElementById('online-status').replaceChildren(...(smallDeck ? [h('p', { class: 'warning' }, 'The deck is too small for this many cards to win.')] : []));
@@ -404,8 +422,8 @@
 
   function settingsText(options) {
     const tokens = options.startTokens === undefined ? 2 : options.startTokens;
-    return `First to ${options.target} cards. Everyone starts with ${tokens} ∎.` +
-      (options.nameNeedsPlacement === false ? ' Naming the prover earns a ∎ even if the card is misplaced.' : ' Naming the prover earns a ∎ only with a correct placement.');
+    return `${D.description(options)}. First to ${options.target} cards. Everyone starts with ${tokens} ∎.` +
+      (options.nameNeedsPlacement === false ? ' Naming a credited mathematician earns a ∎ even if the card is misplaced.' : ' Naming a credited mathematician earns a ∎ only with a correct placement.');
   }
 
   // ---------- online lobby screens ----------
@@ -515,8 +533,9 @@
           h('p', { class: 'statement' }, M.render(c.statement))),
         h('article', { class: 'face back index-card', 'aria-hidden': showBack ? null : 'true' },
           h('p', { class: 'year' }, c.shown),
+          c.yearKind ? h('p', { class: 'note' }, c.yearKind) : null,
           h('p', { class: 'theorem-name' }, M.render(c.name)),
-          h('p', { class: 'prover' }, 'Proved by ', h('strong', {}, listJoin(c.provers))),
+          h('p', { class: 'prover' }, 'Credited to ', h('strong', {}, listJoin(c.provers))),
           c.note ? h('p', { class: 'note' }, c.twist ? h('span', { class: 'twist' }, 'Twist') : null, M.render(c.note)) : null)));
     if (showBack && animateReveal) {
       animateReveal = false;
@@ -546,9 +565,9 @@
       if (!myTurn) return [note, h('h2', {}, h('span', { class: 'who' }, active), ' is placing this theorem.'),
         h('p', { class: 'hint' }, 'Once it’s placed, you can challenge if you have a ∎.')];
       if (!online) return [note, h('h2', {}, h('span', { class: 'who' }, active), ', where does this theorem go?'),
-        h('p', {}, 'Tap a gap in your timeline.'), h('p', { class: 'hint' }, 'If you know who proved it, say the name out loud now.')];
+        h('p', {}, 'Tap a gap in your timeline.'), h('p', { class: 'hint' }, 'Name a mathematician credited for this result before the reveal.')];
       return [note, h('h2', {}, 'Your turn. Where does this theorem go?'),
-        h('div', { class: 'field guess' }, h('label', { for: 'guess' }, 'Who proved it? Optional: a right name earns a ∎.'),
+        h('div', { class: 'field guess' }, h('label', { for: 'guess' }, 'Who is credited? Optional: a right name earns a ∎.'),
           h('input', { type: 'text', id: 'guess', class: 'text', maxlength: '80', value: guessDraft, autocomplete: 'off', placeholder: 'For example: Gauss',
             oninput: e => { guessDraft = e.target.value; } })),
         h('p', {}, 'Then tap a gap in your timeline. Small spelling mistakes are fine.')];
@@ -588,9 +607,9 @@
     if (!online) {
       const finish = named => perform('endTurn', { named });
       if (placementRule) return [note, outcome,
-        h('p', { class: 'hint' }, 'No ∎ for naming the prover this turn, since the card wasn’t placed correctly.'),
+        h('p', { class: 'hint' }, 'No ∎ for naming a credited mathematician this turn, since the card wasn’t placed correctly.'),
         h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn primary', onclick: () => finish(false) }, 'Next turn'))];
-      return [note, outcome, h('p', {}, `Did ${active} name the prover before the reveal?`),
+      return [note, outcome, h('p', {}, `Did ${active} name a credited mathematician before the reveal?`),
         h('div', { class: 'actions' },
           h('button', { type: 'button', class: 'btn primary', onclick: () => finish(true) }, full ? `Yes (${active} already has ${s.settings.maxTokens} ∎)` : 'Yes, earn a ∎'),
           h('button', { type: 'button', class: 'btn', onclick: () => finish(false) }, 'No'))];
@@ -599,7 +618,7 @@
     const guessLine = s.guess
       ? h('p', { class: 'guess-result ' + (right && !placementRule ? 'good' : 'bad') }, `${active} guessed “${s.guess}”: `,
         !right ? 'not this time.' : placementRule ? 'right, but no ∎ since the card wasn’t placed correctly.' : full ? 'right, but already at 5 ∎.' : 'right! +1 ∎')
-      : h('p', { class: 'hint' }, `${active} didn’t guess the prover.`);
+      : h('p', { class: 'hint' }, `${active} didn’t guess a credited mathematician.`);
     return [note, outcome, guessLine,
       myTurn ? h('div', { class: 'actions' }, h('button', { type: 'button', class: 'btn primary', onclick: () => perform('endTurn') }, 'Next turn'))
         : h('p', { class: 'hint' }, `Waiting for ${active} to continue.`)];

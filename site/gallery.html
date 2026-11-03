@@ -8,16 +8,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="vendor/katex/katex.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="vendor/katex/katex.min.css?v=b075123b50">
+<link rel="stylesheet" href="style.css?v=84bfbd1f92">
 </head>
 <body>
 <main id="app" class="gallery">
   <header class="bar">
     <p class="brand">Theorem Timeline</p>
-    <div class="bar-actions"><a class="btn quiet" href="index.html">Back to the game</a></div>
+    <div class="bar-actions"><a class="btn quiet" id="play-deck" href="index.html">Use course and topic in game</a></div>
   </header>
   <h1>All cards</h1>
+  <div id="deck-picker"></div>
   <div class="gallery-tools panel">
     <div class="field search"><label for="search">Search</label>
       <input type="search" id="search" class="text" placeholder="Theorem, statement, prover, year or ID" autocomplete="off"></div>
@@ -31,9 +32,10 @@
   <p id="count" class="deck-count" aria-live="polite"></p>
   <ol id="cards" class="gallery-list"></ol>
 </main>
-<script src="vendor/katex/katex.min.js"></script>
-<script src="math.js"></script>
-<script src="cards.js"></script>
-<script src="gallery.js"></script>
+<script src="vendor/katex/katex.min.js?v=e8d8855059"></script>
+<script src="math.js?v=ae43feeab3"></script>
+<script src="cards.js?v=bead14499a"></script>
+<script src="decks.js?v=7a49a2ee98"></script>
+<script src="gallery.js?v=9cb525a6fe"></script>
 </body>
 </html>

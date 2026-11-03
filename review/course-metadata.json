@@ -1,0 +1,172 @@
+{
+  "T002": {
+    "topics": "Real numbers and irrationality"
+  },
+  "T045": {
+    "topics": "Real numbers and irrationality"
+  },
+  "T114": {
+    "topics": "Real numbers and irrationality"
+  },
+  "T023": {
+    "topics": "Numerical series"
+  },
+  "T024": {
+    "topics": "Numerical series"
+  },
+  "T039": {
+    "topics": "Numerical series"
+  },
+  "T041": {
+    "topics": "Numerical series"
+  },
+  "T108": {
+    "topics": "Numerical series"
+  },
+  "T032": {
+    "topics": "Power series"
+  },
+  "T073": {
+    "topics": "Power series",
+    "courses": "calc1;calc2",
+    "evidence": "Calc 1: series, Cauchy–Hadamard radius. Calc 2: power-series, radius of convergence. This card already existed; no duplicate added."
+  },
+  "T081": {
+    "topics": "Power series"
+  },
+  "T082": {
+    "topics": "Power series"
+  },
+  "T035": {
+    "topics": "Differentiation"
+  },
+  "T036": {
+    "topics": "Differentiation"
+  },
+  "T038": {
+    "topics": "Differentiation"
+  },
+  "T061": {
+    "topics": "Differentiation"
+  },
+  "T077": {
+    "topics": "Differentiation"
+  },
+  "T117": {
+    "topics": "Differentiation"
+  },
+  "T071": {
+    "topics": "Sequences and limits;Continuity and compactness",
+    "courses": "calc1;calc2;calc3;ode",
+    "evidence": "Calc 1: sequences, Bolzano–Weierstrass. Calc 2: compactness. Calc 3: continuity in Rn, bounded subsequences. ODE lesson3.tex: explicitly used in Arzelà–Ascoli proof."
+  },
+  "T072": {
+    "topics": "Continuity and compactness"
+  },
+  "T111": {
+    "topics": "Continuity and compactness",
+    "courses": "calc1;calc2;calc3",
+    "evidence": "Calc 1: functions/continuity, uniform continuity. Calc 2: compactness. Calc 3: Continuity-in-Rn, Heine–Cantor; card states the interval case."
+  },
+  "T132": {
+    "topics": "Continuity and compactness"
+  },
+  "T157": {
+    "topics": "Continuity and compactness",
+    "courses": "calc3",
+    "evidence": "Calc 3: Integration-in-Rn, a variation on Brouwer (enrichment); includes a related fixed-point formulation."
+  },
+  "T033": {
+    "topics": "Riemann integration"
+  },
+  "T143": {
+    "topics": "Riemann integration;Multivariable integration",
+    "courses": "calc2;calc3",
+    "evidence": "Calc 2: Riemann_int, criterion discussed without proof. Calc 3: Integration-in-Rn, Lebesgue criterion with proof; all integration chapters included."
+  },
+  "T063": {
+    "topics": "Fourier series"
+  },
+  "T084": {
+    "topics": "Fourier series"
+  },
+  "T140": {
+    "topics": "Fourier series"
+  },
+  "T110": {
+    "topics": "Function sequences and series"
+  },
+  "T119": {
+    "topics": "Function sequences and series"
+  },
+  "T124": {
+    "topics": "Function sequences and series"
+  },
+  "T060": {
+    "topics": "Multivariable differentiation"
+  },
+  "T074": {
+    "topics": "Inner products",
+    "courses": "calc2;calc3;lin2",
+    "evidence": "Calc 2: metric/vector-function chapters. Calc 3: Working-in-Rn, inner products. Linear Algebra 2: §5.4.2, Cauchy–Schwarz."
+  },
+  "T008": {
+    "topics": "Inner products",
+    "courses": "calc3;lin2",
+    "evidence": "Calc 3: Working-in-Rn, Pythagoras in inner product spaces. Linear Algebra 2: §5.4.3 orthogonality; the card is the classical Euclidean case."
+  },
+  "T162": {
+    "topics": "Metric spaces;ODE existence and uniqueness",
+    "courses": "calc2;ode",
+    "evidence": "Calc 2: complete-metric-spaces, contraction theorem. ODE lesson3.tex: Contractions and existence/uniqueness via fixed points."
+  },
+  "T047": {
+    "topics": "Complex numbers;Linear ODE systems",
+    "courses": "calc2;ode",
+    "evidence": "Calc 2: Fourier series and complex exponentials. ODE lesson4.tex: complex eigenvalues and exponentials."
+  },
+  "T048": {
+    "topics": "Determinants",
+    "courses": "lin1",
+    "evidence": "Linear Algebra 1: §3.9, Theorem 186, Cramer’s rule, printed p. 48."
+  },
+  "T069": {
+    "topics": "Determinants"
+  },
+  "T062": {
+    "topics": "Polynomials and fields",
+    "courses": "lin2",
+    "evidence": "Linear Algebra 2: §7.4, fundamental theorem of algebra; used for eigenvalues over C."
+  },
+  "T066": {
+    "topics": "Polynomials and fields"
+  },
+  "T085": {
+    "topics": "Eigenvalues and canonical forms",
+    "courses": "lin2",
+    "evidence": "Linear Algebra 2: §6.1, self-adjoint maps; real symmetric case."
+  },
+  "T109": {
+    "topics": "Eigenvalues and canonical forms",
+    "courses": "lin2;ode",
+    "evidence": "Linear Algebra 2: chapter 4, Jordan form. ODE lesson4.tex: Jordan canonical form explicitly recalled and used for linear systems."
+  },
+  "T118": {
+    "topics": "Eigenvalues and canonical forms",
+    "courses": "lin2",
+    "evidence": "Linear Algebra 2: chapter 2, Cayley–Hamilton with proof."
+  },
+  "T153": {
+    "topics": "Eigenvalues and canonical forms"
+  },
+  "T102": {
+    "topics": "Quadratic forms;Inner products",
+    "courses": "lin2",
+    "evidence": "Linear Algebra 2: §5.3, quadratic forms and inertia."
+  },
+  "T149": {
+    "topics": "Multivariable integration",
+    "courses": "calc3",
+    "evidence": "Calc 3: Integration-in-Rn, Fubini. Card narrowed to continuous functions on a rectangle, a direct instance of the course theorem."
+  }
+}

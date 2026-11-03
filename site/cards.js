@@ -10,6 +10,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -600,
   "shown": "c. 600 BC",
+  "yearKind": "Attributed (no surviving proof)",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Undergraduate",
   "twist": false,
@@ -27,6 +30,13 @@ window.THEOREM_CARDS = [
   ],
   "year": -450,
   "shown": "c. 450 BC",
+  "yearKind": "Attributed (no surviving proof)",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Real numbers and irrationality"
+  ],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -44,6 +54,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -440,
   "shown": "c. 440 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -61,6 +74,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -300,
   "shown": "c. 300 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -78,6 +94,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -300,
   "shown": "c. 300 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -95,6 +114,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -300,
   "shown": "c. 300 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -112,6 +134,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -300,
   "shown": "c. 300 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -129,6 +154,14 @@ window.THEOREM_CARDS = [
   ],
   "year": -300,
   "shown": "c. 300 BC",
+  "yearKind": "Approximate",
+  "courses": [
+   "calc3",
+   "lin2"
+  ],
+  "topics": [
+   "Inner products"
+  ],
   "area": "Geometry",
   "level": "Undergraduate",
   "twist": true,
@@ -146,6 +179,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -250,
   "shown": "c. 250 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -163,6 +199,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -240,
   "shown": "c. 240 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Famous",
   "twist": false,
@@ -180,6 +219,9 @@ window.THEOREM_CARDS = [
   ],
   "year": -225,
   "shown": "c. 225 BC",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -197,6 +239,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 60,
   "shown": "c. 60 AD",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Undergraduate",
   "twist": false,
@@ -214,6 +259,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 100,
   "shown": "c. 100 AD",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -231,6 +279,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 150,
   "shown": "c. 150 AD",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -248,6 +299,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 340,
   "shown": "c. 340 AD",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -265,6 +319,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 628,
   "shown": "628",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -282,6 +339,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 628,
   "shown": "628",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -299,6 +359,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 820,
   "shown": "c. 820",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -316,6 +379,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 850,
   "shown": "c. 850",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -333,6 +399,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1020,
   "shown": "c. 1020",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -350,6 +419,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1070,
   "shown": "c. 1070",
+  "yearKind": "Approximate",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
@@ -367,6 +439,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1247,
   "shown": "1247",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": true,
@@ -384,6 +459,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1350,
   "shown": "c. 1350",
+  "yearKind": "Approximate",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -401,6 +483,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1400,
   "shown": "c. 1400",
+  "yearKind": "Attributed (no surviving proof)",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -418,6 +507,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1545,
   "shown": "1545",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": true,
@@ -435,6 +527,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1545,
   "shown": "1545",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
@@ -452,6 +547,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1635,
   "shown": "1635",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Undergraduate",
   "twist": false,
@@ -469,6 +567,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1637,
   "shown": "1637",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -486,6 +587,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1640,
   "shown": "1640",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -503,6 +607,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1648,
   "shown": "1648",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -520,6 +627,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1656,
   "shown": "1656",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -537,6 +647,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1665,
   "shown": "1665",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Power series"
+  ],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -548,12 +665,19 @@ window.THEOREM_CARDS = [
   "id": "T033",
   "row": 34,
   "name": "Fundamental theorem of calculus (geometric form)",
-  "statement": "Differentiation and integration are inverse operations.",
+  "statement": "If $f$ is continuous on $[a,b]$, then $F(x)=\\int_a^x f(t)\\,dt$ satisfies $F'(x)=f(x)$ for $a<x<b$.",
   "provers": [
    "Isaac Barrow"
   ],
   "year": 1670,
   "shown": "1670",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Riemann integration"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -571,6 +695,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1678,
   "shown": "1678",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -579,15 +706,48 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T243",
+  "row": 244,
+  "name": "Fermat’s stationary-point theorem",
+  "statement": "If $f$ is differentiable at an interior point $x_0$ of its domain and has a local maximum or minimum there, then $f'(x_0)=0$.",
+  "provers": [
+   "Pierre de Fermat"
+  ],
+  "year": 1679,
+  "shown": "1679",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc3"
+  ],
+  "topics": [
+   "Differentiation",
+   "Multivariable differentiation"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is the posthumous publication of Fermat’s method; it circulated decades earlier. The front is its modern derivative formulation.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T035",
   "row": 36,
   "name": "Rolle's theorem",
-  "statement": "If $f(a) = f(b)$, then $f'(c) = 0$ somewhere between $a$ and $b$.",
+  "statement": "If $f$ is continuous on $[a,b]$, differentiable on $(a,b)$, and $f(a)=f(b)$ with $a<b$, then $f'(c)=0$ for some $c\\in(a,b)$.",
   "provers": [
    "Michel Rolle"
   ],
   "year": 1691,
   "shown": "1691",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -599,12 +759,19 @@ window.THEOREM_CARDS = [
   "id": "T036",
   "row": 37,
   "name": "L'Hôpital's rule",
-  "statement": "A limit of the form $\\frac00$ can be found from the limit of the ratio of derivatives.",
+  "statement": "Suppose $f,g$ are differentiable on $(a,b)$, $g'$ never vanishes, and $f(x),g(x)\\to0$ as $x\\to a^+$. If $f'(x)/g'(x)\\to L$, then $f(x)/g(x)\\to L$ (also for infinite $L$).",
   "provers": [
    "Guillaume de l'Hôpital"
   ],
   "year": 1696,
   "shown": "1696",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -622,6 +789,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1713,
   "shown": "1713",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": false,
@@ -630,15 +800,46 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T237",
+  "row": 238,
+  "name": "Alternating-series test",
+  "statement": "If $a_n\\ge0$ decreases to zero, then $\\sum_{n=1}^{\\infty}(-1)^{n-1}a_n$ converges, with error after $N$ terms at most $a_{N+1}$.",
+  "provers": [
+   "Gottfried Wilhelm Leibniz"
+  ],
+  "year": 1713,
+  "shown": "1713",
+  "yearKind": "Correspondence",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The chosen event is the 1713 letter to Johann Bernoulli; Leibniz also used alternating-series arguments earlier.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T038",
   "row": 39,
   "name": "Taylor's theorem",
-  "statement": "A smooth function can be expanded as a power series built from its derivatives at one point.",
+  "statement": "For $f\\in C^{n+1}$ on an interval containing $a$ and $x$, $f(x)=\\sum_{k=0}^{n}\\frac{f^{(k)}(a)}{k!}(x-a)^k+\\frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}$ for some $c$ between $a$ and $x$.",
   "provers": [
    "Brook Taylor"
   ],
   "year": 1715,
   "shown": "1715",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -650,12 +851,19 @@ window.THEOREM_CARDS = [
   "id": "T039",
   "row": 40,
   "name": "Stirling's formula",
-  "statement": "$\\displaystyle n! \\approx \\sqrt{2\\pi n}\\,\\left(\\frac{n}{e}\\right)^{n}$",
+  "statement": "As $n\\to\\infty$, $\\displaystyle\\frac{n!}{\\sqrt{2\\pi n}(n/e)^n}\\to1$.",
   "provers": [
    "James Stirling"
   ],
   "year": 1730,
   "shown": "1730",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -673,10 +881,38 @@ window.THEOREM_CARDS = [
   ],
   "year": 1733,
   "shown": "1733",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": false,
   "note": "The first central limit theorem. Laplace generalised it (1812); Lyapunov gave a general rigorous proof (1901).",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T256",
+  "row": 257,
+  "name": "Gamma recurrence and factorial interpolation",
+  "statement": "For $s>0$, define $\\displaystyle\\Gamma(s)=\\int_0^\\infty t^{s-1}e^{-t}\\,dt$. Then $\\Gamma(s+1)=s\\Gamma(s)$ and $\\Gamma(n+1)=n!$ for every integer $n\\ge0$.",
+  "provers": [
+   "Leonhard Euler"
+  ],
+  "year": 1738,
+  "shown": "1738",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Improper integrals",
+   "Special functions"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is publication; Euler’s work was written in 1729. The notation $\\Gamma$ came later.",
   "verified": false,
   "alsoAccept": []
  },
@@ -690,6 +926,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1740,
   "shown": "1740",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -707,6 +950,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1741,
   "shown": "1741",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": true,
@@ -724,6 +970,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1741,
   "shown": "1741",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -741,6 +990,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1744,
   "shown": "1744",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -758,6 +1010,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1744,
   "shown": "1744",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Real numbers and irrationality"
+  ],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -775,6 +1034,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1746,
   "shown": "1746",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -792,6 +1054,15 @@ window.THEOREM_CARDS = [
   ],
   "year": 1748,
   "shown": "1748",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "ode"
+  ],
+  "topics": [
+   "Complex numbers",
+   "Linear ODE systems"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -809,6 +1080,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1750,
   "shown": "1750",
+  "yearKind": "Publication",
+  "courses": [
+   "lin1"
+  ],
+  "topics": [
+   "Determinants"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -826,6 +1104,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1758,
   "shown": "1758",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Undergraduate",
   "twist": false,
@@ -843,6 +1124,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1763,
   "shown": "1763",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": false,
@@ -860,6 +1144,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1763,
   "shown": "1763",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -877,6 +1164,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1767,
   "shown": "1767",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -894,6 +1184,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1768,
   "shown": "1768",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -911,10 +1204,39 @@ window.THEOREM_CARDS = [
   ],
   "year": 1768,
   "shown": "1768",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
   "note": "Methods were known to Brahmagupta, Bhāskara II and Brouncker; Lagrange gave the first complete proof.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T238",
+  "row": 239,
+  "name": "Ratio test",
+  "statement": "For an eventually nonzero sequence, let $L=\\lim |a_{n+1}/a_n|$. The series $\\sum a_n$ converges absolutely if $L<1$ and diverges if $L>1$. The case $L=1$ is inconclusive.",
+  "provers": [
+   "Jean le Rond d’Alembert"
+  ],
+  "year": 1768,
+  "shown": "1768",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series",
+   "Power series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "",
   "verified": false,
   "alsoAccept": []
  },
@@ -928,6 +1250,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1770,
   "shown": "1770",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -945,6 +1270,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1771,
   "shown": "1771",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Undergraduate",
   "twist": false,
@@ -962,10 +1290,62 @@ window.THEOREM_CARDS = [
   ],
   "year": 1771,
   "shown": "1771",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": true,
   "note": "Announced by Waring (1770), who credited his student John Wilson; neither had a proof. Lagrange gave the first.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T257",
+  "row": 258,
+  "name": "Gaussian integral",
+  "statement": "$\\displaystyle\\int_{-\\infty}^{\\infty}e^{-x^2}\\,dx=\\sqrt\\pi.$",
+  "provers": [
+   "Pierre-Simon Laplace"
+  ],
+  "year": 1774,
+  "shown": "1774",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Improper integrals",
+   "Multivariable integration"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": true,
+  "note": "Named Gaussian, but this date marks Laplace’s evaluation of an equivalent integral.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T272",
+  "row": 273,
+  "name": "Laplace cofactor expansion",
+  "statement": "For any $n\\times n$ matrix $A=(a_{ij})$ and any row $i$, $\\displaystyle\\det A=\\sum_{j=1}^{n}(-1)^{i+j}a_{ij}\\det A_{ij}$, where $A_{ij}$ deletes row $i$ and column $j$.",
+  "provers": [
+   "Pierre-Simon Laplace"
+  ],
+  "year": 1776,
+  "shown": "1776",
+  "yearKind": "Publication",
+  "courses": [
+   "lin1"
+  ],
+  "topics": [
+   "Determinants"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is publication of the memoir for the Academy’s year 1772. The one-row formula is a case of the general expansion by minors.",
   "verified": false,
   "alsoAccept": []
  },
@@ -979,6 +1359,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1777,
   "shown": "1777",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Famous",
   "twist": false,
@@ -996,6 +1379,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1779,
   "shown": "1779",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": true,
@@ -1007,12 +1393,19 @@ window.THEOREM_CARDS = [
   "id": "T060",
   "row": 61,
   "name": "Lagrange multipliers",
-  "statement": "At a constrained extremum, the gradient of $f$ is a multiple of the gradient of the constraint.",
+  "statement": "Let $f,g$ be $C^1$ near $p$. If $f$ has a local extremum at $p$ subject to $g=0$, and $\\nabla g(p)\\ne0$, then $\\nabla f(p)=\\lambda\\nabla g(p)$ for some real $\\lambda$.",
   "provers": [
    "Joseph-Louis Lagrange"
   ],
   "year": 1788,
   "shown": "1788",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1024,12 +1417,19 @@ window.THEOREM_CARDS = [
   "id": "T061",
   "row": 62,
   "name": "Mean value theorem",
-  "statement": "A differentiable function has a point where its derivative equals its average rate of change.",
+  "statement": "If $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, with $a<b$, then $f'(c)=\\frac{f(b)-f(a)}{b-a}$ for some $c\\in(a,b)$.",
   "provers": [
    "Joseph-Louis Lagrange"
   ],
   "year": 1797,
   "shown": "1797",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1038,15 +1438,50 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T244",
+  "row": 245,
+  "name": "Chain rule",
+  "statement": "If $f$ is differentiable at $x$ and $g$ at $f(x)$, then $(g\\circ f)'(x)=g'(f(x))f'(x)$. For differentiable maps between Euclidean spaces, $D(g\\circ f)(x)=Dg(f(x))Df(x)$.",
+  "provers": [
+   "Joseph-Louis Lagrange"
+  ],
+  "year": 1797,
+  "shown": "1797",
+  "yearKind": "Published formulation",
+  "courses": [
+   "calc1",
+   "calc3"
+  ],
+  "topics": [
+   "Differentiation",
+   "Multivariable differentiation"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Lagrange’s explicit scalar formulation; the matrix formula is the modern multivariable extension.",
+  "verified": false,
+  "alsoAccept": [
+   "Leibniz"
+  ]
+ },
+ {
   "id": "T062",
   "row": 63,
   "name": "Fundamental theorem of algebra",
-  "statement": "Every non-constant polynomial has a root in the complex numbers.",
+  "statement": "Every nonconstant polynomial with complex coefficients has a root in $\\mathbb C$.",
   "provers": [
    "Carl Friedrich Gauss"
   ],
   "year": 1799,
   "shown": "1799",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Polynomials and fields"
+  ],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1058,12 +1493,19 @@ window.THEOREM_CARDS = [
   "id": "T063",
   "row": 64,
   "name": "Parseval's identity",
-  "statement": "The sum of squares of a function's Fourier coefficients equals the integral of its square.",
+  "statement": "For a Riemann-integrable function $f$ on $[-\\pi,\\pi]$, with $\\hat f(n)=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}f(x)e^{-inx}\\,dx$, $\\sum_{n\\in\\mathbb Z}|\\hat f(n)|^2=\\frac1{2\\pi}\\int_{-\\pi}^{\\pi}|f(x)|^2\\,dx$.",
   "provers": [
    "Marc-Antoine Parseval"
   ],
   "year": 1799,
   "shown": "1799",
+  "yearKind": "Presented / announced",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Fourier series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1081,6 +1523,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1801,
   "shown": "1801",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
@@ -1098,6 +1543,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1801,
   "shown": "1801",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1115,6 +1563,11 @@ window.THEOREM_CARDS = [
   ],
   "year": 1801,
   "shown": "1801",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [
+   "Polynomials and fields"
+  ],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1132,6 +1585,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1801,
   "shown": "1801",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1149,6 +1605,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1806,
   "shown": "1806",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -1166,6 +1625,11 @@ window.THEOREM_CARDS = [
   ],
   "year": 1812,
   "shown": "1812",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [
+   "Determinants"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1183,10 +1647,38 @@ window.THEOREM_CARDS = [
   ],
   "year": 1813,
   "shown": "1813",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
   "note": "Stated by Fermat (1638) without proof.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T271",
+  "row": 272,
+  "name": "Multiplicativity of the determinant",
+  "statement": "For square matrices $A,B$ of the same size over a field, $\\det(AB)=\\det A\\,\\det B$.",
+  "provers": [
+   "Augustin-Louis Cauchy"
+  ],
+  "year": 1815,
+  "shown": "1815",
+  "yearKind": "Publication",
+  "courses": [
+   "lin1",
+   "lin2"
+  ],
+  "topics": [
+   "Determinants"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The memoir was presented in 1812 and published in 1815. This is the square-matrix case of the broader determinant product formula.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1200,6 +1692,17 @@ window.THEOREM_CARDS = [
   ],
   "year": 1817,
   "shown": "1817",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2",
+   "calc3",
+   "ode"
+  ],
+  "topics": [
+   "Sequences and limits",
+   "Continuity and compactness"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1217,6 +1720,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1817,
   "shown": "1817",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Continuity and compactness"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1234,6 +1744,14 @@ window.THEOREM_CARDS = [
   ],
   "year": 1821,
   "shown": "1821",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Power series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -1245,16 +1763,103 @@ window.THEOREM_CARDS = [
   "id": "T074",
   "row": 75,
   "name": "Cauchy–Schwarz inequality",
-  "statement": "$\\displaystyle |\\langle u, v\\rangle| \\le \\|u\\|\\,\\|v\\|$",
+  "statement": "In an inner product space, $|\\langle u,v\\rangle|\\le\\|u\\|\\,\\|v\\|$ for all vectors $u,v$.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
   "year": 1821,
   "shown": "1821",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "calc3",
+   "lin2"
+  ],
+  "topics": [
+   "Inner products"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
   "note": "Cours d'analyse (for sums). Bunyakovsky (1859) and Schwarz (1888) proved the integral version.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T233",
+  "row": 234,
+  "name": "Cauchy criterion for real sequences",
+  "statement": "A real sequence $(a_n)$ converges iff, for every $\\varepsilon>0$, there is $N$ such that $|a_m-a_n|<\\varepsilon$ whenever $m,n\\ge N$.",
+  "provers": [
+   "Augustin-Louis Cauchy"
+  ],
+  "year": 1821,
+  "shown": "1821",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Sequences and limits",
+   "Metric spaces"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The real numbers are complete; this equivalence fails in an arbitrary metric space.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T235",
+  "row": 236,
+  "name": "Convergence of arithmetic means",
+  "statement": "If $a_n\\to L$, then $\\displaystyle\\frac{a_1+\\cdots+a_n}{n}\\to L$.",
+  "provers": [
+   "Augustin-Louis Cauchy"
+  ],
+  "year": 1821,
+  "shown": "1821",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Sequences and limits"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": true,
+  "note": "Often called Cesàro’s theorem; this arithmetic-mean limit already appears in Cauchy’s 1821 work.",
+  "verified": false,
+  "alsoAccept": [
+   "Cesaro"
+  ]
+ },
+ {
+  "id": "T239",
+  "row": 240,
+  "name": "Root test",
+  "statement": "Let $L=\\limsup_{n\\to\\infty}|a_n|^{1/n}$. Then $\\sum a_n$ converges absolutely if $L<1$ and diverges if $L>1$; $L=1$ is inconclusive.",
+  "provers": [
+   "Augustin-Louis Cauchy"
+  ],
+  "year": 1821,
+  "shown": "1821",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series",
+   "Power series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The front uses the modern limsup formulation of Cauchy’s test.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1268,6 +1873,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1822,
   "shown": "1822",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -1285,6 +1893,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1822,
   "shown": "1822",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -1296,12 +1907,19 @@ window.THEOREM_CARDS = [
   "id": "T077",
   "row": 78,
   "name": "Cauchy's mean value theorem",
-  "statement": "For $f$ and $g$ on $[a, b]$, some $c$ satisfies $\\bigl(f(b) - f(a)\\bigr)\\,g'(c) = \\bigl(g(b) - g(a)\\bigr)\\,f'(c)$.",
+  "statement": "If $f,g$ are continuous on $[a,b]$ and differentiable on $(a,b)$, with $a<b$, some $c\\in(a,b)$ satisfies $(f(b)-f(a))g'(c)=(g(b)-g(a))f'(c)$.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
   "year": 1823,
   "shown": "1823",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1319,6 +1937,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1823,
   "shown": "1823",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": true,
@@ -1336,6 +1957,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1824,
   "shown": "1824",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1347,12 +1971,15 @@ window.THEOREM_CARDS = [
   "id": "T080",
   "row": 81,
   "name": "Cauchy's integral theorem",
-  "statement": "The integral of a holomorphic function around a closed curve is zero.",
+  "statement": "If $f$ is holomorphic on a simply connected domain, then $\\oint_\\gamma f(z)\\,dz=0$ for every closed piecewise smooth curve $\\gamma$ in that domain.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
   "year": 1825,
   "shown": "1825",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1370,6 +1997,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1826,
   "shown": "1826",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Power series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1381,16 +2015,47 @@ window.THEOREM_CARDS = [
   "id": "T082",
   "row": 83,
   "name": "Binomial series",
-  "statement": "$(1 + x)^\\alpha = \\sum_n \\binom{\\alpha}{n} x^n$ for $|x| < 1$, for any exponent $\\alpha$.",
+  "statement": "For real $\\alpha$ and real $|x|<1$, $(1+x)^\\alpha=\\sum_{n=0}^{\\infty}\\binom{\\alpha}{n}x^n$.",
   "provers": [
    "Niels Henrik Abel"
   ],
   "year": 1826,
   "shown": "1826",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [
+   "Power series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
   "note": "Newton discovered the series c. 1665; Abel gave the first rigorous proof of convergence.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T241",
+  "row": 242,
+  "name": "Abel’s test for series",
+  "statement": "If $\\sum a_n$ converges and $(b_n)$ is a bounded monotone real sequence, then $\\sum a_nb_n$ converges.",
+  "provers": [
+   "Niels Henrik Abel"
+  ],
+  "year": 1826,
+  "shown": "1826",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series",
+   "Function sequences and series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Different from Abel’s theorem about the boundary value of a power series.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1404,6 +2069,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1828,
   "shown": "1828",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Differential geometry",
   "level": "Famous",
   "twist": false,
@@ -1421,6 +2089,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1829,
   "shown": "1829",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Fourier series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1438,6 +2113,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1829,
   "shown": "1829",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Eigenvalues and canonical forms"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1455,6 +2137,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1829,
   "shown": "1829",
+  "yearKind": "Presented / announced",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
@@ -1466,12 +2151,15 @@ window.THEOREM_CARDS = [
   "id": "T087",
   "row": 88,
   "name": "Cauchy's integral formula",
-  "statement": "A holomorphic function's values inside a circle are determined by an integral over the circle.",
+  "statement": "If $f$ is holomorphic on a neighborhood of a closed disk, then for $z$ inside it, $f(z)=\\frac1{2\\pi i}\\oint_{\\partial D}\\frac{f(\\zeta)}{\\zeta-z}\\,d\\zeta$, with counterclockwise orientation.",
   "provers": [
    "Augustin-Louis Cauchy"
   ],
   "year": 1831,
   "shown": "1831",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1489,6 +2177,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1831,
   "shown": "1831",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -1506,6 +2197,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1837,
   "shown": "1837",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1523,6 +2217,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1837,
   "shown": "1837",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1531,15 +2228,68 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T263",
+  "row": 264,
+  "name": "Liouville’s determinant formula",
+  "statement": "If $A(t)$ is a continuous matrix and $X'(t)=A(t)X(t)$, then $\\displaystyle\\det X(t)=\\det X(t_0)\\exp\\!\\left(\\int_{t_0}^{t}\\operatorname{tr}A(s)\\,ds\\right)$.",
+  "provers": [
+   "Joseph Liouville"
+  ],
+  "year": 1838,
+  "shown": "1838",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "Linear ODE systems"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Also called the Abel–Liouville formula; Abel had an earlier scalar-equation version.",
+  "verified": false,
+  "alsoAccept": [
+   "Abel"
+  ]
+ },
+ {
+  "id": "T255",
+  "row": 256,
+  "name": "Change of variables in multiple integrals",
+  "statement": "Let $\\Phi:U\\to V$ be a $C^1$ diffeomorphism between open subsets of $\\mathbb R^n$, $A\\subset U$ compact and Jordan measurable, and $f$ continuous on $\\Phi(A)$. Then $\\displaystyle\\int_{\\Phi(A)}f(y)\\,dy=\\int_A f(\\Phi(x))|\\det D\\Phi(x)|\\,dx$.",
+  "provers": [
+   "Carl Gustav Jacob Jacobi"
+  ],
+  "year": 1841,
+  "shown": "1841",
+  "yearKind": "Jacobian publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable integration"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Jacobi’s functional-determinant work; the front is a modern change-of-variables theorem.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T091",
   "row": 92,
   "name": "Existence of transcendental numbers",
-  "statement": "There are real numbers that are not roots of any integer polynomial.",
+  "statement": "There are real numbers that are not roots of any nonzero polynomial with integer coefficients.",
   "provers": [
    "Joseph Liouville"
   ],
   "year": 1844,
   "shown": "1844",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1557,12 +2307,66 @@ window.THEOREM_CARDS = [
   ],
   "year": 1844,
   "shown": "1844",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Undergraduate",
   "twist": true,
   "note": "Named after Liouville, who used it in lectures (1847), but Cauchy published a proof first.",
   "verified": false,
   "alsoAccept": []
+ },
+ {
+  "id": "T268",
+  "row": 269,
+  "name": "Grassmann’s dimension formula",
+  "statement": "For finite-dimensional subspaces $U,W$ of a vector space, $\\dim(U+W)+\\dim(U\\cap W)=\\dim U+\\dim W$.",
+  "provers": [
+   "Hermann Grassmann"
+  ],
+  "year": 1844,
+  "shown": "1844",
+  "yearKind": "Publication",
+  "courses": [
+   "lin1",
+   "lin2"
+  ],
+  "topics": [
+   "Vector spaces and dimension"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The front uses modern vector-space notation for Grassmann’s dimension formula.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T269",
+  "row": 270,
+  "name": "Exchange lemma",
+  "statement": "If $v_1,\\ldots,v_m$ are linearly independent and $w_1,\\ldots,w_n$ span the same ambient vector space, then $m\\le n$ and $m$ of the $w_j$ can be replaced by the $v_i$ while preserving spanning.",
+  "provers": [
+   "Hermann Grassmann"
+  ],
+  "year": 1844,
+  "shown": "1844",
+  "yearKind": "Publication",
+  "courses": [
+   "lin1"
+  ],
+  "topics": [
+   "Vector spaces and dimension"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": true,
+  "note": "Often called Steinitz’s exchange lemma; an earlier version was proved by Grassmann.",
+  "verified": false,
+  "alsoAccept": [
+   "Steinitz"
+  ]
  },
  {
   "id": "T093",
@@ -1574,6 +2378,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1845,
   "shown": "1845",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1591,6 +2398,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1846,
   "shown": "1846",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": true,
@@ -1608,6 +2418,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1846,
   "shown": "1846",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1625,6 +2438,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1846,
   "shown": "1846",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -1642,6 +2458,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1847,
   "shown": "1847",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1659,6 +2478,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1848,
   "shown": "1848",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Differential geometry",
   "level": "Famous",
   "twist": false,
@@ -1676,6 +2498,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1848,
   "shown": "1848",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -1693,6 +2518,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1849,
   "shown": "1849",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1704,12 +2532,15 @@ window.THEOREM_CARDS = [
   "id": "T101",
   "row": 102,
   "name": "Bertrand's postulate",
-  "statement": "For every $n > 1$ there is a prime between $n$ and $2n$.",
+  "statement": "For every integer $n>1$, there is a prime $p$ with $n<p<2n$.",
   "provers": [
    "Pafnuty Chebyshev"
   ],
   "year": 1852,
   "shown": "1852",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": true,
@@ -1721,12 +2552,20 @@ window.THEOREM_CARDS = [
   "id": "T102",
   "row": 103,
   "name": "Sylvester's law of inertia",
-  "statement": "The numbers of positive, negative and zero eigenvalues of a symmetric matrix don't depend on the choice of basis.",
+  "statement": "For a real symmetric matrix $A$ and any invertible real matrix $P$, the matrices $A$ and $P^TAP$ have the same numbers of positive, negative and zero eigenvalues.",
   "provers": [
    "James Joseph Sylvester"
   ],
   "year": 1852,
   "shown": "1852",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Quadratic forms",
+   "Inner products"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1744,6 +2583,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1853,
   "shown": "1853",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": true,
@@ -1761,6 +2603,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1854,
   "shown": "1854",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1778,6 +2623,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1860,
   "shown": "1860",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": true,
@@ -1795,10 +2643,89 @@ window.THEOREM_CARDS = [
   ],
   "year": 1861,
   "shown": "1861",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
   "note": "Stated by Kelvin in a letter to Stokes (1850), set by Stokes as a Cambridge exam question (1854); first published proof by Hankel.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T242",
+  "row": 243,
+  "name": "Extreme value theorem",
+  "statement": "A continuous real-valued function on a nonempty compact set attains its maximum and minimum. In particular, this holds on a closed bounded interval.",
+  "provers": [
+   "Karl Weierstrass"
+  ],
+  "year": 1861,
+  "shown": "1861",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc1",
+   "calc2",
+   "calc3"
+  ],
+  "topics": [
+   "Continuity and compactness",
+   "Metric spaces"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date refers to Weierstrass’s lecture treatment; the front includes the modern compact-set form.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T246",
+  "row": 247,
+  "name": "Uniform limits preserve continuity",
+  "statement": "If continuous functions $f_n:X\\to\\mathbb R$ on a metric space converge uniformly to $f$, then $f$ is continuous.",
+  "provers": [
+   "Karl Weierstrass"
+  ],
+  "year": 1861,
+  "shown": "1861",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Weierstrass’s lecture treatment; earlier contributions include those of Seidel and Stokes.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T249",
+  "row": 250,
+  "name": "Termwise differentiation of a series",
+  "statement": "Let $f_n\\in C^1([a,b])$. If $\\sum f_n(x_0)$ converges at one point and $\\sum f_n'$ converges uniformly, then $f=\\sum f_n$ converges uniformly and $f'=\\sum f_n'$.",
+  "provers": [
+   "Karl Weierstrass"
+  ],
+  "year": 1861,
+  "shown": "1861",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series",
+   "Power series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Weierstrass’s lecture treatment of differentiation under uniform convergence.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1812,6 +2739,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1862,
   "shown": "1862",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1820,21 +2750,105 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T240",
+  "row": 241,
+  "name": "Dirichlet’s test for series",
+  "statement": "If the partial sums of $\\sum a_n$ are bounded and the real sequence $b_n$ decreases to zero, then $\\sum a_nb_n$ converges.",
+  "provers": [
+   "Peter Gustav Lejeune Dirichlet"
+  ],
+  "year": 1863,
+  "shown": "1863",
+  "yearKind": "Published treatment",
+  "courses": [
+   "calc1",
+   "calc2"
+  ],
+  "topics": [
+   "Numerical series",
+   "Function sequences and series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "This date is the published lecture-book treatment; related arguments occur in Dirichlet’s earlier work.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T248",
+  "row": 249,
+  "name": "Uniform convergence and integration",
+  "statement": "If Riemann-integrable $f_n$ converge uniformly to $f$ on $[a,b]$, then $f$ is Riemann integrable and $\\displaystyle\\int_a^b f=\\lim_{n\\to\\infty}\\int_a^b f_n$.",
+  "provers": [
+   "Karl Weierstrass"
+  ],
+  "year": 1865,
+  "shown": "1865",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series",
+   "Riemann integration"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date identifies Weierstrass’s lecture treatment recorded in Pasch’s notes; the front is a modern formulation.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T108",
   "row": 109,
   "name": "Riemann rearrangement theorem",
-  "statement": "A conditionally convergent series can be rearranged to sum to any real number.",
+  "statement": "A conditionally convergent series of real numbers can be rearranged to sum to any prescribed real number.",
   "provers": [
    "Bernhard Riemann"
   ],
   "year": 1867,
   "shown": "1867",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Numerical series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
   "note": "Written 1854, published posthumously in 1867.",
   "verified": false,
   "alsoAccept": []
+ },
+ {
+  "id": "T250",
+  "row": 251,
+  "name": "Riemann–Lebesgue lemma (Riemann case)",
+  "statement": "If $f$ is Riemann integrable on $[a,b]$, then $\\displaystyle\\int_a^b f(x)\\cos(\\lambda x)\\,dx\\to0$ and $\\displaystyle\\int_a^b f(x)\\sin(\\lambda x)\\,dx\\to0$ as $\\lambda\\to+\\infty$.",
+  "provers": [
+   "Bernhard Riemann"
+  ],
+  "year": 1867,
+  "shown": "1867",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Fourier series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is the publication of Riemann’s work. Lebesgue later extended the result to Lebesgue-integrable functions.",
+  "verified": false,
+  "alsoAccept": [
+   "Lebesgue"
+  ]
  },
  {
   "id": "T109",
@@ -1846,6 +2860,14 @@ window.THEOREM_CARDS = [
   ],
   "year": 1870,
   "shown": "1870",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2",
+   "ode"
+  ],
+  "topics": [
+   "Eigenvalues and canonical forms"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1863,6 +2885,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1872,
   "shown": "1872",
+  "yearKind": "Presented / announced",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1880,6 +2909,15 @@ window.THEOREM_CARDS = [
   ],
   "year": 1872,
   "shown": "1872",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1",
+   "calc2",
+   "calc3"
+  ],
+  "topics": [
+   "Continuity and compactness"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -1897,6 +2935,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1872,
   "shown": "1872",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Undergraduate",
   "twist": false,
@@ -1905,15 +2946,42 @@ window.THEOREM_CARDS = [
   "alsoAccept": []
  },
  {
+  "id": "T232",
+  "row": 233,
+  "name": "Monotone convergence of real sequences",
+  "statement": "Every bounded monotone sequence of real numbers converges to a real limit.",
+  "provers": [
+   "Richard Dedekind"
+  ],
+  "year": 1872,
+  "shown": "1872",
+  "yearKind": "Published treatment",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Sequences and limits"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Dedekind’s completeness-based treatment; it is not a claim that the result was first used in 1872.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
   "id": "T113",
   "row": 114,
   "name": "Singular value decomposition",
-  "statement": "Every matrix can be written as $U \\Sigma V^{T}$ with $U, V$ orthogonal and $\\Sigma$ diagonal.",
+  "statement": "Every real matrix can be written as $U\\Sigma V^T$, where $U,V$ are orthogonal and $\\Sigma$ is rectangular diagonal with nonnegative entries.",
   "provers": [
    "Eugenio Beltrami"
   ],
   "year": 1873,
   "shown": "1873",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -1925,18 +2993,51 @@ window.THEOREM_CARDS = [
   "id": "T114",
   "row": 115,
   "name": "Transcendence of e",
-  "statement": "$e$ is not the root of any integer polynomial.",
+  "statement": "The number $e$ is not a root of any nonzero polynomial with integer coefficients.",
   "provers": [
    "Charles Hermite"
   ],
   "year": 1873,
   "shown": "1873",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Real numbers and irrationality"
+  ],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
   "note": "",
   "verified": false,
   "alsoAccept": []
+ },
+ {
+  "id": "T254",
+  "row": 255,
+  "name": "Equality of mixed partial derivatives",
+  "statement": "If $f\\in C^2(U)$ on an open set $U\\subset\\mathbb R^n$, then $\\partial_i\\partial_j f=\\partial_j\\partial_i f$ for all $i,j$.",
+  "provers": [
+   "Hermann Amandus Schwarz"
+  ],
+  "year": 1873,
+  "shown": "1873",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable differentiation"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Clairaut had earlier versions; this date identifies Schwarz’s rigorous treatment.",
+  "verified": false,
+  "alsoAccept": [
+   "Clairaut"
+  ]
  },
  {
   "id": "T115",
@@ -1948,10 +3049,37 @@ window.THEOREM_CARDS = [
   ],
   "year": 1874,
   "shown": "1874",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Set theory",
   "level": "Undergraduate",
   "twist": false,
   "note": "The famous diagonal argument came later (1891).",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T234",
+  "row": 235,
+  "name": "Nested interval theorem",
+  "statement": "If $I_1\\supseteq I_2\\supseteq\\cdots$ are nonempty closed bounded intervals in $\\mathbb R$, their intersection is nonempty. If their lengths tend to zero, it consists of one point.",
+  "provers": [
+   "Georg Cantor"
+  ],
+  "year": 1874,
+  "shown": "1874",
+  "yearKind": "Published application",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Sequences and limits"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is Cantor’s published nested-interval argument for uncountability, not the first appearance of every form of this lemma.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1965,6 +3093,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1875,
   "shown": "1875",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Differential equations",
   "level": "Famous",
   "twist": false,
@@ -1982,10 +3113,43 @@ window.THEOREM_CARDS = [
   ],
   "year": 1875,
   "shown": "1875",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Differentiation"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T245",
+  "row": 246,
+  "name": "Darboux criterion for Riemann integrability",
+  "statement": "A bounded function $f$ on a closed interval is Riemann integrable iff, for every $\\varepsilon>0$, some partition $P$ satisfies $U(f,P)-L(f,P)<\\varepsilon$.",
+  "provers": [
+   "Jean Gaston Darboux"
+  ],
+  "year": 1875,
+  "shown": "1875",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "calc3"
+  ],
+  "topics": [
+   "Riemann integration",
+   "Multivariable integration"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Here $U$ and $L$ are the upper and lower Darboux sums; an analogous criterion holds for boxes.",
   "verified": false,
   "alsoAccept": []
  },
@@ -1999,6 +3163,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1878,
   "shown": "1878",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Eigenvalues and canonical forms"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": true,
@@ -2010,12 +3181,19 @@ window.THEOREM_CARDS = [
   "id": "T119",
   "row": 120,
   "name": "Dini's theorem",
-  "statement": "A monotone sequence of continuous functions converging pointwise to a continuous limit on a compact set converges uniformly.",
+  "statement": "A pointwise monotone sequence of continuous real-valued functions on a compact space, converging pointwise to a continuous function, converges uniformly.",
   "provers": [
    "Ulisse Dini"
   ],
   "year": 1878,
   "shown": "1878",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2033,10 +3211,61 @@ window.THEOREM_CARDS = [
   ],
   "year": 1878,
   "shown": "1878",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T252",
+  "row": 253,
+  "name": "Inverse function theorem",
+  "statement": "If $F:U\\subset\\mathbb R^n\\to\\mathbb R^n$ is $C^1$ on an open set and $DF(a)$ is invertible, then $F$ has a $C^1$ inverse near $a$, with $D(F^{-1})(F(a))=DF(a)^{-1}$.",
+  "provers": [
+   "Ulisse Dini"
+  ],
+  "year": 1878,
+  "shown": "1877–78",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable differentiation"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Dini’s 1877–78 lectures established the continuously differentiable setting; earlier analytic versions existed.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T253",
+  "row": 254,
+  "name": "Implicit function theorem",
+  "statement": "Let $F:U\\subset\\mathbb R^{n+m}\\to\\mathbb R^m$ be $C^1$ on an open set, with $F(a,b)=0$ and invertible $D_yF(a,b)$. Near $(a,b)$ the zero set is exactly $y=g(x)$ for a unique $C^1$ function $g$ with $g(a)=b$.",
+  "provers": [
+   "Ulisse Dini"
+  ],
+  "year": 1878,
+  "shown": "1877–78",
+  "yearKind": "Lectures",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable differentiation"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date identifies Dini’s continuously differentiable version, not Cauchy’s earlier analytic case.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2050,10 +3279,38 @@ window.THEOREM_CARDS = [
   ],
   "year": 1879,
   "shown": "1879",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T247",
+  "row": 248,
+  "name": "Weierstrass M-test",
+  "statement": "If $|f_n(x)|\\le M_n$ for every $x\\in X$, with $M_n\\ge0$ and $\\sum M_n<\\infty$, then $\\sum f_n$ converges absolutely and uniformly on $X$.",
+  "provers": [
+   "Karl Weierstrass"
+  ],
+  "year": 1880,
+  "shown": "1880",
+  "yearKind": "Published treatment",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series",
+   "Power series"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is the majorant criterion in the published Zur Functionenlehre, not an assertion that its first use was in 1880.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2067,10 +3324,39 @@ window.THEOREM_CARDS = [
   ],
   "year": 1882,
   "shown": "1882",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T270",
+  "row": 271,
+  "name": "Rank–nullity theorem",
+  "statement": "If $T:V\\to W$ is linear and $V$ is finite dimensional, then $\\dim\\ker T+\\dim\\operatorname{im}T=\\dim V$.",
+  "provers": [
+   "James Joseph Sylvester"
+  ],
+  "year": 1884,
+  "shown": "1884",
+  "yearKind": "Nullity terminology",
+  "courses": [
+   "lin1",
+   "lin2"
+  ],
+  "topics": [
+   "Vector spaces and dimension",
+   "Linear maps"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date identifies Sylvester’s nullity terminology for matrices; the front is the modern rank–nullity identity, not a claim of first proof in 1884.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2084,6 +3370,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1885,
   "shown": "1885",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -2101,12 +3390,45 @@ window.THEOREM_CARDS = [
   ],
   "year": 1885,
   "shown": "1885",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Function sequences and series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
   "note": "",
   "verified": false,
   "alsoAccept": []
+ },
+ {
+  "id": "T236",
+  "row": 237,
+  "name": "Stolz–Cesàro theorem",
+  "statement": "If $b_n$ is strictly increasing to $+\\infty$ and $\\displaystyle\\frac{a_{n+1}-a_n}{b_{n+1}-b_n}\\to L\\in\\mathbb R$, then $a_n/b_n\\to L$.",
+  "provers": [
+   "Otto Stolz"
+  ],
+  "year": 1885,
+  "shown": "1885",
+  "yearKind": "Publication",
+  "courses": [
+   "calc1"
+  ],
+  "topics": [
+   "Sequences and limits"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "This card dates Stolz’s published infinite-denominator version.",
+  "verified": false,
+  "alsoAccept": [
+   "Cesaro"
+  ]
  },
  {
   "id": "T125",
@@ -2118,6 +3440,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1886,
   "shown": "1886",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2135,6 +3460,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1887,
   "shown": "1887",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Undergraduate",
   "twist": true,
@@ -2152,6 +3480,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1887,
   "shown": "1887",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Undergraduate",
   "twist": false,
@@ -2169,6 +3500,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1890,
   "shown": "1890",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2186,10 +3520,37 @@ window.THEOREM_CARDS = [
   ],
   "year": 1890,
   "shown": "1890",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Dynamical systems",
   "level": "Famous",
   "twist": false,
   "note": "From his prize-winning memoir on the three-body problem.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T260",
+  "row": 261,
+  "name": "Peano existence theorem",
+  "statement": "If $F(t,x)$ is continuous near $(t_0,x_0)\\in\\mathbb R\\times\\mathbb R^n$, then $x'=F(t,x)$, $x(t_0)=x_0$, has at least one local solution. Uniqueness need not hold.",
+  "provers": [
+   "Giuseppe Peano"
+  ],
+  "year": 1890,
+  "shown": "1890",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "ODE existence and uniqueness"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "",
   "verified": false,
   "alsoAccept": []
  },
@@ -2203,12 +3564,98 @@ window.THEOREM_CARDS = [
   ],
   "year": 1891,
   "shown": "1891",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Set theory",
   "level": "Undergraduate",
   "twist": false,
   "note": "Introduced the diagonal argument.",
   "verified": false,
   "alsoAccept": []
+ },
+ {
+  "id": "T259",
+  "row": 260,
+  "name": "Picard–Lindelöf existence and uniqueness",
+  "statement": "If $F(t,x)$ is continuous near $(t_0,x_0)$ and locally Lipschitz in $x$ uniformly in $t$, then $x'=F(t,x)$, $x(t_0)=x_0$, has a unique local solution.",
+  "provers": [
+   "Émile Picard"
+  ],
+  "year": 1891,
+  "shown": "1891",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "ODE existence and uniqueness"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "This date marks Picard’s published successive-approximation treatment; the theorem also bears Lindelöf’s name.",
+  "verified": false,
+  "alsoAccept": [
+   "Lindelof",
+   "Cauchy",
+   "Lipschitz"
+  ]
+ },
+ {
+  "id": "T264",
+  "row": 265,
+  "name": "Lyapunov’s direct method",
+  "statement": "For $x'=F(x)$ with $F\\in C^1$ and $F(0)=0$, suppose a $C^1$ function $V$ near $0$ satisfies $V(0)=0$, $V(x)>0$ for $x\\ne0$, and $\\nabla V(x)\\cdot F(x)\\le0$. Then $0$ is stable; strict negativity for $x\\ne0$ gives asymptotic stability.",
+  "provers": [
+   "Aleksandr Mikhailovich Lyapunov"
+  ],
+  "year": 1892,
+  "shown": "1892",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "Stability and phase portraits"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "",
+  "verified": false,
+  "alsoAccept": [
+   "Liapounov",
+   "Liapunov"
+  ]
+ },
+ {
+  "id": "T265",
+  "row": 266,
+  "name": "Stability by linearization",
+  "statement": "For $x'=F(x)$ with $F\\in C^1$ and $F(0)=0$, if every eigenvalue of $DF(0)$ has negative real part, then $0$ is locally asymptotically stable.",
+  "provers": [
+   "Aleksandr Mikhailovich Lyapunov"
+  ],
+  "year": 1892,
+  "shown": "1892",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "Stability and phase portraits",
+   "Linear ODE systems"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Zero real parts require further analysis; the linearization test is then inconclusive.",
+  "verified": false,
+  "alsoAccept": [
+   "Liapounov",
+   "Liapunov"
+  ]
  },
  {
   "id": "T131",
@@ -2220,6 +3667,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1893,
   "shown": "1893",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2237,10 +3687,46 @@ window.THEOREM_CARDS = [
   ],
   "year": 1895,
   "shown": "1895",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "calc3"
+  ],
+  "topics": [
+   "Continuity and compactness"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
   "note": "Borel proved the covering property for countable covers; Heine's name comes from a related 1872 argument.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T251",
+  "row": 252,
+  "name": "Arzelà–Ascoli theorem",
+  "statement": "Every uniformly bounded, equicontinuous sequence of real continuous functions on $[a,b]$ has a uniformly convergent subsequence.",
+  "provers": [
+   "Cesare Arzelà",
+   "Giulio Ascoli"
+  ],
+  "year": 1895,
+  "shown": "1895",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "ode"
+  ],
+  "topics": [
+   "Continuity and compactness",
+   "Function sequences and series",
+   "ODE existence and uniqueness"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Ascoli’s earlier work dates to 1884; this card uses the later Arzelà milestone.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2254,6 +3740,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1896,
   "shown": "1896",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -2272,10 +3761,39 @@ window.THEOREM_CARDS = [
   ],
   "year": 1896,
   "shown": "1896",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Undergraduate",
   "twist": false,
   "note": "Proved independently by both in the same year.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T258",
+  "row": 259,
+  "name": "Brunn–Minkowski inequality (convex bodies)",
+  "statement": "For convex bodies $K,L\\subset\\mathbb R^n$, $\\displaystyle |K+L|^{1/n}\\ge |K|^{1/n}+|L|^{1/n}$, where $|\\cdot|$ is volume and $K+L=\\{x+y:x\\in K,y\\in L\\}$.",
+  "provers": [
+   "Hermann Brunn",
+   "Hermann Minkowski"
+  ],
+  "year": 1896,
+  "shown": "1896",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable integration",
+   "Convex geometry"
+  ],
+  "area": "Analysis",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date is Minkowski’s general-dimensional convex-body version; Brunn’s earlier work was in dimension three.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2289,6 +3807,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1898,
   "shown": "1898",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Set theory",
   "level": "Undergraduate",
   "twist": true,
@@ -2306,10 +3827,37 @@ window.THEOREM_CARDS = [
   ],
   "year": 1898,
   "shown": "1898",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Famous",
   "twist": false,
   "note": "ℝ, ℂ, quaternions, octonions.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T262",
+  "row": 263,
+  "name": "Osgood uniqueness criterion",
+  "statement": "For continuous $F$, suppose $|F(t,x)-F(t,y)|\\le\\omega(|x-y|)$ locally, where $\\omega$ is continuous, nondecreasing, positive for $r>0$, and $\\omega(0)=0$. If $\\int_{0^+}dr/\\omega(r)=\\infty$, the initial-value problem has local uniqueness.",
+  "provers": [
+   "William Fogg Osgood"
+  ],
+  "year": 1898,
+  "shown": "1898",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "ODE existence and uniqueness"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "This allows some moduli of continuity that are weaker than a Lipschitz bound.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2323,6 +3871,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1899,
   "shown": "1899",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2340,6 +3891,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1899,
   "shown": "1899",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -2357,6 +3911,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1900,
   "shown": "1900",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -2368,12 +3925,19 @@ window.THEOREM_CARDS = [
   "id": "T140",
   "row": 141,
   "name": "Fejér's theorem",
-  "statement": "The averages of the partial sums of a continuous function's Fourier series converge to it uniformly.",
+  "statement": "For a continuous periodic function, the arithmetic means of the first $N$ Fourier partial sums converge uniformly to the function as $N\\to\\infty$.",
   "provers": [
    "Lipót Fejér"
   ],
   "year": 1900,
   "shown": "1900",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2"
+  ],
+  "topics": [
+   "Fourier series"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2391,6 +3955,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1900,
   "shown": "1900",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Famous",
   "twist": true,
@@ -2408,10 +3975,38 @@ window.THEOREM_CARDS = [
   ],
   "year": 1901,
   "shown": "1901",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
   "note": "The first of Hilbert's 23 problems to be solved.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T267",
+  "row": 268,
+  "name": "Poincaré–Bendixson theorem",
+  "statement": "For a $C^1$ planar autonomous system, if a forward trajectory stays in a compact subset of the domain and its $\\omega$-limit set contains no equilibrium, that limit set is a periodic orbit.",
+  "provers": [
+   "Henri Poincaré",
+   "Ivar Bendixson"
+  ],
+  "year": 1901,
+  "shown": "1901",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "Stability and phase portraits"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The chosen date is Bendixson’s extension of Poincaré’s earlier planar theory.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2425,6 +4020,15 @@ window.THEOREM_CARDS = [
   ],
   "year": 1902,
   "shown": "1902",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "calc3"
+  ],
+  "topics": [
+   "Riemann integration",
+   "Multivariable integration"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2442,6 +4046,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1904,
   "shown": "1904",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Famous",
   "twist": false,
@@ -2459,6 +4066,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1905,
   "shown": "1905",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2476,6 +4086,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1905,
   "shown": "1905",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2487,12 +4100,15 @@ window.THEOREM_CARDS = [
   "id": "T147",
   "row": 148,
   "name": "Fatou's lemma",
-  "statement": "$\\int \\liminf f_n \\le \\liminf \\int f_n$ for non-negative functions.",
+  "statement": "For nonnegative measurable functions on a measure space, $\\int\\liminf_n f_n\\le\\liminf_n\\int f_n$.",
   "provers": [
    "Pierre Fatou"
   ],
   "year": 1906,
   "shown": "1906",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2504,12 +4120,15 @@ window.THEOREM_CARDS = [
   "id": "T148",
   "row": 149,
   "name": "Monotone convergence theorem",
-  "statement": "For increasing non-negative functions, the limit of the integrals is the integral of the limit.",
+  "statement": "If $0\\le f_n\\uparrow f$ are measurable functions on a measure space, then $\\int f_n\\uparrow\\int f$, allowing the value $+\\infty$.",
   "provers": [
    "Beppo Levi"
   ],
   "year": 1906,
   "shown": "1906",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": true,
@@ -2521,16 +4140,23 @@ window.THEOREM_CARDS = [
   "id": "T149",
   "row": 150,
   "name": "Fubini's theorem",
-  "statement": "A double integral of an integrable function can be computed as an iterated integral in either order.",
+  "statement": "If $f$ is continuous on $[a,b]\\times[c,d]$, then $\\displaystyle\\int_a^b\\!\\int_c^d f(x,y)\\,dy\\,dx=\\int_c^d\\!\\int_a^b f(x,y)\\,dx\\,dy=\\iint_{[a,b]\\times[c,d]}f$.",
   "provers": [
    "Guido Fubini"
   ],
   "year": 1907,
   "shown": "1907",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Multivariable integration"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
-  "note": "Tonelli's non-negative version followed in 1909.",
+  "note": "This card gives the continuous Riemann-integral case taught in Calc 3. The date 1907 refers to Fubini’s more general integration theorem.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2544,6 +4170,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1907,
   "shown": "1907",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2562,6 +4191,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1907,
   "shown": "1907",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2580,10 +4212,64 @@ window.THEOREM_CARDS = [
   ],
   "year": 1907,
   "shown": "1907",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Famous",
   "twist": false,
   "note": "Proved independently the same year.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T273",
+  "row": 274,
+  "name": "Gram–Schmidt orthonormalization",
+  "statement": "Every linearly independent list $v_1,\\ldots,v_k$ in an inner product space admits an orthonormal list $e_1,\\ldots,e_k$ with $\\operatorname{span}(e_1,\\ldots,e_j)=\\operatorname{span}(v_1,\\ldots,v_j)$ for each $j$.",
+  "provers": [
+   "Erhard Schmidt",
+   "Jørgen Pedersen Gram"
+  ],
+  "year": 1907,
+  "shown": "1907",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Inner products"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Schmidt’s presentation; orthogonalization has earlier antecedents, including Gram’s work.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T274",
+  "row": 275,
+  "name": "Riesz representation (finite-dimensional case)",
+  "statement": "In a finite-dimensional real inner product space, every linear functional $\\ell$ has a unique representing vector $u$ such that $\\ell(v)=\\langle v,u\\rangle$ for all $v$.",
+  "provers": [
+   "Frigyes Riesz",
+   "Maurice René Fréchet"
+  ],
+  "year": 1907,
+  "shown": "1907",
+  "yearKind": "Representation milestone",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Inner products",
+   "Linear maps"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date belongs to the infinite-dimensional representation milestone; the card gives the finite-dimensional real case used in this course.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2597,6 +4283,11 @@ window.THEOREM_CARDS = [
   ],
   "year": 1909,
   "shown": "1909",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [
+   "Eigenvalues and canonical forms"
+  ],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2614,6 +4305,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1909,
   "shown": "1909",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": false,
@@ -2631,10 +4325,38 @@ window.THEOREM_CARDS = [
   ],
   "year": 1909,
   "shown": "1909",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
   "note": "Waring stated it in 1770.",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T275",
+  "row": 276,
+  "name": "Spectral theorem for normal matrices",
+  "statement": "A complex square matrix $A$ has an orthonormal basis of eigenvectors iff $A^*A=AA^*$. Equivalently, a normal matrix is unitarily diagonalizable.",
+  "provers": [
+   "Issai Schur"
+  ],
+  "year": 1909,
+  "shown": "1909",
+  "yearKind": "Publication",
+  "courses": [
+   "lin2"
+  ],
+  "topics": [
+   "Eigenvalues and canonical forms",
+   "Inner products"
+  ],
+  "area": "Linear algebra",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "The date marks Schur’s unitary-triangularization treatment and its normal-matrix consequence.",
   "verified": false,
   "alsoAccept": []
  },
@@ -2648,6 +4370,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1910,
   "shown": "1910",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -2665,6 +4390,13 @@ window.THEOREM_CARDS = [
   ],
   "year": 1911,
   "shown": "1911",
+  "yearKind": "Publication",
+  "courses": [
+   "calc3"
+  ],
+  "topics": [
+   "Continuity and compactness"
+  ],
   "area": "Topology",
   "level": "Undergraduate",
   "twist": false,
@@ -2682,6 +4414,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1916,
   "shown": "1916",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -2699,6 +4434,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1916,
   "shown": "1916",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -2717,6 +4455,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1918,
   "shown": "1918",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -2734,8 +4475,35 @@ window.THEOREM_CARDS = [
   ],
   "year": 1918,
   "shown": "1918",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Mathematical physics",
   "level": "Famous",
+  "twist": false,
+  "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T261",
+  "row": 262,
+  "name": "Grönwall’s inequality",
+  "statement": "If $u,b\\ge0$ are continuous on $[a,T]$, $A\\ge0$, and $\\displaystyle u(t)\\le A+\\int_a^t b(s)u(s)\\,ds$, then $\\displaystyle u(t)\\le A\\exp\\!\\left(\\int_a^t b(s)\\,ds\\right)$.",
+  "provers": [
+   "Thomas Hakon Grönwall"
+  ],
+  "year": 1919,
+  "shown": "1919",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "ODE existence and uniqueness"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
   "twist": false,
   "note": "",
   "verified": false,
@@ -2745,12 +4513,21 @@ window.THEOREM_CARDS = [
   "id": "T162",
   "row": 163,
   "name": "Banach fixed-point theorem",
-  "statement": "A contraction on a complete metric space has a unique fixed point.",
+  "statement": "If $X$ is a nonempty complete metric space and $T:X\\to X$ satisfies $d(Tx,Ty)\\le qd(x,y)$ for a fixed $0\\le q<1$, then $T$ has a unique fixed point.",
   "provers": [
    "Stefan Banach"
   ],
   "year": 1922,
   "shown": "1922",
+  "yearKind": "Publication",
+  "courses": [
+   "calc2",
+   "ode"
+  ],
+  "topics": [
+   "Metric spaces",
+   "ODE existence and uniqueness"
+  ],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2769,6 +4546,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1924,
   "shown": "1924",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Set theory",
   "level": "Famous",
   "twist": false,
@@ -2786,6 +4566,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1927,
   "shown": "1927",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Functional analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2803,6 +4586,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1927,
   "shown": "1927",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -2821,6 +4607,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1927,
   "shown": "1927",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Functional analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -2838,6 +4627,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1927,
   "shown": "1927",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -2855,6 +4647,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1928,
   "shown": "1928",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Game theory",
   "level": "Undergraduate",
   "twist": false,
@@ -2872,6 +4667,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1928,
   "shown": "1928",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -2889,6 +4687,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1930,
   "shown": "1930",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Undergraduate",
   "twist": false,
@@ -2906,6 +4707,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1930,
   "shown": "1930",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -2923,6 +4727,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1930,
   "shown": "1930",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": false,
@@ -2940,6 +4747,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1931,
   "shown": "1931",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Dynamical systems",
   "level": "Famous",
   "twist": false,
@@ -2957,6 +4767,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1931,
   "shown": "1931",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Linear algebra",
   "level": "Undergraduate",
   "twist": false,
@@ -2974,6 +4787,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1931,
   "shown": "1931",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Famous",
   "twist": false,
@@ -2991,6 +4807,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1931,
   "shown": "1931",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -3008,6 +4827,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1933,
   "shown": "1933",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3025,6 +4847,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1933,
   "shown": "1933",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Probability",
   "level": "Undergraduate",
   "twist": false,
@@ -3043,6 +4868,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1934,
   "shown": "1934",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3061,6 +4889,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1935,
   "shown": "1935",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": false,
@@ -3078,6 +4909,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1935,
   "shown": "1935",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": false,
@@ -3095,6 +4929,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1935,
   "shown": "1935",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Set theory",
   "level": "Undergraduate",
   "twist": true,
@@ -3112,6 +4949,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1936,
   "shown": "1936",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Famous",
   "twist": false,
@@ -3129,6 +4969,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1936,
   "shown": "1936",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3146,6 +4989,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1937,
   "shown": "1937",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": true,
@@ -3157,12 +5003,15 @@ window.THEOREM_CARDS = [
   "id": "T186",
   "row": 187,
   "name": "Stone–Weierstrass theorem",
-  "statement": "A subalgebra of continuous functions that separates points and contains constants is dense.",
+  "statement": "On a compact Hausdorff space $X$, any real subalgebra of $C(X,\\mathbb R)$ that contains the constants and separates points is dense in the uniform norm.",
   "provers": [
    "Marshall Stone"
   ],
   "year": 1937,
   "shown": "1937",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -3180,6 +5029,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1938,
   "shown": "1938",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Famous",
   "twist": false,
@@ -3197,6 +5049,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1940,
   "shown": "1940",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Functional analysis",
   "level": "Undergraduate",
   "twist": false,
@@ -3214,6 +5069,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1941,
   "shown": "1941",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -3231,6 +5089,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1941,
   "shown": "1941",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -3249,6 +5110,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1942,
   "shown": "1942",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3266,6 +5130,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1942,
   "shown": "1942",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Famous",
   "twist": false,
@@ -3283,6 +5150,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1944,
   "shown": "1944",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": true,
@@ -3300,6 +5170,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1947,
   "shown": "1947",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -3317,6 +5190,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1948,
   "shown": "1948",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Information theory",
   "level": "Famous",
   "twist": false,
@@ -3334,6 +5210,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1950,
   "shown": "1950",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Social choice",
   "level": "Famous",
   "twist": false,
@@ -3351,6 +5230,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1950,
   "shown": "1950",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Game theory",
   "level": "Famous",
   "twist": false,
@@ -3368,6 +5250,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1952,
   "shown": "1952",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -3386,6 +5271,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1956,
   "shown": "1956",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Undergraduate",
   "twist": false,
@@ -3403,10 +5291,37 @@ window.THEOREM_CARDS = [
   ],
   "year": 1956,
   "shown": "1956",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Differential geometry",
   "level": "Famous",
   "twist": false,
   "note": "",
+  "verified": false,
+  "alsoAccept": []
+ },
+ {
+  "id": "T266",
+  "row": 267,
+  "name": "LaSalle’s invariance principle",
+  "statement": "Let $K$ be compact and positively invariant for a $C^1$ autonomous system, and let $V\\in C^1$ near $K$ satisfy $\\dot V\\le0$ on $K$. Every trajectory starting in $K$ approaches the largest invariant subset of $\\{x\\in K:\\dot V(x)=0\\}$.",
+  "provers": [
+   "Joseph Pierre LaSalle"
+  ],
+  "year": 1960,
+  "shown": "1960",
+  "yearKind": "Publication",
+  "courses": [
+   "ode"
+  ],
+  "topics": [
+   "Stability and phase portraits"
+  ],
+  "area": "Differential equations",
+  "level": "Undergraduate",
+  "twist": false,
+  "note": "Here approaching a set means that the distance to it tends to zero.",
   "verified": false,
   "alsoAccept": []
  },
@@ -3422,6 +5337,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1961,
   "shown": "1961",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": false,
@@ -3439,6 +5357,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1961,
   "shown": "1961",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3457,6 +5378,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1962,
   "shown": "1962",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Undergraduate",
   "twist": false,
@@ -3475,6 +5399,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1963,
   "shown": "1963",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3493,6 +5420,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1963,
   "shown": "1963",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Group theory",
   "level": "Famous",
   "twist": false,
@@ -3511,6 +5441,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1963,
   "shown": "1963",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -3528,6 +5461,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1963,
   "shown": "1963",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Famous",
   "twist": false,
@@ -3545,6 +5481,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1966,
   "shown": "1966",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Analysis",
   "level": "Famous",
   "twist": false,
@@ -3562,6 +5501,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1970,
   "shown": "1970",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Logic",
   "level": "Famous",
   "twist": false,
@@ -3579,6 +5521,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1970,
   "shown": "1970",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -3596,6 +5541,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1971,
   "shown": "1971",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Computer science",
   "level": "Famous",
   "twist": false,
@@ -3613,6 +5561,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1974,
   "shown": "1974",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Algebraic geometry",
   "level": "Famous",
   "twist": false,
@@ -3630,6 +5581,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1975,
   "shown": "1975",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -3648,6 +5602,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1977,
   "shown": "1977",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Famous",
   "twist": false,
@@ -3665,6 +5622,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1978,
   "shown": "1978",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Combinatorics",
   "level": "Famous",
   "twist": false,
@@ -3682,6 +5642,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1979,
   "shown": "1979",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3699,6 +5662,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1982,
   "shown": "1982",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3716,6 +5682,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1983,
   "shown": "1983",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3733,6 +5702,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1985,
   "shown": "1985",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Complex analysis",
   "level": "Famous",
   "twist": false,
@@ -3750,6 +5722,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 1995,
   "shown": "1995",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": true,
@@ -3767,6 +5742,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2003,
   "shown": "2003",
+  "yearKind": "Presented / announced",
+  "courses": [],
+  "topics": [],
   "area": "Topology",
   "level": "Famous",
   "twist": false,
@@ -3784,6 +5762,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2004,
   "shown": "2004",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3802,6 +5783,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2004,
   "shown": "2004",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Famous",
   "twist": false,
@@ -3821,6 +5805,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2004,
   "shown": "2004",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Computer science",
   "level": "Famous",
   "twist": false,
@@ -3838,6 +5825,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2005,
   "shown": "2005",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -3858,6 +5848,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2006,
   "shown": "2006",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Graph theory",
   "level": "Famous",
   "twist": false,
@@ -3875,6 +5868,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2008,
   "shown": "2008",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Differential geometry",
   "level": "Famous",
   "twist": false,
@@ -3893,6 +5889,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2008,
   "shown": "2008",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3910,6 +5909,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2014,
   "shown": "2014",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Number theory",
   "level": "Famous",
   "twist": false,
@@ -3927,6 +5929,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2017,
   "shown": "2017",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Geometry",
   "level": "Famous",
   "twist": false,
@@ -3944,6 +5949,9 @@ window.THEOREM_CARDS = [
   ],
   "year": 2019,
   "shown": "2019",
+  "yearKind": "Publication",
+  "courses": [],
+  "topics": [],
   "area": "Computer science",
   "level": "Famous",
   "twist": false,

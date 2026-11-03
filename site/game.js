@@ -38,8 +38,9 @@
     return result;
   }
 
-  /** Cards needed so that every player can reach the target with room to spare. */
-  function cardsNeeded(playerCount, target) { return playerCount * (target + 2) + 4; }
+  /** Minimum: enough for every player to reach the target, plus two spare cards.
+   * The existing empty-deck rule handles games with many incorrect placements. */
+  function cardsNeeded(playerCount, target) { return playerCount * target + 2; }
 
   /**
    * Start a game.

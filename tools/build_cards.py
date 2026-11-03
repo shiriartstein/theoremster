@@ -12,6 +12,7 @@ prover's name that count when guessing, separated by commas (for example "Qin"
 for Qin Jiushao). The script stops with a list of problems if any row is invalid.
 """
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -34,6 +35,9 @@ COLUMNS = {
     'note': 'Notes / twist',
     'verified': 'Verified?',
     'also': 'Also accept',
+    'courses': 'Courses',
+    'topics': 'Topics',
+    'yearKind': 'What the year means',
 }
 REQUIRED = ['id', 'name', 'statement', 'prover', 'year', 'shown']
 VERIFIED = {'yes', 'y', 'approved', 'verified', 'ok', 'checked', 'done', '✓', '✔'}
@@ -92,11 +96,19 @@ def main():
             continue
         seen.add(card_id)
         try:
-            year = int(float(get('year')))
-        except ValueError:
+            number = float(get('year'))
+            if not math.isfinite(number) or not number.is_integer():
+                raise ValueError('not an integer')
+            year = int(number)
+        except (ValueError, OverflowError):
             problems.append(f'Row {line}: "{get("year")}" is not a whole year (use negative numbers for BC)')
             continue
         twist, note = player_note(get('note'))
+        courses = list(dict.fromkeys(c.strip().lower() for c in re.split(r'[;,]', get('courses')) if c.strip()))
+        unknown = set(courses) - {'calc1', 'calc2', 'calc3', 'ode', 'lin1', 'lin2'}
+        if unknown:
+            problems.append(f'Row {line}: unknown Courses tag(s): {", ".join(sorted(unknown))}; use calc1, calc2, calc3, ode, lin1, lin2')
+            continue
         cards.append({
             'id': card_id,
             'row': line,
@@ -105,6 +117,9 @@ def main():
             'provers': [p.strip() for p in get('prover').split(' / ') if p.strip()],
             'year': year,
             'shown': get('shown'),
+            'yearKind': get('yearKind'),
+            'courses': courses,
+            'topics': list(dict.fromkeys(t.strip() for t in get('topics').split(';') if t.strip())),
             'area': get('area'),
             'level': get('level'),
             'twist': twist,

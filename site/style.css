@@ -242,3 +242,12 @@ dialog::backdrop { background: #0f1a2a88; }
 @media (prefers-reduced-motion: reduce) {
   .flip-inner { transition: none; }
 }
+
+.deck-picker { margin: 14px 0 22px; }
+.deck-picker > summary { width: fit-content; cursor: pointer; display: list-item; list-style-position: inside; }
+.deck-picker-fields { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(200px, 1fr); gap: 24px; margin-top: 16px; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.deck-picker fieldset { min-width: 0; border: 0; padding: 0; margin: 0; }
+.deck-picker legend { font-weight: 700; margin-bottom: 6px; }
+.deck-picker .check { margin: 8px 0; min-height: 30px; }
+.deck-picker select { max-width: 100%; }
+@media (max-width: 600px) { .deck-picker-fields { grid-template-columns: 1fr; gap: 16px; } }
